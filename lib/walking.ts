@@ -6,6 +6,8 @@
 import walkingData from "@/data/walking-distances.json";
 
 export const MAX_WALKING_METERS = 1500;
+// 도보 시간 기준: 모든 동을 분당 60m(시속 3.6km)로 똑같이 계산한다
+export const WALKING_METERS_PER_MINUTE = 60;
 export const IMPOSSIBLE_LABEL = "불가능";
 
 // data/walking-distances.json 의 항목 하나 (scripts/calc-walking.mjs 가 만든다)
@@ -24,11 +26,22 @@ export type WalkingItem = {
 export type LatLng = { lat: number; lng: number };
 
 export type WalkingResult =
-  | { possible: true; meters: number; label: string; exitName: string }
+  | { possible: true; meters: number; label: string; timeLabel: string; exitName: string }
   | { possible: false; label: typeof IMPOSSIBLE_LABEL; reason: "too-far" | "failed" | "not-found" };
 
 export function roundTo10(meters: number): number {
   return Math.round(meters / 10) * 10;
+}
+
+// 화면에 표시한 거리(10m 단위)로 도보 시간을 구한다. 올림·반올림 없이 분·초로 보여준다
+// 분당 60m는 초당 1m라서 10m 단위 거리는 항상 초 단위로 딱 떨어진다 (예: 460m → 7분 40초)
+export function walkingTimeLabel(meters: number): string {
+  // 곱셈을 먼저 해서 소수점 오차 없이 정수 초로 계산한다
+  const totalSeconds = (meters * 60) / WALKING_METERS_PER_MINUTE;
+  const minutes = Math.floor(totalSeconds / 60);
+  const seconds = totalSeconds - minutes * 60;
+  if (minutes === 0) return `${seconds}초`;
+  return seconds === 0 ? `${minutes}분` : `${minutes}분 ${seconds}초`;
 }
 
 export function toWalkingResult(item: WalkingItem): WalkingResult {
@@ -44,7 +57,13 @@ export function toWalkingResult(item: WalkingItem): WalkingResult {
   }
 
   const meters = roundTo10(item.walkingMeters);
-  return { possible: true, meters, label: `${meters.toLocaleString("ko-KR")}m`, exitName: item.exit.name };
+  return {
+    possible: true,
+    meters,
+    label: `${meters.toLocaleString("ko-KR")}m`,
+    timeLabel: walkingTimeLabel(meters),
+    exitName: item.exit.name,
+  };
 }
 
 // 개발 단위 10: 화면에 함께 보여줄 데이터 기준일

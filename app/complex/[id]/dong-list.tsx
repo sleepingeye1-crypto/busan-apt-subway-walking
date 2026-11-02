@@ -52,6 +52,7 @@ export default function DongList({ dongs }: { dongs: DongDistance[] }) {
             </div>
             <div className="shrink-0 text-right">
               <p className={`text-lg font-bold ${result.possible ? "" : "text-zinc-400"}`}>{result.label}</p>
+              {result.possible && <p className="text-sm text-zinc-500">도보 {result.timeLabel}</p>}
               {result.possible && basis === "complex" && (
                 <p className="text-xs text-amber-700 dark:text-amber-300">단지 대표 위치 기준</p>
               )}

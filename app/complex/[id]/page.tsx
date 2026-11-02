@@ -2,7 +2,13 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { getComplex, listComplexes } from "@/lib/complexes";
-import { getDongDistances, IMPOSSIBLE_LABEL, WALKING_DATA_DATES, type DongDistance } from "@/lib/walking";
+import {
+  getDongDistances,
+  IMPOSSIBLE_LABEL,
+  WALKING_DATA_DATES,
+  WALKING_METERS_PER_MINUTE,
+  type DongDistance,
+} from "@/lib/walking";
 import ComplexMap, { type MapPoint } from "./complex-map";
 import DongList from "./dong-list";
 
@@ -75,6 +81,7 @@ function DataNotice() {
         출입구 데이터 기준일 {WALKING_DATA_DATES.exitDataDate} · 도보 거리 계산일 {WALKING_DATA_DATES.calculatedAt}
       </p>
       <p>출입구 정보는 실제와 다를 수 있습니다. 공사·폐쇄된 출구는 반영되지 않았을 수 있습니다.</p>
+      <p>도보 시간은 모든 동을 분당 {WALKING_METERS_PER_MINUTE}m(시속 3.6km)로 걷는다고 보고 계산했습니다.</p>
       <p>
         도보 거리:{" "}
         <a
