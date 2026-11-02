@@ -32,9 +32,16 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+!.env.example
 
 # vercel
 .vercel
+
+# 삭제 대기 파일 (사용자가 확인 후 직접 삭제)
+/trash-can/
+
+# bkit 플러그인 실행 상태 파일 (컴퓨터마다 달라 공유하지 않음)
+/.bkit/
 
 # typescript
 *.tsbuildinfo
