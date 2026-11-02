@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-11-02",
-  "source": "카카오 장소 검색 (아파트 동 분류)",
+  "source": "카카오 장소 검색 (아파트 동 분류), 일부 동은 OpenStreetMap 건물 위치",
   "complexes": [
     {
       "name": "더샵센텀포레",

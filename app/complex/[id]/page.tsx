@@ -93,7 +93,7 @@ function DataNotice() {
         >
           © OpenStreetMap contributors
         </a>{" "}
-        · 출구·동 위치: 카카오 장소 검색
+        · 출구·동 위치: 카카오 장소 검색 (일부 동은 OpenStreetMap 건물 위치)
       </p>
     </footer>
   );

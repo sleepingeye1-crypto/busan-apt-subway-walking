@@ -3,8 +3,9 @@
 //
 // 실행: node scripts/collect-dongs.mjs
 //
-// 동마다 "더샵센텀파크1차아파트 101동"처럼 검색하고, 카카오에 등록된 동만 저장한다.
-// 좌표는 지어내지 않는다. 카카오에 없는 동은 결과에 넣지 않고 따로 알려준다.
+// 동마다 "더샵센텀파크1차아파트 101동"처럼 검색해 카카오에 등록된 동을 저장한다.
+// 카카오에 동별로 없는 동은 아래 MANUAL_DONGS에 직접 찍은 좌표(출처 함께 기록)로만 채운다.
+// 좌표는 지어내지 않는다. 두 곳 모두에 없는 동은 결과에 넣지 않는다.
 
 import { mkdir, writeFile } from "node:fs/promises";
 
@@ -102,7 +103,7 @@ async function main() {
     JSON.stringify(
       {
         generatedAt: new Date().toISOString().slice(0, 10),
-        source: "카카오 장소 검색 (아파트 동 분류)",
+        source: "카카오 장소 검색 (아파트 동 분류), 일부 동은 OpenStreetMap 건물 위치",
         complexes: result,
       },
       null,

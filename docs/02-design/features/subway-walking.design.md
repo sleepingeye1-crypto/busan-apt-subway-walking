@@ -267,7 +267,7 @@ interface WalkingItem {
 - [x] List row: "불가능" (회색, 거리·시간 없음)
 - [x] Footer: 출입구 데이터 기준일 · 도보 거리 계산일
 - [x] Footer: 출입구 정보가 다를 수 있다는 안내, 도보 시간 기준(분당 60m)
-- [x] Footer: "© OpenStreetMap contributors" 링크 · "출구·동 위치: 카카오 장소 검색"
+- [x] Footer: "© OpenStreetMap contributors" 링크 · "출구·동 위치: 카카오 장소 검색 (일부 동은 OpenStreetMap 건물 위치)"
 - [x] Not found: 없는 단지 주소는 404
 
 ---
@@ -344,7 +344,7 @@ interface WalkingItem {
 |--------|:------------:|---------------------|
 | Station (출구 포함) | 41 역 / 215 출구 | lat, lng, line |
 | ComplexWithDongs | 3 | dongs[].lat/lng, jibunAddress |
-| WalkingItem | 38 | status, walkingMeters, exit |
+| WalkingItem | 40 | status, walkingMeters, exit |
 
 ---
 
