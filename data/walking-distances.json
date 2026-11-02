@@ -1,0 +1,844 @@
+{
+  "generatedAt": "2026-11-02",
+  "source": "© OpenStreetMap contributors — routing.openstreetmap.de (foot)",
+  "exitDataDate": "2026-11-02",
+  "count": 38,
+  "items": [
+    {
+      "complex": "더샵센텀포레",
+      "dong": "101동",
+      "basis": "dong",
+      "lat": 35.16558826921188,
+      "lng": 129.12326477601795,
+      "status": "ok",
+      "walkingMeters": 103.7,
+      "walkingSeconds": 83,
+      "snapMeters": {
+        "start": 24.05614856,
+        "end": 6.337149565
+      },
+      "exit": {
+        "station": "민락역 부산2호선",
+        "line": "부산2호선",
+        "name": "민락역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.166440462691,
+        "lng": 129.122664708228
+      }
+    },
+    {
+      "complex": "더샵센텀포레",
+      "dong": "102동",
+      "basis": "dong",
+      "lat": 35.16538110105091,
+      "lng": 129.12382454457875,
+      "status": "ok",
+      "walkingMeters": 227.1,
+      "walkingSeconds": 181.5,
+      "snapMeters": {
+        "start": 15.20747065,
+        "end": 6.337149565
+      },
+      "exit": {
+        "station": "민락역 부산2호선",
+        "line": "부산2호선",
+        "name": "민락역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.166440462691,
+        "lng": 129.122664708228
+      }
+    },
+    {
+      "complex": "더샵센텀포레",
+      "dong": "103동",
+      "basis": "dong",
+      "lat": 35.165199686154786,
+      "lng": 129.12440583061266,
+      "status": "ok",
+      "walkingMeters": 268.1,
+      "walkingSeconds": 214.5,
+      "snapMeters": {
+        "start": 22.52756737,
+        "end": 6.337149565
+      },
+      "exit": {
+        "station": "민락역 부산2호선",
+        "line": "부산2호선",
+        "name": "민락역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.166440462691,
+        "lng": 129.122664708228
+      }
+    },
+    {
+      "complex": "더샵센텀포레",
+      "dong": "104동",
+      "basis": "dong",
+      "lat": 35.165029169675734,
+      "lng": 129.12503348776693,
+      "status": "ok",
+      "walkingMeters": 346.3,
+      "walkingSeconds": 277,
+      "snapMeters": {
+        "start": 17.52855231,
+        "end": 6.337149565
+      },
+      "exit": {
+        "station": "민락역 부산2호선",
+        "line": "부산2호선",
+        "name": "민락역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.166440462691,
+        "lng": 129.122664708228
+      }
+    },
+    {
+      "complex": "더샵센텀포레",
+      "dong": "105동",
+      "basis": "dong",
+      "lat": 35.1647963601511,
+      "lng": 129.12571877920635,
+      "status": "ok",
+      "walkingMeters": 382.7,
+      "walkingSeconds": 306.2,
+      "snapMeters": {
+        "start": 27.92955158,
+        "end": 6.337149565
+      },
+      "exit": {
+        "station": "민락역 부산2호선",
+        "line": "부산2호선",
+        "name": "민락역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.166440462691,
+        "lng": 129.122664708228
+      }
+    },
+    {
+      "complex": "더샵센텀포레",
+      "dong": "106동",
+      "basis": "dong",
+      "lat": 35.1643088719207,
+      "lng": 129.12520349130045,
+      "status": "ok",
+      "walkingMeters": 366.7,
+      "walkingSeconds": 293.3,
+      "snapMeters": {
+        "start": 31.70014562,
+        "end": 6.337149565
+      },
+      "exit": {
+        "station": "민락역 부산2호선",
+        "line": "부산2호선",
+        "name": "민락역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.166440462691,
+        "lng": 129.122664708228
+      }
+    },
+    {
+      "complex": "더샵센텀포레",
+      "dong": "107동",
+      "basis": "dong",
+      "lat": 35.16463869655268,
+      "lng": 129.12468972282656,
+      "status": "ok",
+      "walkingMeters": 354.7,
+      "walkingSeconds": 283.7,
+      "snapMeters": {
+        "start": 25.26236286,
+        "end": 6.337149565
+      },
+      "exit": {
+        "station": "민락역 부산2호선",
+        "line": "부산2호선",
+        "name": "민락역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.166440462691,
+        "lng": 129.122664708228
+      }
+    },
+    {
+      "complex": "더샵센텀포레",
+      "dong": "108동",
+      "basis": "dong",
+      "lat": 35.165457311856706,
+      "lng": 129.12271596760203,
+      "status": "ok",
+      "walkingMeters": 113,
+      "walkingSeconds": 90.5,
+      "snapMeters": {
+        "start": 19.85325716,
+        "end": 6.337149565
+      },
+      "exit": {
+        "station": "민락역 부산2호선",
+        "line": "부산2호선",
+        "name": "민락역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.166440462691,
+        "lng": 129.122664708228
+      }
+    },
+    {
+      "complex": "더샵센텀포레",
+      "dong": "109동",
+      "basis": "dong",
+      "lat": 35.16569714312068,
+      "lng": 129.12229751091056,
+      "status": "ok",
+      "walkingMeters": 202.6,
+      "walkingSeconds": 162.1,
+      "snapMeters": {
+        "start": 18.69028595,
+        "end": 6.337149565
+      },
+      "exit": {
+        "station": "민락역 부산2호선",
+        "line": "부산2호선",
+        "name": "민락역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.166440462691,
+        "lng": 129.122664708228
+      }
+    },
+    {
+      "complex": "더샵센텀포레",
+      "dong": "110동",
+      "basis": "dong",
+      "lat": 35.16618174861813,
+      "lng": 129.12179542576933,
+      "status": "ok",
+      "walkingMeters": 189.1,
+      "walkingSeconds": 151.1,
+      "snapMeters": {
+        "start": 16.63985787,
+        "end": 7.565989232
+      },
+      "exit": {
+        "station": "민락역 부산2호선",
+        "line": "부산2호선",
+        "name": "민락역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.16746258135019,
+        "lng": 129.12141827587246
+      }
+    },
+    {
+      "complex": "더샵센텀포레",
+      "dong": "111동",
+      "basis": "dong",
+      "lat": 35.1664609422361,
+      "lng": 129.12211324629345,
+      "status": "ok",
+      "walkingMeters": 234.2,
+      "walkingSeconds": 187.4,
+      "snapMeters": {
+        "start": 14.33028966,
+        "end": 6.337149565
+      },
+      "exit": {
+        "station": "민락역 부산2호선",
+        "line": "부산2호선",
+        "name": "민락역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.166440462691,
+        "lng": 129.122664708228
+      }
+    },
+    {
+      "complex": "더샵센텀포레",
+      "dong": "112동",
+      "basis": "dong",
+      "lat": 35.16609671048933,
+      "lng": 129.12258553835622,
+      "status": "ok",
+      "walkingMeters": 163.5,
+      "walkingSeconds": 130.9,
+      "snapMeters": {
+        "start": 15.91235058,
+        "end": 6.337149565
+      },
+      "exit": {
+        "station": "민락역 부산2호선",
+        "line": "부산2호선",
+        "name": "민락역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.166440462691,
+        "lng": 129.122664708228
+      }
+    },
+    {
+      "complex": "대연힐스테이트푸르지오",
+      "dong": "101동",
+      "basis": "dong",
+      "lat": 35.141322445545015,
+      "lng": 129.1008145675518,
+      "status": "ok",
+      "walkingMeters": 480.2,
+      "walkingSeconds": 384.2,
+      "snapMeters": {
+        "start": 10.07983086,
+        "end": 12.98563376
+      },
+      "exit": {
+        "station": "경성대.부경대역 부산2호선",
+        "line": "부산2호선",
+        "name": "경성대.부경대역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.1380669572347,
+        "lng": 129.101259660026
+      }
+    },
+    {
+      "complex": "대연힐스테이트푸르지오",
+      "dong": "102동",
+      "basis": "dong",
+      "lat": 35.14067271332038,
+      "lng": 129.10123010924613,
+      "status": "ok",
+      "walkingMeters": 389.5,
+      "walkingSeconds": 311.7,
+      "snapMeters": {
+        "start": 15.71073993,
+        "end": 12.98563376
+      },
+      "exit": {
+        "station": "경성대.부경대역 부산2호선",
+        "line": "부산2호선",
+        "name": "경성대.부경대역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.1380669572347,
+        "lng": 129.101259660026
+      }
+    },
+    {
+      "complex": "대연힐스테이트푸르지오",
+      "dong": "103동",
+      "basis": "dong",
+      "lat": 35.140049044639056,
+      "lng": 129.10164960590987,
+      "status": "ok",
+      "walkingMeters": 278.6,
+      "walkingSeconds": 222.9,
+      "snapMeters": {
+        "start": 15.62693048,
+        "end": 12.98563376
+      },
+      "exit": {
+        "station": "경성대.부경대역 부산2호선",
+        "line": "부산2호선",
+        "name": "경성대.부경대역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.1380669572347,
+        "lng": 129.101259660026
+      }
+    },
+    {
+      "complex": "대연힐스테이트푸르지오",
+      "dong": "104동",
+      "basis": "dong",
+      "lat": 35.14075867858307,
+      "lng": 129.10287133210187,
+      "status": "ok",
+      "walkingMeters": 537.4,
+      "walkingSeconds": 430.2,
+      "snapMeters": {
+        "start": 19.42585922,
+        "end": 12.98563376
+      },
+      "exit": {
+        "station": "경성대.부경대역 부산2호선",
+        "line": "부산2호선",
+        "name": "경성대.부경대역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.1380669572347,
+        "lng": 129.101259660026
+      }
+    },
+    {
+      "complex": "대연힐스테이트푸르지오",
+      "dong": "105동",
+      "basis": "dong",
+      "lat": 35.14133766898776,
+      "lng": 129.102378285487,
+      "status": "ok",
+      "walkingMeters": 579.8,
+      "walkingSeconds": 463.9,
+      "snapMeters": {
+        "start": 15.68886153,
+        "end": 12.98563376
+      },
+      "exit": {
+        "station": "경성대.부경대역 부산2호선",
+        "line": "부산2호선",
+        "name": "경성대.부경대역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.1380669572347,
+        "lng": 129.101259660026
+      }
+    },
+    {
+      "complex": "대연힐스테이트푸르지오",
+      "dong": "106동",
+      "basis": "dong",
+      "lat": 35.14189078308474,
+      "lng": 129.10187030451843,
+      "status": "ok",
+      "walkingMeters": 603.2,
+      "walkingSeconds": 482.5,
+      "snapMeters": {
+        "start": 13.8811711,
+        "end": 12.98563376
+      },
+      "exit": {
+        "station": "경성대.부경대역 부산2호선",
+        "line": "부산2호선",
+        "name": "경성대.부경대역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.1380669572347,
+        "lng": 129.101259660026
+      }
+    },
+    {
+      "complex": "대연힐스테이트푸르지오",
+      "dong": "107동",
+      "basis": "dong",
+      "lat": 35.14237567939896,
+      "lng": 129.10145052375128,
+      "status": "ok",
+      "walkingMeters": 606.8,
+      "walkingSeconds": 485.5,
+      "snapMeters": {
+        "start": 17.96715829,
+        "end": 12.98563376
+      },
+      "exit": {
+        "station": "경성대.부경대역 부산2호선",
+        "line": "부산2호선",
+        "name": "경성대.부경대역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.1380669572347,
+        "lng": 129.101259660026
+      }
+    },
+    {
+      "complex": "대연힐스테이트푸르지오",
+      "dong": "108동",
+      "basis": "dong",
+      "lat": 35.1429165583272,
+      "lng": 129.1007644867295,
+      "status": "ok",
+      "walkingMeters": 667.3,
+      "walkingSeconds": 534.1,
+      "snapMeters": {
+        "start": 9.712107862,
+        "end": 12.98563376
+      },
+      "exit": {
+        "station": "경성대.부경대역 부산2호선",
+        "line": "부산2호선",
+        "name": "경성대.부경대역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.1380669572347,
+        "lng": 129.101259660026
+      }
+    },
+    {
+      "complex": "대연힐스테이트푸르지오",
+      "dong": "109동",
+      "basis": "dong",
+      "lat": 35.14341270246776,
+      "lng": 129.1002155256709,
+      "status": "ok",
+      "walkingMeters": 737.3,
+      "walkingSeconds": 590.1,
+      "snapMeters": {
+        "start": 22.89510671,
+        "end": 12.98563376
+      },
+      "exit": {
+        "station": "경성대.부경대역 부산2호선",
+        "line": "부산2호선",
+        "name": "경성대.부경대역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.1380669572347,
+        "lng": 129.101259660026
+      }
+    },
+    {
+      "complex": "대연힐스테이트푸르지오",
+      "dong": "110동",
+      "basis": "dong",
+      "lat": 35.1438319159836,
+      "lng": 129.09952963748842,
+      "status": "ok",
+      "walkingMeters": 879.1,
+      "walkingSeconds": 703.4,
+      "snapMeters": {
+        "start": 23.25952193,
+        "end": 12.98563376
+      },
+      "exit": {
+        "station": "경성대.부경대역 부산2호선",
+        "line": "부산2호선",
+        "name": "경성대.부경대역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.1380669572347,
+        "lng": 129.101259660026
+      }
+    },
+    {
+      "complex": "대연힐스테이트푸르지오",
+      "dong": "111동",
+      "basis": "dong",
+      "lat": 35.14415080959119,
+      "lng": 129.09828822235352,
+      "status": "ok",
+      "walkingMeters": 1067.2,
+      "walkingSeconds": 854.1,
+      "snapMeters": {
+        "start": 11.51654574,
+        "end": 12.98563376
+      },
+      "exit": {
+        "station": "경성대.부경대역 부산2호선",
+        "line": "부산2호선",
+        "name": "경성대.부경대역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.1380669572347,
+        "lng": 129.101259660026
+      }
+    },
+    {
+      "complex": "대연힐스테이트푸르지오",
+      "dong": "112동",
+      "basis": "dong",
+      "lat": 35.14359010791396,
+      "lng": 129.0987148608271,
+      "status": "ok",
+      "walkingMeters": 870,
+      "walkingSeconds": 696.1,
+      "snapMeters": {
+        "start": 20.35555168,
+        "end": 12.98563376
+      },
+      "exit": {
+        "station": "경성대.부경대역 부산2호선",
+        "line": "부산2호선",
+        "name": "경성대.부경대역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.1380669572347,
+        "lng": 129.101259660026
+      }
+    },
+    {
+      "complex": "더샵센텀파크1차",
+      "dong": "101동",
+      "basis": "dong",
+      "lat": 35.180465457520086,
+      "lng": 129.1210976736009,
+      "status": "ok",
+      "walkingMeters": 497.9,
+      "walkingSeconds": 400.4,
+      "snapMeters": {
+        "start": 40.14321664,
+        "end": 48.51635328
+      },
+      "exit": {
+        "station": "센텀역 동해선",
+        "line": "동해선",
+        "name": "센텀역 동해선 3번출구",
+        "number": 3,
+        "lat": 35.18008771264601,
+        "lng": 129.12398548718647
+      }
+    },
+    {
+      "complex": "더샵센텀파크1차",
+      "dong": "102동",
+      "basis": "dong",
+      "lat": 35.180418418767985,
+      "lng": 129.12049057993784,
+      "status": "ok",
+      "walkingMeters": 563.8,
+      "walkingSeconds": 452.9,
+      "snapMeters": {
+        "start": 34.63078561,
+        "end": 48.51635328
+      },
+      "exit": {
+        "station": "센텀역 동해선",
+        "line": "동해선",
+        "name": "센텀역 동해선 3번출구",
+        "number": 3,
+        "lat": 35.18008771264601,
+        "lng": 129.12398548718647
+      }
+    },
+    {
+      "complex": "더샵센텀파크1차",
+      "dong": "103동",
+      "basis": "dong",
+      "lat": 35.17979731669259,
+      "lng": 129.12153141531613,
+      "status": "ok",
+      "walkingMeters": 581.8,
+      "walkingSeconds": 467.5,
+      "snapMeters": {
+        "start": 44.56559891,
+        "end": 48.51635328
+      },
+      "exit": {
+        "station": "센텀역 동해선",
+        "line": "동해선",
+        "name": "센텀역 동해선 3번출구",
+        "number": 3,
+        "lat": 35.18008771264601,
+        "lng": 129.12398548718647
+      }
+    },
+    {
+      "complex": "더샵센텀파크1차",
+      "dong": "104동",
+      "basis": "dong",
+      "lat": 35.17974651160875,
+      "lng": 129.12077934755882,
+      "status": "ok",
+      "walkingMeters": 648.1,
+      "walkingSeconds": 520.5,
+      "snapMeters": {
+        "start": 35.95541319,
+        "end": 48.51635328
+      },
+      "exit": {
+        "station": "센텀역 동해선",
+        "line": "동해선",
+        "name": "센텀역 동해선 3번출구",
+        "number": 3,
+        "lat": 35.18008771264601,
+        "lng": 129.12398548718647
+      }
+    },
+    {
+      "complex": "더샵센텀파크1차",
+      "dong": "105동",
+      "basis": "dong",
+      "lat": 35.179137242668304,
+      "lng": 129.12196755505673,
+      "status": "ok",
+      "walkingMeters": 665.1,
+      "walkingSeconds": 534.1,
+      "snapMeters": {
+        "start": 48.26991894,
+        "end": 48.51635328
+      },
+      "exit": {
+        "station": "센텀역 동해선",
+        "line": "동해선",
+        "name": "센텀역 동해선 3번출구",
+        "number": 3,
+        "lat": 35.18008771264601,
+        "lng": 129.12398548718647
+      }
+    },
+    {
+      "complex": "더샵센텀파크1차",
+      "dong": "106동",
+      "basis": "dong",
+      "lat": 35.17907082792905,
+      "lng": 129.12107789071234,
+      "status": "ok",
+      "walkingMeters": 727.8,
+      "walkingSeconds": 584.3,
+      "snapMeters": {
+        "start": 37.01119054,
+        "end": 48.51635328
+      },
+      "exit": {
+        "station": "센텀역 동해선",
+        "line": "동해선",
+        "name": "센텀역 동해선 3번출구",
+        "number": 3,
+        "lat": 35.18008771264601,
+        "lng": 129.12398548718647
+      }
+    },
+    {
+      "complex": "더샵센텀파크1차",
+      "dong": "107동",
+      "basis": "dong",
+      "lat": 35.178435198951476,
+      "lng": 129.12135332386413,
+      "status": "ok",
+      "walkingMeters": 802.7,
+      "walkingSeconds": 644.2,
+      "snapMeters": {
+        "start": 37.39181771,
+        "end": 48.51635328
+      },
+      "exit": {
+        "station": "센텀역 동해선",
+        "line": "동해선",
+        "name": "센텀역 동해선 3번출구",
+        "number": 3,
+        "lat": 35.18008771264601,
+        "lng": 129.12398548718647
+      }
+    },
+    {
+      "complex": "더샵센텀파크1차",
+      "dong": "108동",
+      "basis": "dong",
+      "lat": 35.17778103562717,
+      "lng": 129.12165790520075,
+      "status": "ok",
+      "walkingMeters": 857.3,
+      "walkingSeconds": 691.8,
+      "snapMeters": {
+        "start": 39.62573302,
+        "end": 20.72988738
+      },
+      "exit": {
+        "station": "센텀역 동해선",
+        "line": "동해선",
+        "name": "센텀역 동해선 2번출구",
+        "number": 2,
+        "lat": 35.17945508057205,
+        "lng": 129.12408975622407
+      }
+    },
+    {
+      "complex": "더샵센텀파크1차",
+      "dong": "109동",
+      "basis": "dong",
+      "lat": 35.17834297986211,
+      "lng": 129.1223475153168,
+      "status": "ok",
+      "walkingMeters": 646.7,
+      "walkingSeconds": 521.2,
+      "snapMeters": {
+        "start": 63.53839692,
+        "end": 20.72988738
+      },
+      "exit": {
+        "station": "센텀역 동해선",
+        "line": "동해선",
+        "name": "센텀역 동해선 2번출구",
+        "number": 2,
+        "lat": 35.17945508057205,
+        "lng": 129.12408975622407
+      }
+    },
+    {
+      "complex": "더샵센텀파크1차",
+      "dong": "110동",
+      "basis": "dong",
+      "lat": 35.177113456721806,
+      "lng": 129.12195664538348,
+      "status": "ok",
+      "walkingMeters": 778.4,
+      "walkingSeconds": 628.6,
+      "snapMeters": {
+        "start": 40.97604526,
+        "end": 20.72988738
+      },
+      "exit": {
+        "station": "센텀역 동해선",
+        "line": "동해선",
+        "name": "센텀역 동해선 2번출구",
+        "number": 2,
+        "lat": 35.17945508057205,
+        "lng": 129.12408975622407
+      }
+    },
+    {
+      "complex": "더샵센텀파크1차",
+      "dong": "111동",
+      "basis": "dong",
+      "lat": 35.177606561479564,
+      "lng": 129.12292324006592,
+      "status": "ok",
+      "walkingMeters": 571.6,
+      "walkingSeconds": 461.4,
+      "snapMeters": {
+        "start": 51.23220628,
+        "end": 20.72988738
+      },
+      "exit": {
+        "station": "센텀역 동해선",
+        "line": "동해선",
+        "name": "센텀역 동해선 2번출구",
+        "number": 2,
+        "lat": 35.17945508057205,
+        "lng": 129.12408975622407
+      }
+    },
+    {
+      "complex": "더샵센텀파크1차",
+      "dong": "112동",
+      "basis": "dong",
+      "lat": 35.1767549125075,
+      "lng": 129.12364632008038,
+      "status": "ok",
+      "walkingMeters": 461.3,
+      "walkingSeconds": 374.9,
+      "snapMeters": {
+        "start": 32.9206319,
+        "end": 20.72988738
+      },
+      "exit": {
+        "station": "센텀역 동해선",
+        "line": "동해선",
+        "name": "센텀역 동해선 2번출구",
+        "number": 2,
+        "lat": 35.17945508057205,
+        "lng": 129.12408975622407
+      }
+    },
+    {
+      "complex": "더샵센텀파크1차",
+      "dong": "113동",
+      "basis": "dong",
+      "lat": 35.17648268892652,
+      "lng": 129.12293132462864,
+      "status": "ok",
+      "walkingMeters": 529.1,
+      "walkingSeconds": 429.2,
+      "snapMeters": {
+        "start": 42.37026119,
+        "end": 20.72988738
+      },
+      "exit": {
+        "station": "센텀역 동해선",
+        "line": "동해선",
+        "name": "센텀역 동해선 2번출구",
+        "number": 2,
+        "lat": 35.17945508057205,
+        "lng": 129.12408975622407
+      }
+    },
+    {
+      "complex": "더샵센텀파크1차",
+      "dong": "114동",
+      "basis": "dong",
+      "lat": 35.176439514335215,
+      "lng": 129.1222585080989,
+      "status": "ok",
+      "walkingMeters": 697.2,
+      "walkingSeconds": 563.6,
+      "snapMeters": {
+        "start": 41.0863841,
+        "end": 20.72988738
+      },
+      "exit": {
+        "station": "센텀역 동해선",
+        "line": "동해선",
+        "name": "센텀역 동해선 2번출구",
+        "number": 2,
+        "lat": 35.17945508057205,
+        "lng": 129.12408975622407
+      }
+    }
+  ]
+}
