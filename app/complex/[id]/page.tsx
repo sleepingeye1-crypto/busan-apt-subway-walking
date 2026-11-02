@@ -4,6 +4,7 @@ import { Suspense } from "react";
 import { getComplex, listComplexes } from "@/lib/complexes";
 import { getDongDistances, IMPOSSIBLE_LABEL, WALKING_DATA_DATES, type DongDistance } from "@/lib/walking";
 import ComplexMap, { type MapPoint } from "./complex-map";
+import DongList from "./dong-list";
 
 // 개발 단위 9: 단지를 고르면 동 목록과 동마다 가장 가까운 지하철 출구까지의 도보 거리를 보여준다.
 
@@ -55,22 +56,7 @@ async function ComplexDetail({ params }: { params: PageProps<"/complex/[id]">["p
 
       <h2 className="mb-3 mt-8 font-semibold">동별 가장 가까운 지하철 입구까지 도보 거리</h2>
       {dongs.length > 0 ? (
-        <ul className="divide-y divide-zinc-200 rounded-lg border border-zinc-200 bg-white dark:divide-zinc-800 dark:border-zinc-800 dark:bg-zinc-900">
-          {dongs.map(({ dong, basis, result }) => (
-            <li key={dong} className="flex items-center justify-between gap-4 px-4 py-3">
-              <div>
-                <p className="font-medium">{dong}</p>
-                {result.possible && <p className="text-sm text-zinc-500">{result.exitName}</p>}
-              </div>
-              <div className="shrink-0 text-right">
-                <p className={`text-lg font-bold ${result.possible ? "" : "text-zinc-400"}`}>{result.label}</p>
-                {result.possible && basis === "complex" && (
-                  <p className="text-xs text-amber-700 dark:text-amber-300">단지 대표 위치 기준</p>
-                )}
-              </div>
-            </li>
-          ))}
-        </ul>
+        <DongList dongs={dongs} />
       ) : (
         // 계산 결과가 아예 없는 단지도 다른 값으로 대신하지 않고 "불가능"을 보여준다
         <p className="rounded-lg border border-zinc-200 bg-white px-4 py-6 text-center text-lg font-bold text-zinc-400 dark:border-zinc-800 dark:bg-zinc-900">
