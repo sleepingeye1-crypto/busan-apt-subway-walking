@@ -20,6 +20,7 @@ export type WalkingItem = {
   status: "ok" | "failed" | "no-route" | "no-exit-nearby" | "no-coordinate";
   walkingMeters?: number;
   walkingSeconds?: number;
+  snapMeters?: { start: number; end: number };
   exit?: { station: string; line: string; name: string; number: number | null; lat: number; lng: number };
 };
 

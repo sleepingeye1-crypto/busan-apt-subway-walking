@@ -12,14 +12,16 @@ export type Complex = {
   name: string;
   gu: string;
   dong: string;
+  area: string; // 화면 표시용 "부산 수영구 민락동" (주소가 없으면 "위치 정보 없음")
   address: string;
   hasDongCoordinates: boolean;
 };
 
-// 지번 주소 "부산 수영구 민락동 765" → { gu: "수영구", dong: "민락동" }
-function guDongOf(jibunAddress: string): { gu: string; dong: string } {
+// 지번 주소 "부산 수영구 민락동 765" → { gu: "수영구", dong: "민락동", area: "부산 수영구 민락동" }
+// 주소가 비어 있으면 빈 칸("부산  ")을 보여주지 않도록 "위치 정보 없음"으로 둔다
+function guDongOf(jibunAddress: string): { gu: string; dong: string; area: string } {
   const [, gu = "", dong = ""] = jibunAddress.split(/\s+/);
-  return { gu, dong };
+  return { gu, dong, area: gu && dong ? `부산 ${gu} ${dong}` : "위치 정보 없음" };
 }
 
 // 단지 목록은 단지 이름 가나다순으로 둔다 (검색 결과도 이 순서를 따른다)

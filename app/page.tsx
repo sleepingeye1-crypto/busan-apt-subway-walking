@@ -55,7 +55,7 @@ async function SearchSection({ searchParams }: { searchParams: PageProps<"/">["s
                   >
                     <p className="font-medium">{c.name}</p>
                     <p className="text-sm text-zinc-500">
-                      부산 {c.gu} {c.dong}
+                      {c.area}
                     </p>
                   </Link>
                 </li>

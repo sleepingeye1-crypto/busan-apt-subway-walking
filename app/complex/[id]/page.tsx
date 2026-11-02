@@ -47,7 +47,8 @@ async function ComplexDetail({ params }: { params: PageProps<"/complex/[id]">["p
     <>
       <h1 className="mt-4 text-2xl font-bold">{complex.name}</h1>
       <p className="mt-1 text-zinc-500">
-        부산 {complex.gu} {complex.dong} · {complex.address}
+        {complex.area}
+        {complex.address && ` · ${complex.address}`}
       </p>
       {/* 개발 단위 10: 동 좌표가 없는 단지는 단지 대표 위치로 계산했음을 알린다 */}
       {!complex.hasDongCoordinates && (

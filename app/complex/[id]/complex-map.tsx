@@ -23,6 +23,14 @@ const LABEL_STYLE = {
   exit: "rounded bg-blue-600 px-1.5 py-0.5 text-xs font-bold text-white shadow",
 } as const;
 
+function MapUnavailable() {
+  return (
+    <p className="rounded-lg border border-zinc-200 px-4 py-6 text-center text-sm text-zinc-500 dark:border-zinc-800">
+      지도를 불러오지 못했습니다.
+    </p>
+  );
+}
+
 export default function ComplexMap({ points }: { points: MapPoint[] }) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [ready, setReady] = useState(false);
@@ -49,7 +57,9 @@ export default function ComplexMap({ points }: { points: MapPoint[] }) {
     map.setBounds(bounds);
   }, [ready, points]);
 
-  if (!KAKAO_JS_KEY || points.length === 0) return null;
+  if (points.length === 0) return null;
+  // 키가 없거나 SDK를 못 불러오면 지도 자리를 비워 두지 않고 안내 문구를 보여준다
+  if (!KAKAO_JS_KEY) return <MapUnavailable />;
 
   return (
     <>
@@ -59,9 +69,7 @@ export default function ComplexMap({ points }: { points: MapPoint[] }) {
         onError={() => setFailed(true)}
       />
       {failed ? (
-        <p className="rounded-lg border border-zinc-200 px-4 py-6 text-center text-sm text-zinc-500 dark:border-zinc-800">
-          지도를 불러오지 못했습니다.
-        </p>
+        <MapUnavailable />
       ) : (
         <div
           ref={containerRef}

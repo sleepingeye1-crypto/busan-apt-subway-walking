@@ -25,6 +25,16 @@ const COMPLEXES = [
 const DONG_RANGE = { from: 101, to: 130 };
 const OUT_FILE = "data/dong-coordinates.json";
 
+// 카카오에 동별로 등록되지 않은 동은 직접 찍은 좌표를 쓴다 (PRD 6번: 카카오에 없는 동만 직접 찍는다)
+// 대연힐스테이트푸르지오 113·114동은 카카오에 "(113동,114동)" 한 곳으로만 등록돼 있어,
+// OpenStreetMap 건물(ref=113, ref=114)의 중심 좌표를 쓴다. 같은 번지의 115동은 오피스텔이라 넣지 않는다.
+const MANUAL_DONGS = {
+  대연힐스테이트푸르지오: [
+    { dong: "113동", lat: 35.1402331, lng: 129.1038525, source: "OpenStreetMap 건물 ref=113" },
+    { dong: "114동", lat: 35.1399464, lng: 129.1033158, source: "OpenStreetMap 건물 ref=114" },
+  ],
+};
+
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 async function searchKeyword(query) {
@@ -48,8 +58,16 @@ async function collectComplex(complex) {
     const doc = (await searchKeyword(`${complex.kakaoName} ${n}동`)).find(
       (d) => d.category_name.endsWith("아파트 동") && d.place_name === `${complex.kakaoName} ${n}동`,
     );
-    if (doc) dongs.push({ dong: `${n}동`, lat: Number(doc.y), lng: Number(doc.x), kakaoId: doc.id });
+    if (doc) dongs.push({ dong: `${n}동`, lat: Number(doc.y), lng: Number(doc.x), kakaoId: doc.id, source: "카카오" });
   }
+  // 카카오에서 찾지 못한 동만 직접 찍은 좌표로 채운다 (카카오에 생기면 카카오 좌표가 우선)
+  for (const manual of MANUAL_DONGS[complex.name] ?? []) {
+    if (!dongs.some((d) => d.dong === manual.dong)) dongs.push({ ...manual, kakaoId: null });
+  }
+  dongs.sort((a, b) => Number(a.dong.replace(/\D/g, "")) - Number(b.dong.replace(/\D/g, "")));
+
+  // 단지 자체를 카카오에서 못 찾으면 주소·대표 좌표가 비게 되므로 미리 알려준다
+  if (!main) console.warn(`  경고: ${complex.kakaoName} 단지 정보를 카카오에서 찾지 못해 주소·대표 좌표가 비어 있습니다.`);
 
   return {
     name: complex.name,

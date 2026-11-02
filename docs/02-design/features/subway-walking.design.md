@@ -128,8 +128,15 @@ interface ComplexWithDongs {
   address: string;       // 도로명 주소
   jibunAddress: string;  // 지번 주소 (구·동 표시용)
   lat: number; lng: number;
-  dongs: { dong: string; lat: number; lng: number; kakaoId: string }[];
+  dongCount: number;
+  dongs: {
+    dong: string; lat: number; lng: number;
+    kakaoId: string | null;  // 직접 찍은 동은 null
+    source: string;          // "카카오" 또는 "OpenStreetMap 건물 ref=113" 등
+  }[];
 }
+// 파일 전체: { generatedAt, source, complexes: ComplexWithDongs[] }
+// 카카오에 동별로 없는 동은 scripts/collect-dongs.mjs의 MANUAL_DONGS에 직접 찍은 좌표로 둔다
 
 // data/complexes.json — 대상 단지 목록 (공공데이터, 승인 대기)
 interface ComplexSummary {
@@ -147,9 +154,14 @@ interface WalkingItem {
   lat: number | null; lng: number | null;
   status: "ok" | "failed" | "no-route" | "no-exit-nearby" | "no-coordinate";
   walkingMeters?: number;                  // 서버 값 그대로 (반올림 전)
+  walkingSeconds?: number;                 // 서버가 준 보행 시간 (화면은 쓰지 않고 분당 기준으로 다시 계산)
   snapMeters?: { start: number; end: number };  // 길 위로 옮겨진 거리 (정확도 점검용)
   exit?: { station: string; line: string; name: string; number: number | null; lat: number; lng: number };
+  kaptCode?: string;                       // 단지 대표 좌표로 계산한 단지만 (공공데이터 단지 코드)
+  reason?: string;                         // status가 "failed"일 때 오류 내용
 }
+// 파일 전체: { generatedAt, source, exitDataDate, count, items: WalkingItem[] }
+// 화면은 generatedAt(도보 거리 계산일)과 exitDataDate(출입구 데이터 기준일)를 하단에 표시한다
 ```
 
 ### 3.2 Entity Relationships
