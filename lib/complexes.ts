@@ -4,6 +4,9 @@
 
 import dongData from "@/data/dong-coordinates.json";
 
+// 이 서비스가 다루는 단지 범위 (PRD 6번)
+export const SERVICE_SCOPE = "부산 해운대구·수영구·남구의 700세대 이상 아파트";
+
 export type Complex = {
   id: string;
   name: string;
