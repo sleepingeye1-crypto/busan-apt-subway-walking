@@ -43,6 +43,12 @@ export function toWalkingResult(item: WalkingItem): WalkingResult {
   return { possible: true, meters, label: `${meters.toLocaleString("ko-KR")}m`, exitName: item.exit.name };
 }
 
+// 개발 단위 10: 화면에 함께 보여줄 데이터 기준일
+export const WALKING_DATA_DATES = {
+  exitDataDate: walkingData.exitDataDate,
+  calculatedAt: walkingData.generatedAt,
+};
+
 export type DongDistance = { dong: string; basis: WalkingItem["basis"]; result: WalkingResult };
 
 const ITEMS = walkingData.items as WalkingItem[];
