@@ -3,6 +3,8 @@
 // - 가장 가까운 출구까지 1.5km 초과, 계산 실패, 경로 없음은 모두 "불가능"
 // 다른 값(직선거리 등)으로 대신하지 않는다.
 
+import walkingData from "@/data/walking-distances.json";
+
 export const MAX_WALKING_METERS = 1500;
 export const IMPOSSIBLE_LABEL = "불가능";
 
@@ -39,4 +41,16 @@ export function toWalkingResult(item: WalkingItem): WalkingResult {
 
   const meters = roundTo10(item.walkingMeters);
   return { possible: true, meters, label: `${meters.toLocaleString("ko-KR")}m`, exitName: item.exit.name };
+}
+
+export type DongDistance = { dong: string; basis: WalkingItem["basis"]; result: WalkingResult };
+
+const ITEMS = walkingData.items as WalkingItem[];
+
+// 개발 단위 9: 단지 하나의 동별 도보 거리 (동 번호 순)
+export function getDongDistances(complexName: string): DongDistance[] {
+  const dongNumber = (dong: string | null) => Number(dong?.replace(/\D/g, "") ?? 0);
+  return ITEMS.filter((item) => item.complex === complexName)
+    .sort((a, b) => dongNumber(a.dong) - dongNumber(b.dong))
+    .map((item) => ({ dong: item.dong ?? "단지 대표 위치", basis: item.basis, result: toWalkingResult(item) }));
 }
