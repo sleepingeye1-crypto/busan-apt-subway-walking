@@ -1,4 +1,5 @@
 import Form from "next/form";
+import Link from "next/link";
 import { Suspense } from "react";
 import { SERVICE_SCOPE, searchComplexes } from "@/lib/complexes";
 import { IMPOSSIBLE_LABEL } from "@/lib/walking";
@@ -43,11 +44,16 @@ async function SearchSection({ searchParams }: { searchParams: PageProps<"/">["s
           {results.length > 0 ? (
             <ul className="divide-y divide-zinc-200 rounded-lg border border-zinc-200 bg-white dark:divide-zinc-800 dark:border-zinc-800 dark:bg-zinc-900">
               {results.map((c) => (
-                <li key={c.id} className="px-4 py-3">
-                  <p className="font-medium">{c.name}</p>
-                  <p className="text-sm text-zinc-500">
-                    부산 {c.gu} {c.dong}
-                  </p>
+                <li key={c.id}>
+                  <Link
+                    href={`/complex/${encodeURIComponent(c.id)}`}
+                    className="block px-4 py-3 hover:bg-zinc-50 dark:hover:bg-zinc-800"
+                  >
+                    <p className="font-medium">{c.name}</p>
+                    <p className="text-sm text-zinc-500">
+                      부산 {c.gu} {c.dong}
+                    </p>
+                  </Link>
                 </li>
               ))}
             </ul>

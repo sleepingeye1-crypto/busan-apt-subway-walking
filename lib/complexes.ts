@@ -30,6 +30,14 @@ const COMPLEXES: Complex[] = dongData.complexes.map((c) => ({
   hasDongCoordinates: c.dongs.length > 0,
 }));
 
+export function listComplexes(): Complex[] {
+  return COMPLEXES;
+}
+
+export function getComplex(id: string): Complex | undefined {
+  return COMPLEXES.find((c) => c.id === id);
+}
+
 // 띄어쓰기와 대소문자를 무시하고 비교한다 ("대연 힐스테이트" = "대연힐스테이트")
 const normalize = (text: string) => text.replace(/\s+/g, "").toLowerCase();
 
