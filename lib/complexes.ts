@@ -22,13 +22,16 @@ function guDongOf(jibunAddress: string): { gu: string; dong: string } {
   return { gu, dong };
 }
 
-const COMPLEXES: Complex[] = dongData.complexes.map((c) => ({
-  id: c.name,
-  name: c.name,
-  ...guDongOf(c.jibunAddress ?? ""),
-  address: c.address ?? "",
-  hasDongCoordinates: c.dongs.length > 0,
-}));
+// 단지 목록은 단지 이름 가나다순으로 둔다 (검색 결과도 이 순서를 따른다)
+const COMPLEXES: Complex[] = dongData.complexes
+  .map((c) => ({
+    id: c.name,
+    name: c.name,
+    ...guDongOf(c.jibunAddress ?? ""),
+    address: c.address ?? "",
+    hasDongCoordinates: c.dongs.length > 0,
+  }))
+  .sort((a, b) => a.name.localeCompare(b.name, "ko"));
 
 export function listComplexes(): Complex[] {
   return COMPLEXES;
