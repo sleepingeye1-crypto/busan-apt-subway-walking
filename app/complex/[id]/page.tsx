@@ -2,7 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { getComplex, listComplexes } from "@/lib/complexes";
-import { getDongDistances } from "@/lib/walking";
+import { getDongDistances, IMPOSSIBLE_LABEL, WALKING_DATA_DATES } from "@/lib/walking";
 
 // 개발 단위 9: 단지를 고르면 동 목록과 동마다 가장 가까운 지하철 출구까지의 도보 거리를 보여준다.
 
@@ -26,20 +26,62 @@ async function ComplexDetail({ params }: { params: PageProps<"/complex/[id]">["p
       <p className="mt-1 text-zinc-500">
         부산 {complex.gu} {complex.dong} · {complex.address}
       </p>
+      {/* 개발 단위 10: 동 좌표가 없는 단지는 단지 대표 위치로 계산했음을 알린다 */}
+      {!complex.hasDongCoordinates && (
+        <p className="mt-3 inline-block rounded-full bg-amber-100 px-3 py-1 text-sm font-medium text-amber-900 dark:bg-amber-900/40 dark:text-amber-200">
+          동별 좌표 없음
+        </p>
+      )}
 
       <h2 className="mb-3 mt-8 font-semibold">동별 가장 가까운 지하철 입구까지 도보 거리</h2>
-      <ul className="divide-y divide-zinc-200 rounded-lg border border-zinc-200 bg-white dark:divide-zinc-800 dark:border-zinc-800 dark:bg-zinc-900">
-        {dongs.map(({ dong, result }) => (
-          <li key={dong} className="flex items-center justify-between gap-4 px-4 py-3">
-            <div>
-              <p className="font-medium">{dong}</p>
-              {result.possible && <p className="text-sm text-zinc-500">{result.exitName}</p>}
-            </div>
-            <p className={`shrink-0 text-lg font-bold ${result.possible ? "" : "text-zinc-400"}`}>{result.label}</p>
-          </li>
-        ))}
-      </ul>
+      {dongs.length > 0 ? (
+        <ul className="divide-y divide-zinc-200 rounded-lg border border-zinc-200 bg-white dark:divide-zinc-800 dark:border-zinc-800 dark:bg-zinc-900">
+          {dongs.map(({ dong, basis, result }) => (
+            <li key={dong} className="flex items-center justify-between gap-4 px-4 py-3">
+              <div>
+                <p className="font-medium">{dong}</p>
+                {result.possible && <p className="text-sm text-zinc-500">{result.exitName}</p>}
+              </div>
+              <div className="shrink-0 text-right">
+                <p className={`text-lg font-bold ${result.possible ? "" : "text-zinc-400"}`}>{result.label}</p>
+                {result.possible && basis === "complex" && (
+                  <p className="text-xs text-amber-700 dark:text-amber-300">단지 대표 위치 기준</p>
+                )}
+              </div>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        // 계산 결과가 아예 없는 단지도 다른 값으로 대신하지 않고 "불가능"을 보여준다
+        <p className="rounded-lg border border-zinc-200 bg-white px-4 py-6 text-center text-lg font-bold text-zinc-400 dark:border-zinc-800 dark:bg-zinc-900">
+          {IMPOSSIBLE_LABEL}
+        </p>
+      )}
     </>
+  );
+}
+
+// 데이터 기준일과 출처. OpenStreetMap 데이터는 출처 표시가 사용 조건이다
+function DataNotice() {
+  return (
+    <footer className="mt-10 space-y-1 border-t border-zinc-200 pt-4 text-xs text-zinc-500 dark:border-zinc-800">
+      <p>
+        출입구 데이터 기준일 {WALKING_DATA_DATES.exitDataDate} · 도보 거리 계산일 {WALKING_DATA_DATES.calculatedAt}
+      </p>
+      <p>출입구 정보는 실제와 다를 수 있습니다. 공사·폐쇄된 출구는 반영되지 않았을 수 있습니다.</p>
+      <p>
+        도보 거리:{" "}
+        <a
+          href="https://www.openstreetmap.org/copyright"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:text-zinc-900 dark:hover:text-zinc-100"
+        >
+          © OpenStreetMap contributors
+        </a>{" "}
+        · 출구·동 위치: 카카오 장소 검색
+      </p>
+    </footer>
   );
 }
 
@@ -52,6 +94,7 @@ export default function ComplexPage(props: PageProps<"/complex/[id]">) {
       <Suspense fallback={<p className="mt-4 text-zinc-500">불러오는 중…</p>}>
         <ComplexDetail params={props.params} />
       </Suspense>
+      <DataNotice />
     </main>
   );
 }
