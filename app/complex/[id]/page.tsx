@@ -2,13 +2,29 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { getComplex, listComplexes } from "@/lib/complexes";
-import { getDongDistances, IMPOSSIBLE_LABEL, WALKING_DATA_DATES } from "@/lib/walking";
+import { getDongDistances, IMPOSSIBLE_LABEL, WALKING_DATA_DATES, type DongDistance } from "@/lib/walking";
+import ComplexMap, { type MapPoint } from "./complex-map";
 
 // 개발 단위 9: 단지를 고르면 동 목록과 동마다 가장 가까운 지하철 출구까지의 도보 거리를 보여준다.
 
 // 단지 목록이 정해져 있으므로 빌드할 때 단지별 화면을 미리 만들어 둔다
 export function generateStaticParams() {
   return listComplexes().map((c) => ({ id: c.id }));
+}
+
+// 지도에 찍을 점: 동마다 1개, 출구는 여러 동이 같은 출구를 쓰면 1개만
+function toMapPoints(dongs: DongDistance[]): MapPoint[] {
+  const points: MapPoint[] = [];
+  const exits = new Map<string, MapPoint>();
+  for (const { dong, result, position, exitPosition } of dongs) {
+    if (position) points.push({ label: dong.replace("동", ""), ...position, kind: "dong" });
+    if (result.possible && exitPosition) {
+      // "민락역 부산2호선 1번출구" → "민락역 1번출구"
+      const label = result.exitName.replace(/\s*(부산\d호선|동해선)\s*/, " ");
+      exits.set(label, { label, ...exitPosition, kind: "exit" });
+    }
+  }
+  return [...points, ...exits.values()];
 }
 
 // 주소의 단지 이름(params)은 Suspense 안에서 읽어야 화면 이동이 바로 일어난다
@@ -32,6 +48,10 @@ async function ComplexDetail({ params }: { params: PageProps<"/complex/[id]">["p
           동별 좌표 없음
         </p>
       )}
+
+      <div className="mt-6">
+        <ComplexMap points={toMapPoints(dongs)} />
+      </div>
 
       <h2 className="mb-3 mt-8 font-semibold">동별 가장 가까운 지하철 입구까지 도보 거리</h2>
       {dongs.length > 0 ? (
