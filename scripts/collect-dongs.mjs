@@ -55,6 +55,8 @@ async function collectComplex(complex) {
     name: complex.name,
     kakaoName: complex.kakaoName,
     address: main?.road_address_name || main?.address_name || null,
+    // 지번 주소 예: "부산 수영구 민락동 765" → 검색 결과의 구·동 표시에 쓴다
+    jibunAddress: main?.address_name || null,
     lat: main ? Number(main.y) : null,
     lng: main ? Number(main.x) : null,
     dongCount: dongs.length,
