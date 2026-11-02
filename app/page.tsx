@@ -1,7 +1,7 @@
 import Form from "next/form";
 import Link from "next/link";
 import { Suspense } from "react";
-import { SERVICE_SCOPE, searchComplexes } from "@/lib/complexes";
+import { listComplexes, SERVICE_SCOPE, searchComplexes } from "@/lib/complexes";
 import { IMPOSSIBLE_LABEL } from "@/lib/walking";
 
 // 개발 단위 7: 아파트 검색 화면.
@@ -30,16 +30,20 @@ function SearchForm({ defaultValue = "" }: { defaultValue?: string }) {
 // 검색어(searchParams)는 요청할 때만 알 수 있으므로 Suspense 안에서 읽는다
 async function SearchSection({ searchParams }: { searchParams: PageProps<"/">["searchParams"] }) {
   const { q } = await searchParams;
-  const query = typeof q === "string" ? q.trim() : "";
-  const results = searchComplexes(query);
+  // 검색 버튼을 누르면 빈칸이어도 주소에 ?q= 가 붙는다. 처음 들어왔을 때(q 없음)와 구분한다
+  const submitted = typeof q === "string";
+  const query = submitted ? q.trim() : "";
+  // 빈칸으로 검색하면 전체 단지 목록을 보여준다
+  const showAll = submitted && query === "";
+  const results = showAll ? listComplexes() : searchComplexes(query);
 
   return (
     <>
       <SearchForm defaultValue={query} />
-      {query && (
+      {submitted && (
         <section className="mt-6" aria-live="polite">
           <p className="mb-3 text-sm text-zinc-500">
-            &ldquo;{query}&rdquo; 검색 결과 {results.length}개
+            {showAll ? <>전체 단지 {results.length}개</> : <>&ldquo;{query}&rdquo; 검색 결과 {results.length}개</>}
           </p>
           {results.length > 0 ? (
             <ul className="divide-y divide-zinc-200 rounded-lg border border-zinc-200 bg-white dark:divide-zinc-800 dark:border-zinc-800 dark:bg-zinc-900">
