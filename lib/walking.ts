@@ -13,11 +13,15 @@ export type WalkingItem = {
   complex: string;
   dong: string | null;
   basis: "dong" | "complex";
+  lat: number | null;
+  lng: number | null;
   status: "ok" | "failed" | "no-route" | "no-exit-nearby" | "no-coordinate";
   walkingMeters?: number;
   walkingSeconds?: number;
-  exit?: { station: string; line: string; name: string; number: number | null };
+  exit?: { station: string; line: string; name: string; number: number | null; lat: number; lng: number };
 };
+
+export type LatLng = { lat: number; lng: number };
 
 export type WalkingResult =
   | { possible: true; meters: number; label: string; exitName: string }
@@ -49,7 +53,13 @@ export const WALKING_DATA_DATES = {
   calculatedAt: walkingData.generatedAt,
 };
 
-export type DongDistance = { dong: string; basis: WalkingItem["basis"]; result: WalkingResult };
+export type DongDistance = {
+  dong: string;
+  basis: WalkingItem["basis"];
+  result: WalkingResult;
+  position: LatLng | null; // 동(또는 단지 대표 위치) 좌표 — 지도 표시용
+  exitPosition: LatLng | null; // 가장 가까운 출구 좌표 — 지도 표시용
+};
 
 const ITEMS = walkingData.items as WalkingItem[];
 
@@ -58,5 +68,15 @@ export function getDongDistances(complexName: string): DongDistance[] {
   const dongNumber = (dong: string | null) => Number(dong?.replace(/\D/g, "") ?? 0);
   return ITEMS.filter((item) => item.complex === complexName)
     .sort((a, b) => dongNumber(a.dong) - dongNumber(b.dong))
-    .map((item) => ({ dong: item.dong ?? "단지 대표 위치", basis: item.basis, result: toWalkingResult(item) }));
+    .map((item) => {
+      const result = toWalkingResult(item);
+      return {
+        dong: item.dong ?? "단지 대표 위치",
+        basis: item.basis,
+        result,
+        position: item.lat !== null && item.lng !== null ? { lat: item.lat, lng: item.lng } : null,
+        // "불가능"인 동은 출구를 지도에 표시하지 않는다
+        exitPosition: result.possible && item.exit ? { lat: item.exit.lat, lng: item.exit.lng } : null,
+      };
+    });
 }
