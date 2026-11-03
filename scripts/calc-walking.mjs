@@ -19,7 +19,8 @@ const OSRM_TABLE_URL = "https://routing.openstreetmap.de/routed-foot/table/v1/fo
 const USER_AGENT = "my-app-practice/0.1 (busan apartment subway walking distance study)";
 const CANDIDATE_COUNT = 5; // 직선거리로 가까운 출구 몇 개를 후보로 볼지
 const CANDIDATE_MAX_STRAIGHT_M = 2000; // 직선거리로 이보다 먼 출구는 후보에서 뺀다
-const REQUEST_GAP_MS = 1100; // 공개 서버 조건: 1초에 1건 정도
+// 한꺼번에 많이 부르면 서버가 막아서, 10분에 100건 미만으로 천천히 요청한다
+const REQUEST_GAP_MS = 15000; // 7초 간격으로도 20분 만에 막혀서 15초에 1건(10분에 40건)으로 늦춘다
 const OUT_FILE = "data/walking-distances.json";
 // 계산이 끝난 출발점은 여기에 모아 두고, 다시 실행하면 이어서 계산한다 (.cache/ 는 커밋하지 않는다)
 const CACHE_FILE = ".cache/walking-cache.json";
@@ -158,6 +159,7 @@ async function main() {
 
   const items = [];
   let consecutiveFailures = 0;
+  let stopped = false;
   for (const [i, origin] of origins.entries()) {
     const key = cacheKey(origin);
     const label = `${origin.complex} ${origin.dong ?? "(단지 대표 위치)"}`;
@@ -186,22 +188,21 @@ async function main() {
     );
 
     if (consecutiveFailures >= MAX_CONSECUTIVE_FAILURES) {
-      await mkdir(".cache", { recursive: true });
-      await writeFile(CACHE_FILE, JSON.stringify(cache));
-      throw new Error(
-        `도보 길찾기 서버가 ${MAX_CONSECUTIVE_FAILURES}번 연달아 실패해 멈춥니다. 저장하지 않았습니다. ` +
-          "서버가 풀린 뒤 다시 실행하면 계산한 곳 다음부터 이어서 합니다.",
-      );
+      stopped = true;
+      break;
     }
     await sleep(REQUEST_GAP_MS);
   }
   await mkdir(".cache", { recursive: true });
   await writeFile(CACHE_FILE, JSON.stringify(cache));
 
-  // 서버 실패가 하나라도 남았으면 "불가능"으로 잘못 저장하지 않도록 저장하지 않고 멈춘다
-  const serverFailed = items.filter((it) => it.status === "failed");
-  if (serverFailed.length > 0) {
-    throw new Error(`서버 실패 ${serverFailed.length}건이 남아 저장하지 않았습니다. 다시 실행하면 그 건만 이어서 계산합니다.`);
+  // 서버 실패("failed")는 저장하지 않는다. 저장하면 막힌 서버 때문에 생긴 값이 "불가능"으로 보이기 때문이다.
+  // 실패한 곳과 아직 계산 안 한 곳은 DB에 없으므로 화면에서 "정보 없음"으로 보이고, 다시 실행하면 이어서 채운다
+  const failedCount = items.filter((it) => it.status === "failed").length;
+  const notDone = origins.length - items.length;
+  const savedItems = items.filter((it) => it.status !== "failed");
+  if (stopped) {
+    console.error(`\n도보 길찾기 서버가 ${MAX_CONSECUTIVE_FAILURES}번 연달아 실패해 멈춥니다. 서버가 풀린 뒤 다시 실행하면 이어서 합니다.`);
   }
 
   if (onlyName) {
@@ -216,20 +217,24 @@ async function main() {
         generatedAt: new Date().toISOString().slice(0, 10),
         source: "© OpenStreetMap contributors — routing.openstreetmap.de (foot)",
         exitDataDate: exitData.generatedAt,
-        count: items.length,
-        items,
+        count: savedItems.length,
+        items: savedItems,
       },
       null,
       2,
     ) + "\n",
   );
 
-  const failed = items.filter((it) => it.status !== "ok");
-  console.log(`\n${OUT_FILE} 에 저장했습니다. 성공 ${items.length - failed.length}개, 실패 ${failed.length}개`);
+  const noRoute = savedItems.filter((it) => it.status !== "ok").length;
+  console.log(`\n${OUT_FILE} 에 ${savedItems.length}건 저장했습니다. (거리 있음 ${savedItems.length - noRoute}건, 근처 출구 없음·경로 없음 ${noRoute}건)`);
+  console.log(`저장하지 않은 것: 서버 실패 ${failedCount}건, 아직 계산 안 함 ${notDone}건`);
+
+  // JSON 백업을 저장한 뒤 DB에도 저장한다 (개발 단위 13)
+  await trySync("도보 거리", syncWalking);
+  if (stopped || failedCount > 0 || notDone > 0) process.exitCode = 1; // 아직 다 끝나지 않았음을 알린다
 }
 
-// JSON 백업을 저장한 뒤 DB에도 저장한다 (개발 단위 13)
-main().then(() => !process.argv.some((a) => a.startsWith("--only=")) && trySync("도보 거리", syncWalking)).catch((err) => {
+main().catch((err) => {
   console.error(err.message);
   process.exitCode = 1;
 });
