@@ -8,6 +8,7 @@
 // 좌표는 지어내지 않는다. 두 곳 모두에 없는 동은 결과에 넣지 않는다.
 
 import { mkdir, writeFile } from "node:fs/promises";
+import { syncComplexes, syncDongs, trySync } from "./db-sync.mjs";
 
 process.loadEnvFile(".env");
 
@@ -123,7 +124,11 @@ async function main() {
   }
 }
 
-main().catch((err) => {
+// JSON 백업을 저장한 뒤 DB에도 저장한다 (동 표는 단지 표를 참조하므로 단지를 먼저 저장한다)
+main()
+  .then(() => trySync("단지", syncComplexes))
+  .then(() => trySync("동 좌표", syncDongs))
+  .catch((err) => {
   console.error(err.message);
   process.exitCode = 1;
 });

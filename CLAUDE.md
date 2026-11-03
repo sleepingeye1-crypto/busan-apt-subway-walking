@@ -69,7 +69,8 @@
 
 - `app/`: 화면(페이지). App Router 방식이라 폴더 이름이 곧 주소가 된다
 - `scripts/`: 데이터를 미리 모으고 계산하는 Node 스크립트 (`.mjs`)
-- `data/`: 스크립트가 만든 결과 파일(JSON). 화면은 이 파일만 읽는다
+- `data/`: 스크립트가 만든 결과 파일(JSON). **백업용**이다. 원본은 Supabase DB이고 화면은 DB에서 읽는다 (`lib/supabase.ts`)
+- `supabase/schema.sql`: DB 표 설계. `node scripts/apply-schema.mjs`로 적용, `node scripts/db-sync.mjs`로 JSON을 DB에 옮긴다
 - `public/`: 그림 등 그대로 보여줄 파일
 - `PRD.md`: 기획서 / `.env`: 비밀 키 (GitHub에 올리지 않음) / `.env.example`: 키 이름 견본
 
@@ -78,7 +79,8 @@
 - Next.js 16 (App Router) + TypeScript + Tailwind CSS. 코드를 쓰기 전에 `AGENTS.md` 안내대로 `node_modules/next/dist/docs/`에서 관련 문서를 확인한다.
 - 파일을 불러올 때는 `@/` 경로를 쓴다 (예: `import x from "@/data/complexes.json"`).
 - 지도 표시는 **카카오맵**, 장소·주소 검색과 **지하철 출입구 좌표**는 **카카오 REST API**(장소 검색의 "지하철출구" 분류), 도보 거리는 **OpenStreetMap 도보 길찾기 서버**(routing.openstreetmap.de)를 쓴다.
-- 도보 거리는 화면에서 실시간으로 부르지 않고, **스크립트로 미리 계산해 `data/`에 저장**한다.
+- 도보 거리는 화면에서 실시간으로 부르지 않고, **스크립트로 미리 계산해 Supabase DB에 저장**한다 (`data/`에는 JSON 백업도 남긴다).
+- 화면은 읽기용 키(`SUPABASE_ANON_KEY`)만 쓴다. 쓰기용 키(`SUPABASE_SERVICE_ROLE_KEY`)는 `scripts/`에서만 쓴다.
 - 스크립트는 `process.loadEnvFile(".env")`로 키를 읽는다. Windows에서는 네트워크 요청 뒤 `process.exit()`를 쓰면 비정상 종료되므로 `process.exitCode = 1`을 쓴다.
 
 ## 데이터 규칙 (절대 지킬 것)

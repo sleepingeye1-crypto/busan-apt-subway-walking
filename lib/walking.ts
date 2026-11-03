@@ -3,7 +3,8 @@
 // - 가장 가까운 출구까지 1.5km 초과, 계산 실패, 경로 없음은 모두 "불가능"
 // 다른 값(직선거리 등)으로 대신하지 않는다.
 
-import walkingData from "@/data/walking-distances.json";
+import { cacheLife } from "next/cache";
+import { getDb } from "@/lib/supabase";
 
 export const MAX_WALKING_METERS = 1500;
 // 도보 시간 기준: 모든 동을 분당 60m(시속 3.6km)로 똑같이 계산한다
@@ -67,11 +68,20 @@ export function toWalkingResult(item: WalkingItem): WalkingResult {
   };
 }
 
-// 개발 단위 10: 화면에 함께 보여줄 데이터 기준일
-export const WALKING_DATA_DATES = {
-  exitDataDate: walkingData.exitDataDate,
-  calculatedAt: walkingData.generatedAt,
-};
+// 개발 단위 10: 화면에 함께 보여줄 데이터 기준일 (DB의 data_meta 표에서 읽는다)
+export async function getWalkingDataDates(): Promise<{ exitDataDate: string; calculatedAt: string }> {
+  "use cache";
+  cacheLife("hours");
+
+  const { data, error } = await getDb()
+    .from("data_meta")
+    .select("key, generated_at")
+    .in("key", ["subway_exits", "walking_distances"]);
+  if (error) throw new Error(`데이터 기준일을 읽지 못했습니다: ${error.message}`);
+
+  const dateOf = (key: string) => data.find((row) => row.key === key)?.generated_at ?? "알 수 없음";
+  return { exitDataDate: dateOf("subway_exits"), calculatedAt: dateOf("walking_distances") };
+}
 
 export type DongDistance = {
   dong: string;
@@ -81,12 +91,58 @@ export type DongDistance = {
   exitPosition: LatLng | null; // 가장 가까운 출구 좌표 — 지도 표시용
 };
 
-const ITEMS = walkingData.items as WalkingItem[];
+// DB의 walking_distances 표 한 행 (scripts/db-sync.mjs 가 저장한다)
+type WalkingRow = {
+  dong: string | null;
+  basis: WalkingItem["basis"];
+  lat: number | null;
+  lng: number | null;
+  status: WalkingItem["status"];
+  walking_meters: number | null;
+  walking_seconds: number | null;
+  exit_station: string | null;
+  exit_line: string | null;
+  exit_name: string | null;
+  exit_number: number | null;
+  exit_lat: number | null;
+  exit_lng: number | null;
+};
 
-// 개발 단위 9: 단지 하나의 동별 도보 거리 (동 번호 순)
-export function getDongDistances(complexName: string): DongDistance[] {
+function toWalkingItem(complexName: string, row: WalkingRow): WalkingItem {
+  const hasExit = row.exit_name !== null && row.exit_lat !== null && row.exit_lng !== null;
+  return {
+    complex: complexName,
+    dong: row.dong,
+    basis: row.basis,
+    lat: row.lat,
+    lng: row.lng,
+    status: row.status,
+    walkingMeters: row.walking_meters ?? undefined,
+    walkingSeconds: row.walking_seconds ?? undefined,
+    exit: hasExit
+      ? {
+          station: row.exit_station ?? "",
+          line: row.exit_line ?? "",
+          name: row.exit_name!,
+          number: row.exit_number,
+          lat: row.exit_lat!,
+          lng: row.exit_lng!,
+        }
+      : undefined,
+  };
+}
+
+// 개발 단위 9: 단지 하나의 동별 도보 거리 (동 번호 순). DB에서 읽는다
+export async function getDongDistances(complexName: string): Promise<DongDistance[]> {
+  "use cache";
+  cacheLife("hours");
+
+  const { data, error } = await getDb().from("walking_distances").select("*").eq("complex_name", complexName);
+  if (error) throw new Error(`도보 거리를 읽지 못했습니다: ${error.message}`);
+
+  const items = (data as WalkingRow[]).map((row) => toWalkingItem(complexName, row));
   const dongNumber = (dong: string | null) => Number(dong?.replace(/\D/g, "") ?? 0);
-  return ITEMS.filter((item) => item.complex === complexName)
+  return items
     .sort((a, b) => dongNumber(a.dong) - dongNumber(b.dong))
     .map((item) => {
       const result = toWalkingResult(item);
