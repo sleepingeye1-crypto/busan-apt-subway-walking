@@ -110,6 +110,15 @@ function hasDuplicateDongs(entry) {
   return new Set(labels).size !== labels.length;
 }
 
+// 단지 대표 좌표에서 이 거리보다 멀리 떨어진 동은 이름이 같은 다른 단지의 동일 가능성이 커서 쓰지 않는다
+// (동 좌표가 하나도 안 남으면 단지 대표 위치로 계산한다)
+const MAX_DONG_DISTANCE_M = 1000;
+function withoutFarDongs(entry) {
+  const dongs = entry.dongs.filter((d) => straightMeters(entry, d) <= MAX_DONG_DISTANCE_M);
+  if (dongs.length === 0) return null;
+  return { ...entry, dongCount: dongs.length, dongs };
+}
+
 async function collectAuto(c) {
   const main = await findKakaoComplex(c);
   if (!main) return null;
@@ -150,7 +159,8 @@ async function collectAllAuto(curated) {
       console.log(`  [${i + 1}/${list.length}] ${c.name}: ${cache[c.name] ? `동 ${cache[c.name].dongCount}개` : "카카오에 동 정보 없음 → 단지 대표 위치"}`);
     }
     // 이미 캐시에 있던 결과도 같은 규칙으로 거른다
-    if (cache[c.name] && !hasDuplicateDongs(cache[c.name])) found.push(cache[c.name]);
+    const usable = cache[c.name] && !hasDuplicateDongs(cache[c.name]) ? withoutFarDongs(cache[c.name]) : null;
+    if (usable) found.push(usable);
     else noCoord++;
   }
   console.log(`동 좌표를 찾은 단지 ${found.length}개, 못 찾은 단지 ${noCoord}개`);
