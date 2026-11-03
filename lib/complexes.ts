@@ -15,6 +15,7 @@ export type Complex = {
   area: string; // 화면 표시용 "부산 수영구 민락동" (주소가 없으면 "위치 정보 없음")
   address: string;
   hasDongCoordinates: boolean;
+  buildingCount: number | null; // 공공데이터상의 동 수 (모르면 null)
 };
 
 type ComplexRow = {
@@ -22,6 +23,7 @@ type ComplexRow = {
   gu: string | null;
   dong: string | null;
   address: string | null;
+  building_count: number | null;
   dongs: { count: number }[];
 };
 
@@ -31,7 +33,7 @@ async function loadComplexes(): Promise<Complex[]> {
   "use cache";
   cacheLife("hours");
 
-  const { data, error } = await getDb().from("complexes").select("name, gu, dong, address, dongs(count)");
+  const { data, error } = await getDb().from("complexes").select("name, gu, dong, address, building_count, dongs(count)");
   if (error) throw new Error(`단지 목록을 읽지 못했습니다: ${error.message}`);
 
   return (data as unknown as ComplexRow[])
@@ -43,6 +45,7 @@ async function loadComplexes(): Promise<Complex[]> {
       area: c.gu && c.dong ? `부산 ${c.gu} ${c.dong}` : "위치 정보 없음",
       address: c.address ?? "",
       hasDongCoordinates: (c.dongs[0]?.count ?? 0) > 0,
+      buildingCount: c.building_count,
     }))
     .sort((a, b) => a.name.localeCompare(b.name, "ko"));
 }

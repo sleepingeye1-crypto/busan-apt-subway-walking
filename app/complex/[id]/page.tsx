@@ -42,6 +42,10 @@ async function ComplexDetail({ params }: { params: PageProps<"/complex/[id]">["p
   if (!complex) notFound();
 
   const dongs = await getDongDistances(complex.name);
+  // 좌표가 있는 동 수(단지 대표 위치 기준 행은 제외)가 공공데이터상의 동 수보다 적으면 그 차이를 알린다
+  const coordinateDongCount = dongs.filter((d) => d.basis === "dong").length;
+  const missingDongCount =
+    complex.buildingCount && coordinateDongCount > 0 ? Math.max(0, complex.buildingCount - coordinateDongCount) : 0;
 
   return (
     <>
@@ -54,6 +58,14 @@ async function ComplexDetail({ params }: { params: PageProps<"/complex/[id]">["p
       {!complex.hasDongCoordinates && (
         <p className="mt-3 inline-block rounded-full bg-amber-100 px-3 py-1 text-sm font-medium text-amber-900 dark:bg-amber-900/40 dark:text-amber-200">
           동별 좌표 없음
+        </p>
+      )}
+
+      {/* 일부 동만 좌표가 있는 단지: 빠진 동을 조용히 빼지 않고 몇 개인지 알린다 (동 이름은 알 수 없어 지어내지 않는다) */}
+      {missingDongCount > 0 && (
+        <p className="mt-3 rounded-lg bg-amber-100 px-3 py-2 text-sm text-amber-900 dark:bg-amber-900/40 dark:text-amber-200">
+          <span className="font-medium">동별 좌표 없음</span> · 공공데이터상 이 단지는 동이 {complex.buildingCount}개인데,
+          좌표가 있는 동은 {coordinateDongCount}개뿐입니다. 나머지 {missingDongCount}개 동은 아래 목록에 나오지 않습니다.
         </p>
       )}
 

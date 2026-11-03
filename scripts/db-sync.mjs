@@ -52,6 +52,7 @@ export async function syncComplexes(db = client()) {
       kapt_code: l?.kaptCode ?? null,
       ...(l ? { gu: l.gu ?? null, dong: l.dong ?? null } : guDongOf(c.jibunAddress)),
       households: l?.households ?? null,
+      building_count: l?.buildingCount || null, // 0이면 모르는 값으로 본다
       address: c.address ?? null,
       jibun_address: c.jibunAddress ?? null,
       lat: c.lat ?? null,
@@ -70,6 +71,7 @@ export async function syncComplexes(db = client()) {
         gu: c.gu ?? null,
         dong: c.dong ?? null,
         households: c.households ?? null,
+        building_count: c.buildingCount || null,
         address: c.roadAddress ?? null,
         jibun_address: c.jibunAddress ?? null,
         lat: c.lat,
