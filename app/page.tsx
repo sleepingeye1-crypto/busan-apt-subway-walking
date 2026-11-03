@@ -51,7 +51,8 @@ async function SearchSection({ searchParams }: { searchParams: PageProps<"/">["s
                 <li key={c.id}>
                   {c.hasDistances ? (
                     <Link
-                      href={`/complex/${encodeURIComponent(c.id)}`}
+                      // from: 돌아가기를 눌렀을 때 같은 검색 결과를 다시 보여주기 위한 검색어 (빈칸 검색이면 빈 값)
+                      href={`/complex/${encodeURIComponent(c.id)}?from=${encodeURIComponent(query)}`}
                       className="block px-4 py-3 hover:bg-zinc-50 dark:hover:bg-zinc-800"
                     >
                       <p className="font-medium">{c.name}</p>

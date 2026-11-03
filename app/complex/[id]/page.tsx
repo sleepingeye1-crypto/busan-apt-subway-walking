@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { getComplex, listComplexes } from "@/lib/complexes";
@@ -9,6 +8,7 @@ import {
   WALKING_METERS_PER_MINUTE,
   type DongDistance,
 } from "@/lib/walking";
+import BackLink from "./back-link";
 import ComplexMap, { type MapPoint } from "./complex-map";
 import DongList from "./dong-list";
 
@@ -122,9 +122,10 @@ async function DataNotice() {
 export default function ComplexPage(props: PageProps<"/complex/[id]">) {
   return (
     <main className="mx-auto w-full max-w-2xl flex-1 px-4 py-12">
-      <Link href="/" className="text-sm text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100">
-        ← 검색으로 돌아가기
-      </Link>
+      {/* 돌아갈 검색어는 브라우저에서 읽으므로 Suspense 안에 둔다 */}
+      <Suspense fallback={<span className="text-sm text-zinc-500">← 검색으로 돌아가기</span>}>
+        <BackLink />
+      </Suspense>
       <Suspense fallback={<p className="mt-4 text-zinc-500">불러오는 중…</p>}>
         <ComplexDetail params={props.params} />
       </Suspense>
