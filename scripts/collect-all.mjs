@@ -1,4 +1,4 @@
-// 남은 데이터를 한 번에 모은다: 단지 목록 수집 → 단지별 도보 거리 계산.
+// 남은 데이터를 한 번에 모은다: 단지 목록 수집 → 전체 단지 동 좌표 수집 → 동(또는 단지)별 도보 거리 계산.
 // 각 단계는 끝날 때 JSON 백업과 DB 저장을 함께 한다.
 //
 // 실행: node scripts/collect-all.mjs
@@ -9,6 +9,7 @@ import { spawnSync } from "node:child_process";
 
 const STEPS = [
   ["단지 목록 수집", "scripts/collect-complexes.mjs"],
+  ["동 좌표 수집", "scripts/collect-dongs.mjs"],
   ["도보 거리 계산", "scripts/calc-walking.mjs"],
 ];
 

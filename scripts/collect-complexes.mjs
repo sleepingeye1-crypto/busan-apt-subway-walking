@@ -168,6 +168,13 @@ async function main() {
     return false;
   }
 
+  // 화면과 DB가 단지 이름으로 단지를 구분하므로, 이름이 같은 단지는 동 이름을 붙여 구분한다 ("현대아파트 (우동)")
+  const nameCount = new Map();
+  for (const c of complexes) nameCount.set(c.name, (nameCount.get(c.name) ?? 0) + 1);
+  for (const c of complexes) {
+    if (nameCount.get(c.name) > 1) c.name = `${c.name} (${c.dong ?? c.gu})`;
+  }
+
   complexes.sort((a, b) => a.gu.localeCompare(b.gu, "ko") || a.name.localeCompare(b.name, "ko"));
 
   await mkdir("data", { recursive: true });

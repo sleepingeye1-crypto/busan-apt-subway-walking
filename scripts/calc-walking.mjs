@@ -58,10 +58,12 @@ async function loadOrigins() {
   }
 
   if (existsSync("data/complexes.json")) {
+    // 동 좌표가 있는 단지는 이름이나 도로명 주소가 같은 목록 항목을 건너뛴다 (같은 단지를 두 번 계산하지 않기 위함)
     const withDongs = new Set(dongData.complexes.map((c) => c.address));
+    const withDongNames = new Set(dongData.complexes.map((c) => c.name));
     const complexData = await readJson("data/complexes.json");
     for (const c of complexData.complexes) {
-      if (withDongs.has(c.roadAddress)) continue;
+      if (withDongs.has(c.roadAddress) || withDongNames.has(c.name)) continue;
       origins.push({
         complex: c.name,
         kaptCode: c.kaptCode,
