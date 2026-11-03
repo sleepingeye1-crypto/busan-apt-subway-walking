@@ -1,0 +1,7 @@
+# Vercel CLI로 배포할 때 올리지 않을 파일 (비밀 키와 작업용 파일)
+.env
+.env.*
+!.env.example
+.cache
+supabase/.temp
+trash-can

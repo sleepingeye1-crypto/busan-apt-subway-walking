@@ -8,7 +8,8 @@
 // 3) 700세대 이상만 남긴다
 // 4) 카카오 주소 검색으로 단지 대표 좌표(위도·경도)를 붙인다
 
-import { mkdir, writeFile } from "node:fs/promises";
+import { existsSync } from "node:fs";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { syncComplexes, trySync } from "./db-sync.mjs";
 
 process.loadEnvFile(".env");
@@ -34,7 +35,7 @@ const KAKAO_ADDRESS_URL = "https://dapi.kakao.com/v2/local/search/address.json";
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-async function getDataGoKr(url, params) {
+async function getDataGoKrOnce(url, params) {
   const query = new URLSearchParams({ ...params, serviceKey: DATA_KEY, _type: "json" });
   const res = await fetch(`${url}?${query}`);
   const text = await res.text();
@@ -49,6 +50,29 @@ async function getDataGoKr(url, params) {
   return json.response?.body;
 }
 
+// 포털 서버가 가끔 "HTTP_ERROR"를 내므로 잠깐 쉬었다가 몇 번 다시 시도한다
+// (키가 등록되지 않은 경우처럼 다시 해도 소용없는 오류는 바로 멈춘다)
+async function getDataGoKr(url, params) {
+  const RETRIES = 4;
+  for (let attempt = 1; ; attempt++) {
+    try {
+      return await getDataGoKrOnce(url, params);
+    } catch (err) {
+      const retryable = err.message.includes("HTTP_ERROR") || err.message.includes("읽을 수 없음") || err.name === "TypeError";
+      if (!retryable || attempt >= RETRIES) throw err;
+      await sleep(2000 * attempt);
+    }
+  }
+}
+
+// 받은 결과를 파일에 모아 두면, 중간에 멈춰도 다음 실행에서 이어서 받는다 (.cache/ 는 커밋하지 않는다)
+const CACHE_FILE = ".cache/complexes-cache.json";
+const cache = existsSync(CACHE_FILE) ? JSON.parse(await readFile(CACHE_FILE, "utf8")) : { codes: {}, info: {} };
+async function saveCache() {
+  await mkdir(".cache", { recursive: true });
+  await writeFile(CACHE_FILE, JSON.stringify(cache));
+}
+
 // 응답의 items 가 배열·객체·{item: ...} 중 어떤 모양이어도 배열로 바꾼다
 function toArray(items) {
   if (!items) return [];
@@ -57,6 +81,7 @@ function toArray(items) {
 }
 
 async function listComplexCodes(district) {
+  if (cache.codes[district.code]) return cache.codes[district.code];
   const codes = [];
   for (let page = 1; ; page++) {
     const body = await getDataGoKr(LIST_URL, {
@@ -70,12 +95,20 @@ async function listComplexCodes(district) {
     if (items.length === 0 || codes.length >= total) break;
     await sleep(100);
   }
+  cache.codes[district.code] = codes;
+  await saveCache();
   return codes;
 }
 
+// 필요한 항목만 골라 캐시에 둔다 (세대수와 관계없이 모두 저장해 두면 다음 실행에서 다시 받지 않는다)
 async function getBasicInfo(kaptCode) {
-  const body = await getDataGoKr(BASIC_URL, { kaptCode });
-  return body?.item;
+  if (cache.info[kaptCode]) return cache.info[kaptCode];
+  const item = (await getDataGoKr(BASIC_URL, { kaptCode }))?.item;
+  if (!item) throw new Error("기본 정보가 비어 있음");
+  const { kaptName, kaptAddr, doroJuso, kaptdaCnt, kaptDongCnt } = item;
+  cache.info[kaptCode] = { kaptName, kaptAddr, doroJuso, kaptdaCnt, kaptDongCnt };
+  if (Object.keys(cache.info).length % 20 === 0) await saveCache();
+  return cache.info[kaptCode];
 }
 
 async function geocode(address) {
@@ -126,6 +159,22 @@ async function main() {
     }
   }
 
+  await saveCache();
+
+  // 한 단지라도 못 받았으면 불완전한 목록을 저장하지 않는다. 받은 결과는 캐시에 있으니 다시 실행하면 이어서 받는다
+  if (failed.length) {
+    console.error(`조회에 실패한 단지 ${failed.length}개 — 저장하지 않고 멈춥니다. 다시 실행하면 이어서 받습니다.`, failed.slice(0, 3));
+    process.exitCode = 1;
+    return false;
+  }
+
+  // 화면과 DB가 단지 이름으로 단지를 구분하므로, 이름이 같은 단지는 동 이름을 붙여 구분한다 ("현대아파트 (우동)")
+  const nameCount = new Map();
+  for (const c of complexes) nameCount.set(c.name, (nameCount.get(c.name) ?? 0) + 1);
+  for (const c of complexes) {
+    if (nameCount.get(c.name) > 1) c.name = `${c.name} (${c.dong ?? c.gu})`;
+  }
+
   complexes.sort((a, b) => a.gu.localeCompare(b.gu, "ko") || a.name.localeCompare(b.name, "ko"));
 
   await mkdir("data", { recursive: true });
@@ -147,11 +196,11 @@ async function main() {
   console.log(`\n700세대 이상 단지 ${complexes.length}개를 ${OUT_FILE} 에 저장했습니다.`);
   const noPosition = complexes.filter((c) => c.lat === null);
   if (noPosition.length) console.log(`좌표를 못 찾은 단지 ${noPosition.length}개:`, noPosition.map((c) => c.name).join(", "));
-  if (failed.length) console.log(`조회에 실패한 단지 ${failed.length}개:`, failed);
+  return true;
 }
 
 // JSON 백업을 저장한 뒤 DB에도 저장한다 (개발 단위 13)
-main().then(() => trySync("단지", syncComplexes)).catch((err) => {
+main().then((saved) => saved && trySync("단지", syncComplexes)).catch((err) => {
   console.error(err.message);
   process.exitCode = 1;
 });

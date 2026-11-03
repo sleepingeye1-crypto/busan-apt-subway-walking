@@ -15,6 +15,8 @@ export type Complex = {
   area: string; // 화면 표시용 "부산 수영구 민락동" (주소가 없으면 "위치 정보 없음")
   address: string;
   hasDongCoordinates: boolean;
+  hasDistances: boolean; // 계산된 도보 거리 정보가 하나라도 있는지 (없으면 목록에서 "정보 없음"으로 표시)
+  buildingCount: number | null; // 공공데이터상의 동 수 (모르면 null)
 };
 
 type ComplexRow = {
@@ -22,8 +24,26 @@ type ComplexRow = {
   gu: string | null;
   dong: string | null;
   address: string | null;
+  building_count: number | null;
   dongs: { count: number }[];
 };
+
+// 도보 거리 행이 하나라도 있는 단지 이름들. walking_distances 표는 단지 표와 연결돼 있지 않아 따로 읽는다
+// (한 번에 1000행까지만 오므로 나눠서 모두 읽는다)
+async function loadComplexNamesWithDistances(): Promise<Set<string>> {
+  const names = new Set<string>();
+  const PAGE = 1000;
+  for (let from = 0; ; from += PAGE) {
+    const { data, error } = await getDb()
+      .from("walking_distances")
+      .select("complex_name")
+      .order("id")
+      .range(from, from + PAGE - 1);
+    if (error) throw new Error(`도보 거리 정보를 읽지 못했습니다: ${error.message}`);
+    for (const row of data) names.add(row.complex_name);
+    if (data.length < PAGE) return names;
+  }
+}
 
 // 단지 목록은 단지 이름 가나다순으로 둔다 (검색 결과도 이 순서를 따른다).
 // 데이터는 스크립트가 가끔 바꾸므로 몇 시간 동안 결과를 재사용한다
@@ -31,8 +51,9 @@ async function loadComplexes(): Promise<Complex[]> {
   "use cache";
   cacheLife("hours");
 
-  const { data, error } = await getDb().from("complexes").select("name, gu, dong, address, dongs(count)");
+  const { data, error } = await getDb().from("complexes").select("name, gu, dong, address, building_count, dongs(count)");
   if (error) throw new Error(`단지 목록을 읽지 못했습니다: ${error.message}`);
+  const withDistances = await loadComplexNamesWithDistances();
 
   return (data as unknown as ComplexRow[])
     .map((c) => ({
@@ -43,6 +64,8 @@ async function loadComplexes(): Promise<Complex[]> {
       area: c.gu && c.dong ? `부산 ${c.gu} ${c.dong}` : "위치 정보 없음",
       address: c.address ?? "",
       hasDongCoordinates: (c.dongs[0]?.count ?? 0) > 0,
+      hasDistances: withDistances.has(c.name),
+      buildingCount: c.building_count,
     }))
     .sort((a, b) => a.name.localeCompare(b.name, "ko"));
 }

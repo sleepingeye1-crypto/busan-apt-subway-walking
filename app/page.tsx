@@ -49,15 +49,27 @@ async function SearchSection({ searchParams }: { searchParams: PageProps<"/">["s
             <ul className="divide-y divide-zinc-200 rounded-lg border border-zinc-200 bg-white dark:divide-zinc-800 dark:border-zinc-800 dark:bg-zinc-900">
               {results.map((c) => (
                 <li key={c.id}>
-                  <Link
-                    href={`/complex/${encodeURIComponent(c.id)}`}
-                    className="block px-4 py-3 hover:bg-zinc-50 dark:hover:bg-zinc-800"
-                  >
-                    <p className="font-medium">{c.name}</p>
-                    <p className="text-sm text-zinc-500">
-                      {c.area}
-                    </p>
-                  </Link>
+                  {c.hasDistances ? (
+                    <Link
+                      // from: 돌아가기를 눌렀을 때 같은 검색 결과를 다시 보여주기 위한 검색어 (빈칸 검색이면 빈 값)
+                      href={`/complex/${encodeURIComponent(c.id)}?from=${encodeURIComponent(query)}`}
+                      className="block px-4 py-3 hover:bg-zinc-50 dark:hover:bg-zinc-800"
+                    >
+                      <p className="font-medium">{c.name}</p>
+                      <p className="text-sm text-zinc-500">{c.area}</p>
+                    </Link>
+                  ) : (
+                    // 도보 거리 정보가 없는 단지는 눌러 보기 전에 목록에서 알리고, 누를 수 없게 한다
+                    <div aria-disabled="true" className="flex cursor-not-allowed items-center justify-between gap-3 px-4 py-3 opacity-60">
+                      <div>
+                        <p className="font-medium">{c.name}</p>
+                        <p className="text-sm text-zinc-500">{c.area}</p>
+                      </div>
+                      <span className="shrink-0 rounded bg-zinc-100 px-2 py-0.5 text-xs text-zinc-500 dark:bg-zinc-800">
+                        정보 없음
+                      </span>
+                    </div>
+                  )}
                 </li>
               ))}
             </ul>

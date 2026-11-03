@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { getComplex, listComplexes } from "@/lib/complexes";
@@ -9,6 +8,7 @@ import {
   WALKING_METERS_PER_MINUTE,
   type DongDistance,
 } from "@/lib/walking";
+import BackLink from "./back-link";
 import ComplexMap, { type MapPoint } from "./complex-map";
 import DongList from "./dong-list";
 
@@ -38,10 +38,21 @@ function toMapPoints(dongs: DongDistance[]): MapPoint[] {
 async function ComplexDetail({ params }: { params: PageProps<"/complex/[id]">["params"] }) {
   const { id } = await params;
   // 한글 단지 이름이 주소에 인코딩된 채로 올 수 있어 풀어서 찾는다
-  const complex = await getComplex(decodeURIComponent(id));
+  // 잘못된 % 글자가 섞인 주소는 서버 오류(500) 대신 "없는 단지"(404)로 처리한다
+  let name: string;
+  try {
+    name = decodeURIComponent(id);
+  } catch {
+    notFound();
+  }
+  const complex = await getComplex(name);
   if (!complex) notFound();
 
   const dongs = await getDongDistances(complex.name);
+  // 좌표가 있는 동 수(단지 대표 위치 기준 행은 제외)가 공공데이터상의 동 수보다 적으면 그 차이를 알린다
+  const coordinateDongCount = dongs.filter((d) => d.basis === "dong").length;
+  const missingDongCount =
+    complex.buildingCount && coordinateDongCount > 0 ? Math.max(0, complex.buildingCount - coordinateDongCount) : 0;
 
   return (
     <>
@@ -54,6 +65,14 @@ async function ComplexDetail({ params }: { params: PageProps<"/complex/[id]">["p
       {!complex.hasDongCoordinates && (
         <p className="mt-3 inline-block rounded-full bg-amber-100 px-3 py-1 text-sm font-medium text-amber-900 dark:bg-amber-900/40 dark:text-amber-200">
           동별 좌표 없음
+        </p>
+      )}
+
+      {/* 일부 동만 좌표가 있는 단지: 빠진 동을 조용히 빼지 않고 몇 개인지 알린다 (동 이름은 알 수 없어 지어내지 않는다) */}
+      {missingDongCount > 0 && (
+        <p className="mt-3 rounded-lg bg-amber-100 px-3 py-2 text-sm text-amber-900 dark:bg-amber-900/40 dark:text-amber-200">
+          <span className="font-medium">동별 좌표 없음</span> · 공공데이터상 이 단지는 동이 {complex.buildingCount}개인데,
+          좌표가 있는 동은 {coordinateDongCount}개뿐입니다. 나머지 {missingDongCount}개 동은 아래 목록에 나오지 않습니다.
         </p>
       )}
 
@@ -103,9 +122,10 @@ async function DataNotice() {
 export default function ComplexPage(props: PageProps<"/complex/[id]">) {
   return (
     <main className="mx-auto w-full max-w-2xl flex-1 px-4 py-12">
-      <Link href="/" className="text-sm text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100">
-        ← 검색으로 돌아가기
-      </Link>
+      {/* 돌아갈 검색어는 브라우저에서 읽으므로 Suspense 안에 둔다 */}
+      <Suspense fallback={<span className="text-sm text-zinc-500">← 검색으로 돌아가기</span>}>
+        <BackLink />
+      </Suspense>
       <Suspense fallback={<p className="mt-4 text-zinc-500">불러오는 중…</p>}>
         <ComplexDetail params={props.params} />
       </Suspense>

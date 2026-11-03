@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-02",
+  "generatedAt": "2026-11-03",
   "source": "© OpenStreetMap contributors — routing.openstreetmap.de (foot)",
   "exitDataDate": "2026-11-02",
-  "count": 40,
+  "count": 316,
   "items": [
     {
       "complex": "더샵센텀포레",
@@ -882,6 +882,5644 @@
         "number": 2,
         "lat": 35.17945508057205,
         "lng": 129.12408975622407
+      }
+    },
+    {
+      "complex": "감만현대1차아파트",
+      "dong": "101동",
+      "basis": "dong",
+      "lat": 35.11126425861163,
+      "lng": 129.08322726582782,
+      "status": "no-exit-nearby"
+    },
+    {
+      "complex": "감만현대1차아파트",
+      "dong": "102동",
+      "basis": "dong",
+      "lat": 35.111496271556305,
+      "lng": 129.08362249267728,
+      "status": "no-exit-nearby"
+    },
+    {
+      "complex": "감만현대1차아파트",
+      "dong": "103동",
+      "basis": "dong",
+      "lat": 35.11187235948635,
+      "lng": 129.08365729383365,
+      "status": "no-exit-nearby"
+    },
+    {
+      "complex": "감만현대1차아파트",
+      "dong": "104동",
+      "basis": "dong",
+      "lat": 35.111685177646116,
+      "lng": 129.0827510581177,
+      "status": "no-exit-nearby"
+    },
+    {
+      "complex": "감만현대1차아파트",
+      "dong": "105동",
+      "basis": "dong",
+      "lat": 35.11229491884058,
+      "lng": 129.08256149936184,
+      "status": "no-exit-nearby"
+    },
+    {
+      "complex": "대연롯데캐슬레전드",
+      "dong": "101동",
+      "basis": "dong",
+      "lat": 35.137715562564225,
+      "lng": 129.0783776464854,
+      "status": "ok",
+      "walkingMeters": 618.9,
+      "walkingSeconds": 495.1,
+      "snapMeters": {
+        "start": 21.13040992,
+        "end": 14.83928971
+      },
+      "exit": {
+        "station": "지게골역 부산2호선",
+        "line": "부산2호선",
+        "name": "지게골역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.13524311831191,
+        "lng": 129.07530901747
+      }
+    },
+    {
+      "complex": "대연롯데캐슬레전드",
+      "dong": "102동",
+      "basis": "dong",
+      "lat": 35.13783442337087,
+      "lng": 129.0788556825699,
+      "status": "ok",
+      "walkingMeters": 655.7,
+      "walkingSeconds": 524.6,
+      "snapMeters": {
+        "start": 28.763525,
+        "end": 14.83928971
+      },
+      "exit": {
+        "station": "지게골역 부산2호선",
+        "line": "부산2호선",
+        "name": "지게골역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.13524311831191,
+        "lng": 129.07530901747
+      }
+    },
+    {
+      "complex": "대연롯데캐슬레전드",
+      "dong": "103동",
+      "basis": "dong",
+      "lat": 35.13794631805713,
+      "lng": 129.07937193888415,
+      "status": "ok",
+      "walkingMeters": 702.3,
+      "walkingSeconds": 561.8,
+      "snapMeters": {
+        "start": 42.60063122,
+        "end": 14.83928971
+      },
+      "exit": {
+        "station": "지게골역 부산2호선",
+        "line": "부산2호선",
+        "name": "지게골역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.13524311831191,
+        "lng": 129.07530901747
+      }
+    },
+    {
+      "complex": "대연롯데캐슬레전드",
+      "dong": "104동",
+      "basis": "dong",
+      "lat": 35.13792455201614,
+      "lng": 129.08000985701315,
+      "status": "ok",
+      "walkingMeters": 639.4,
+      "walkingSeconds": 511.5,
+      "snapMeters": {
+        "start": 64.89313696,
+        "end": 10.31477799
+      },
+      "exit": {
+        "station": "못골역 부산2호선",
+        "line": "부산2호선",
+        "name": "못골역 부산2호선 4번출구",
+        "number": 4,
+        "lat": 35.1347969640885,
+        "lng": 129.083974871271
+      }
+    },
+    {
+      "complex": "대연롯데캐슬레전드",
+      "dong": "105동",
+      "basis": "dong",
+      "lat": 35.13799057137827,
+      "lng": 129.0806258745677,
+      "status": "ok",
+      "walkingMeters": 583.8,
+      "walkingSeconds": 467,
+      "snapMeters": {
+        "start": 54.44515649,
+        "end": 10.31477799
+      },
+      "exit": {
+        "station": "못골역 부산2호선",
+        "line": "부산2호선",
+        "name": "못골역 부산2호선 4번출구",
+        "number": 4,
+        "lat": 35.1347969640885,
+        "lng": 129.083974871271
+      }
+    },
+    {
+      "complex": "대연롯데캐슬레전드",
+      "dong": "106동",
+      "basis": "dong",
+      "lat": 35.137966926193116,
+      "lng": 129.0814776656971,
+      "status": "ok",
+      "walkingMeters": 493.6,
+      "walkingSeconds": 394.7,
+      "snapMeters": {
+        "start": 50.44202245,
+        "end": 10.31477799
+      },
+      "exit": {
+        "station": "못골역 부산2호선",
+        "line": "부산2호선",
+        "name": "못골역 부산2호선 4번출구",
+        "number": 4,
+        "lat": 35.1347969640885,
+        "lng": 129.083974871271
+      }
+    },
+    {
+      "complex": "대연롯데캐슬레전드",
+      "dong": "107동",
+      "basis": "dong",
+      "lat": 35.13795517451641,
+      "lng": 129.082056598581,
+      "status": "ok",
+      "walkingMeters": 446.2,
+      "walkingSeconds": 356.9,
+      "snapMeters": {
+        "start": 38.61670832,
+        "end": 10.31477799
+      },
+      "exit": {
+        "station": "못골역 부산2호선",
+        "line": "부산2호선",
+        "name": "못골역 부산2호선 4번출구",
+        "number": 4,
+        "lat": 35.1347969640885,
+        "lng": 129.083974871271
+      }
+    },
+    {
+      "complex": "대연롯데캐슬레전드",
+      "dong": "108동",
+      "basis": "dong",
+      "lat": 35.13708252467568,
+      "lng": 129.08270464947455,
+      "status": "ok",
+      "walkingMeters": 294.5,
+      "walkingSeconds": 235.6,
+      "snapMeters": {
+        "start": 26.40489318,
+        "end": 10.31477799
+      },
+      "exit": {
+        "station": "못골역 부산2호선",
+        "line": "부산2호선",
+        "name": "못골역 부산2호선 4번출구",
+        "number": 4,
+        "lat": 35.1347969640885,
+        "lng": 129.083974871271
+      }
+    },
+    {
+      "complex": "대연롯데캐슬레전드",
+      "dong": "109동",
+      "basis": "dong",
+      "lat": 35.13728149564067,
+      "lng": 129.08203395390836,
+      "status": "ok",
+      "walkingMeters": 329.9,
+      "walkingSeconds": 263.9,
+      "snapMeters": {
+        "start": 75.92864079,
+        "end": 10.31477799
+      },
+      "exit": {
+        "station": "못골역 부산2호선",
+        "line": "부산2호선",
+        "name": "못골역 부산2호선 4번출구",
+        "number": 4,
+        "lat": 35.1347969640885,
+        "lng": 129.083974871271
+      }
+    },
+    {
+      "complex": "대연롯데캐슬레전드",
+      "dong": "110동",
+      "basis": "dong",
+      "lat": 35.13729528992082,
+      "lng": 129.08149347357633,
+      "status": "ok",
+      "walkingMeters": 343.3,
+      "walkingSeconds": 274.6,
+      "snapMeters": {
+        "start": 121.8992078,
+        "end": 10.31477799
+      },
+      "exit": {
+        "station": "못골역 부산2호선",
+        "line": "부산2호선",
+        "name": "못골역 부산2호선 4번출구",
+        "number": 4,
+        "lat": 35.1347969640885,
+        "lng": 129.083974871271
+      }
+    },
+    {
+      "complex": "대연롯데캐슬레전드",
+      "dong": "111동",
+      "basis": "dong",
+      "lat": 35.13730711199809,
+      "lng": 129.08064797064105,
+      "status": "ok",
+      "walkingMeters": 638.7,
+      "walkingSeconds": 511.1,
+      "snapMeters": {
+        "start": 91.47212663,
+        "end": 14.83928971
+      },
+      "exit": {
+        "station": "지게골역 부산2호선",
+        "line": "부산2호선",
+        "name": "지게골역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.13524311831191,
+        "lng": 129.07530901747
+      }
+    },
+    {
+      "complex": "대연롯데캐슬레전드",
+      "dong": "112동",
+      "basis": "dong",
+      "lat": 35.13728798890376,
+      "lng": 129.08002986052207,
+      "status": "ok",
+      "walkingMeters": 638.7,
+      "walkingSeconds": 511.1,
+      "snapMeters": {
+        "start": 36.26758349,
+        "end": 14.83928971
+      },
+      "exit": {
+        "station": "지게골역 부산2호선",
+        "line": "부산2호선",
+        "name": "지게골역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.13524311831191,
+        "lng": 129.07530901747
+      }
+    },
+    {
+      "complex": "대연롯데캐슬레전드",
+      "dong": "113동",
+      "basis": "dong",
+      "lat": 35.136650732132736,
+      "lng": 129.08003777918836,
+      "status": "ok",
+      "walkingMeters": 695.3,
+      "walkingSeconds": 556.3,
+      "snapMeters": {
+        "start": 33.56507129,
+        "end": 14.83928971
+      },
+      "exit": {
+        "station": "지게골역 부산2호선",
+        "line": "부산2호선",
+        "name": "지게골역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.13524311831191,
+        "lng": 129.07530901747
+      }
+    },
+    {
+      "complex": "대연롯데캐슬레전드",
+      "dong": "114동",
+      "basis": "dong",
+      "lat": 35.136631589947925,
+      "lng": 129.08068014179182,
+      "status": "ok",
+      "walkingMeters": 695.2,
+      "walkingSeconds": 556.2,
+      "snapMeters": {
+        "start": 92.12483735,
+        "end": 14.83928971
+      },
+      "exit": {
+        "station": "지게골역 부산2호선",
+        "line": "부산2호선",
+        "name": "지게골역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.13524311831191,
+        "lng": 129.07530901747
+      }
+    },
+    {
+      "complex": "대연롯데캐슬레전드",
+      "dong": "115동",
+      "basis": "dong",
+      "lat": 35.13666405983093,
+      "lng": 129.0814653328366,
+      "status": "ok",
+      "walkingMeters": 345.3,
+      "walkingSeconds": 276.3,
+      "snapMeters": {
+        "start": 143.0349468,
+        "end": 10.31477799
+      },
+      "exit": {
+        "station": "못골역 부산2호선",
+        "line": "부산2호선",
+        "name": "못골역 부산2호선 4번출구",
+        "number": 4,
+        "lat": 35.1347969640885,
+        "lng": 129.083974871271
+      }
+    },
+    {
+      "complex": "대연롯데캐슬레전드",
+      "dong": "116동",
+      "basis": "dong",
+      "lat": 35.13662796894842,
+      "lng": 129.08204473356517,
+      "status": "ok",
+      "walkingMeters": 284.4,
+      "walkingSeconds": 227.4,
+      "snapMeters": {
+        "start": 104.286617,
+        "end": 10.31477799
+      },
+      "exit": {
+        "station": "못골역 부산2호선",
+        "line": "부산2호선",
+        "name": "못골역 부산2호선 4번출구",
+        "number": 4,
+        "lat": 35.1347969640885,
+        "lng": 129.083974871271
+      }
+    },
+    {
+      "complex": "대연롯데캐슬레전드",
+      "dong": "117동",
+      "basis": "dong",
+      "lat": 35.13646509362854,
+      "lng": 129.08260773946773,
+      "status": "ok",
+      "walkingMeters": 257.4,
+      "walkingSeconds": 205.9,
+      "snapMeters": {
+        "start": 72.62241696,
+        "end": 10.31477799
+      },
+      "exit": {
+        "station": "못골역 부산2호선",
+        "line": "부산2호선",
+        "name": "못골역 부산2호선 4번출구",
+        "number": 4,
+        "lat": 35.1347969640885,
+        "lng": 129.083974871271
+      }
+    },
+    {
+      "complex": "대연롯데캐슬레전드",
+      "dong": "118동",
+      "basis": "dong",
+      "lat": 35.13594841036962,
+      "lng": 129.08210202145273,
+      "status": "ok",
+      "walkingMeters": 335.2,
+      "walkingSeconds": 268.2,
+      "snapMeters": {
+        "start": 115.0317402,
+        "end": 10.31477799
+      },
+      "exit": {
+        "station": "못골역 부산2호선",
+        "line": "부산2호선",
+        "name": "못골역 부산2호선 4번출구",
+        "number": 4,
+        "lat": 35.1347969640885,
+        "lng": 129.083974871271
+      }
+    },
+    {
+      "complex": "대연롯데캐슬레전드",
+      "dong": "119동",
+      "basis": "dong",
+      "lat": 35.13594747930252,
+      "lng": 129.0814745116912,
+      "status": "ok",
+      "walkingMeters": 339.9,
+      "walkingSeconds": 271.9,
+      "snapMeters": {
+        "start": 73.20227602,
+        "end": 10.31477799
+      },
+      "exit": {
+        "station": "못골역 부산2호선",
+        "line": "부산2호선",
+        "name": "못골역 부산2호선 4번출구",
+        "number": 4,
+        "lat": 35.1347969640885,
+        "lng": 129.083974871271
+      }
+    },
+    {
+      "complex": "대연롯데캐슬레전드",
+      "dong": "120동",
+      "basis": "dong",
+      "lat": 35.1359961380503,
+      "lng": 129.0806354453066,
+      "status": "ok",
+      "walkingMeters": 370.9,
+      "walkingSeconds": 296.7,
+      "snapMeters": {
+        "start": 55.6901917,
+        "end": 10.31477799
+      },
+      "exit": {
+        "station": "못골역 부산2호선",
+        "line": "부산2호선",
+        "name": "못골역 부산2호선 4번출구",
+        "number": 4,
+        "lat": 35.1347969640885,
+        "lng": 129.083974871271
+      }
+    },
+    {
+      "complex": "대연롯데캐슬레전드",
+      "dong": "121동",
+      "basis": "dong",
+      "lat": 35.13597657155495,
+      "lng": 129.07988569332022,
+      "status": "ok",
+      "walkingMeters": 628.9,
+      "walkingSeconds": 503.2,
+      "snapMeters": {
+        "start": 27.24229183,
+        "end": 14.83928971
+      },
+      "exit": {
+        "station": "지게골역 부산2호선",
+        "line": "부산2호선",
+        "name": "지게골역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.13524311831191,
+        "lng": 129.07530901747
+      }
+    },
+    {
+      "complex": "대연롯데캐슬레전드",
+      "dong": "122동",
+      "basis": "dong",
+      "lat": 35.13535653501752,
+      "lng": 129.0815143145941,
+      "status": "ok",
+      "walkingMeters": 319.7,
+      "walkingSeconds": 255.7,
+      "snapMeters": {
+        "start": 38.88683659,
+        "end": 10.31477799
+      },
+      "exit": {
+        "station": "못골역 부산2호선",
+        "line": "부산2호선",
+        "name": "못골역 부산2호선 4번출구",
+        "number": 4,
+        "lat": 35.1347969640885,
+        "lng": 129.083974871271
+      }
+    },
+    {
+      "complex": "대연롯데캐슬레전드",
+      "dong": "123동",
+      "basis": "dong",
+      "lat": 35.13507897484169,
+      "lng": 129.08167179599374,
+      "status": "ok",
+      "walkingMeters": 281.2,
+      "walkingSeconds": 224.9,
+      "snapMeters": {
+        "start": 41.02012148,
+        "end": 10.31477799
+      },
+      "exit": {
+        "station": "못골역 부산2호선",
+        "line": "부산2호선",
+        "name": "못골역 부산2호선 4번출구",
+        "number": 4,
+        "lat": 35.1347969640885,
+        "lng": 129.083974871271
+      }
+    },
+    {
+      "complex": "대연롯데캐슬레전드",
+      "dong": "124동",
+      "basis": "dong",
+      "lat": 35.13511574793338,
+      "lng": 129.08204900077644,
+      "status": "ok",
+      "walkingMeters": 174.6,
+      "walkingSeconds": 139.7,
+      "snapMeters": {
+        "start": 52.47352182,
+        "end": 10.31477799
+      },
+      "exit": {
+        "station": "못골역 부산2호선",
+        "line": "부산2호선",
+        "name": "못골역 부산2호선 4번출구",
+        "number": 4,
+        "lat": 35.1347969640885,
+        "lng": 129.083974871271
+      }
+    },
+    {
+      "complex": "대연롯데캐슬레전드",
+      "dong": "125동",
+      "basis": "dong",
+      "lat": 35.13561407938401,
+      "lng": 129.0827835182835,
+      "status": "ok",
+      "walkingMeters": 142.3,
+      "walkingSeconds": 113.7,
+      "snapMeters": {
+        "start": 65.25266872,
+        "end": 10.31477799
+      },
+      "exit": {
+        "station": "못골역 부산2호선",
+        "line": "부산2호선",
+        "name": "못골역 부산2호선 4번출구",
+        "number": 4,
+        "lat": 35.1347969640885,
+        "lng": 129.083974871271
+      }
+    },
+    {
+      "complex": "대연롯데캐슬레전드",
+      "dong": "126동",
+      "basis": "dong",
+      "lat": 35.13560526377462,
+      "lng": 129.08319137717876,
+      "status": "ok",
+      "walkingMeters": 111.3,
+      "walkingSeconds": 88.9,
+      "snapMeters": {
+        "start": 45.01810245,
+        "end": 10.31477799
+      },
+      "exit": {
+        "station": "못골역 부산2호선",
+        "line": "부산2호선",
+        "name": "못골역 부산2호선 4번출구",
+        "number": 4,
+        "lat": 35.1347969640885,
+        "lng": 129.083974871271
+      }
+    },
+    {
+      "complex": "대연롯데캐슬레전드",
+      "dong": "127동",
+      "basis": "dong",
+      "lat": 35.136218042624776,
+      "lng": 129.08303476308654,
+      "status": "ok",
+      "walkingMeters": 164.1,
+      "walkingSeconds": 131.3,
+      "snapMeters": {
+        "start": 64.77155206,
+        "end": 10.31477799
+      },
+      "exit": {
+        "station": "못골역 부산2호선",
+        "line": "부산2호선",
+        "name": "못골역 부산2호선 4번출구",
+        "number": 4,
+        "lat": 35.1347969640885,
+        "lng": 129.083974871271
+      }
+    },
+    {
+      "complex": "대연자이 아파트",
+      "dong": "101동",
+      "basis": "dong",
+      "lat": 35.12970485146236,
+      "lng": 129.10200234585804,
+      "status": "ok",
+      "walkingMeters": 1037.4,
+      "walkingSeconds": 837.6,
+      "snapMeters": {
+        "start": 24.21655456,
+        "end": 3.601803393
+      },
+      "exit": {
+        "station": "경성대.부경대역 부산2호선",
+        "line": "부산2호선",
+        "name": "경성대.부경대역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.137301745888806,
+        "lng": 129.10017588228052
+      }
+    },
+    {
+      "complex": "대연자이 아파트",
+      "dong": "102동",
+      "basis": "dong",
+      "lat": 35.129698896783914,
+      "lng": 129.10265705087264,
+      "status": "ok",
+      "walkingMeters": 1088.1,
+      "walkingSeconds": 878.2,
+      "snapMeters": {
+        "start": 31.92816947,
+        "end": 3.601803393
+      },
+      "exit": {
+        "station": "경성대.부경대역 부산2호선",
+        "line": "부산2호선",
+        "name": "경성대.부경대역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.137301745888806,
+        "lng": 129.10017588228052
+      }
+    },
+    {
+      "complex": "대연자이 아파트",
+      "dong": "103동",
+      "basis": "dong",
+      "lat": 35.1294979116891,
+      "lng": 129.103437271234,
+      "status": "ok",
+      "walkingMeters": 1141.9,
+      "walkingSeconds": 921.2,
+      "snapMeters": {
+        "start": 21.63132659,
+        "end": 3.601803393
+      },
+      "exit": {
+        "station": "경성대.부경대역 부산2호선",
+        "line": "부산2호선",
+        "name": "경성대.부경대역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.137301745888806,
+        "lng": 129.10017588228052
+      }
+    },
+    {
+      "complex": "대연자이 아파트",
+      "dong": "104동",
+      "basis": "dong",
+      "lat": 35.1293955189659,
+      "lng": 129.103988576849,
+      "status": "ok",
+      "walkingMeters": 1215.9,
+      "walkingSeconds": 980.3,
+      "snapMeters": {
+        "start": 48.28171588,
+        "end": 3.601803393
+      },
+      "exit": {
+        "station": "경성대.부경대역 부산2호선",
+        "line": "부산2호선",
+        "name": "경성대.부경대역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.137301745888806,
+        "lng": 129.10017588228052
+      }
+    },
+    {
+      "complex": "대연자이 아파트",
+      "dong": "105동",
+      "basis": "dong",
+      "lat": 35.1292999209104,
+      "lng": 129.1043042205,
+      "status": "ok",
+      "walkingMeters": 1309.5,
+      "walkingSeconds": 1047.8,
+      "snapMeters": {
+        "start": 24.81435271,
+        "end": 3.697913179
+      },
+      "exit": {
+        "station": "경성대.부경대역 부산2호선",
+        "line": "부산2호선",
+        "name": "경성대.부경대역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13789315070687,
+        "lng": 129.10140877549668
+      }
+    },
+    {
+      "complex": "대연자이 아파트",
+      "dong": "106동",
+      "basis": "dong",
+      "lat": 35.1297417268425,
+      "lng": 129.104809202582,
+      "status": "ok",
+      "walkingMeters": 1126,
+      "walkingSeconds": 910.6,
+      "snapMeters": {
+        "start": 30.17807495,
+        "end": 3.601803393
+      },
+      "exit": {
+        "station": "경성대.부경대역 부산2호선",
+        "line": "부산2호선",
+        "name": "경성대.부경대역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.137301745888806,
+        "lng": 129.10017588228052
+      }
+    },
+    {
+      "complex": "대연자이 아파트",
+      "dong": "107동",
+      "basis": "dong",
+      "lat": 35.1298606069703,
+      "lng": 129.104450280473,
+      "status": "ok",
+      "walkingMeters": 1052.8,
+      "walkingSeconds": 852.1,
+      "snapMeters": {
+        "start": 43.88017368,
+        "end": 3.601803393
+      },
+      "exit": {
+        "station": "경성대.부경대역 부산2호선",
+        "line": "부산2호선",
+        "name": "경성대.부경대역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.137301745888806,
+        "lng": 129.10017588228052
+      }
+    },
+    {
+      "complex": "대연자이 아파트",
+      "dong": "108동",
+      "basis": "dong",
+      "lat": 35.130122019432484,
+      "lng": 129.10361567116763,
+      "status": "ok",
+      "walkingMeters": 935.3,
+      "walkingSeconds": 758.1,
+      "snapMeters": {
+        "start": 37.00852572,
+        "end": 3.601803393
+      },
+      "exit": {
+        "station": "경성대.부경대역 부산2호선",
+        "line": "부산2호선",
+        "name": "경성대.부경대역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.137301745888806,
+        "lng": 129.10017588228052
+      }
+    },
+    {
+      "complex": "대연자이 아파트",
+      "dong": "109동",
+      "basis": "dong",
+      "lat": 35.1300926658611,
+      "lng": 129.103022579273,
+      "status": "ok",
+      "walkingMeters": 917,
+      "walkingSeconds": 743.4,
+      "snapMeters": {
+        "start": 36.99114476,
+        "end": 3.601803393
+      },
+      "exit": {
+        "station": "경성대.부경대역 부산2호선",
+        "line": "부산2호선",
+        "name": "경성대.부경대역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.137301745888806,
+        "lng": 129.10017588228052
+      }
+    },
+    {
+      "complex": "대연파크푸르지오아파트",
+      "dong": "101동",
+      "basis": "dong",
+      "lat": 35.1253705789087,
+      "lng": 129.09089273620452,
+      "status": "ok",
+      "walkingMeters": 1459.8,
+      "walkingSeconds": 1167.7,
+      "snapMeters": {
+        "start": 67.86136912,
+        "end": 1.888229979
+      },
+      "exit": {
+        "station": "대연역 부산2호선",
+        "line": "부산2호선",
+        "name": "대연역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.13504158942585,
+        "lng": 129.09226338115568
+      }
+    },
+    {
+      "complex": "대연파크푸르지오아파트",
+      "dong": "102동",
+      "basis": "dong",
+      "lat": 35.12605771779709,
+      "lng": 129.0901874688843,
+      "status": "ok",
+      "walkingMeters": 1144.2,
+      "walkingSeconds": 915.4,
+      "snapMeters": {
+        "start": 43.9802805,
+        "end": 1.888229979
+      },
+      "exit": {
+        "station": "대연역 부산2호선",
+        "line": "부산2호선",
+        "name": "대연역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.13504158942585,
+        "lng": 129.09226338115568
+      }
+    },
+    {
+      "complex": "대연파크푸르지오아파트",
+      "dong": "103동",
+      "basis": "dong",
+      "lat": 35.12493635362095,
+      "lng": 129.09062387344383,
+      "status": "ok",
+      "walkingMeters": 1513.8,
+      "walkingSeconds": 1210.8,
+      "snapMeters": {
+        "start": 63.08919358,
+        "end": 1.888229979
+      },
+      "exit": {
+        "station": "대연역 부산2호선",
+        "line": "부산2호선",
+        "name": "대연역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.13504158942585,
+        "lng": 129.09226338115568
+      }
+    },
+    {
+      "complex": "대연파크푸르지오아파트",
+      "dong": "104동",
+      "basis": "dong",
+      "lat": 35.125645215667845,
+      "lng": 129.08996523080168,
+      "status": "ok",
+      "walkingMeters": 1157.2,
+      "walkingSeconds": 925.7,
+      "snapMeters": {
+        "start": 52.90807684,
+        "end": 1.888229979
+      },
+      "exit": {
+        "station": "대연역 부산2호선",
+        "line": "부산2호선",
+        "name": "대연역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.13504158942585,
+        "lng": 129.09226338115568
+      }
+    },
+    {
+      "complex": "대연파크푸르지오아파트",
+      "dong": "105동",
+      "basis": "dong",
+      "lat": 35.1244647189069,
+      "lng": 129.09027727812727,
+      "status": "ok",
+      "walkingMeters": 1566.2,
+      "walkingSeconds": 1252.8,
+      "snapMeters": {
+        "start": 62.83804659,
+        "end": 1.888229979
+      },
+      "exit": {
+        "station": "대연역 부산2호선",
+        "line": "부산2호선",
+        "name": "대연역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.13504158942585,
+        "lng": 129.09226338115568
+      }
+    },
+    {
+      "complex": "대연파크푸르지오아파트",
+      "dong": "106동",
+      "basis": "dong",
+      "lat": 35.12524403278787,
+      "lng": 129.0897136691492,
+      "status": "ok",
+      "walkingMeters": 1208.2,
+      "walkingSeconds": 966.6,
+      "snapMeters": {
+        "start": 55.35728274,
+        "end": 1.888229979
+      },
+      "exit": {
+        "station": "대연역 부산2호선",
+        "line": "부산2호선",
+        "name": "대연역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.13504158942585,
+        "lng": 129.09226338115568
+      }
+    },
+    {
+      "complex": "대연파크푸르지오아파트",
+      "dong": "107동",
+      "basis": "dong",
+      "lat": 35.12393235361552,
+      "lng": 129.08995107176787,
+      "status": "ok",
+      "walkingMeters": 1657.3,
+      "walkingSeconds": 1325.8,
+      "snapMeters": {
+        "start": 49.77735976,
+        "end": 1.888229979
+      },
+      "exit": {
+        "station": "대연역 부산2호선",
+        "line": "부산2호선",
+        "name": "대연역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.13504158942585,
+        "lng": 129.09226338115568
+      }
+    },
+    {
+      "complex": "대연파크푸르지오아파트",
+      "dong": "108동",
+      "basis": "dong",
+      "lat": 35.1248053128836,
+      "lng": 129.08949625025124,
+      "status": "ok",
+      "walkingMeters": 1258.8,
+      "walkingSeconds": 1006.9,
+      "snapMeters": {
+        "start": 62.68296828,
+        "end": 1.888229979
+      },
+      "exit": {
+        "station": "대연역 부산2호선",
+        "line": "부산2호선",
+        "name": "대연역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.13504158942585,
+        "lng": 129.09226338115568
+      }
+    },
+    {
+      "complex": "대연파크푸르지오아파트",
+      "dong": "109동",
+      "basis": "dong",
+      "lat": 35.124438326754074,
+      "lng": 129.08919511233194,
+      "status": "ok",
+      "walkingMeters": 1342.7,
+      "walkingSeconds": 1074.2,
+      "snapMeters": {
+        "start": 29.44304601,
+        "end": 1.888229979
+      },
+      "exit": {
+        "station": "대연역 부산2호선",
+        "line": "부산2호선",
+        "name": "대연역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.13504158942585,
+        "lng": 129.09226338115568
+      }
+    },
+    {
+      "complex": "대연파크푸르지오아파트",
+      "dong": "110동",
+      "basis": "dong",
+      "lat": 35.123566508212534,
+      "lng": 129.089688353643,
+      "status": "ok",
+      "walkingMeters": 1450.6,
+      "walkingSeconds": 1160.5,
+      "snapMeters": {
+        "start": 50.14197282,
+        "end": 1.888229979
+      },
+      "exit": {
+        "station": "대연역 부산2호선",
+        "line": "부산2호선",
+        "name": "대연역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.13504158942585,
+        "lng": 129.09226338115568
+      }
+    },
+    {
+      "complex": "대연파크푸르지오아파트",
+      "dong": "111동",
+      "basis": "dong",
+      "lat": 35.1228189696509,
+      "lng": 129.0900816594941,
+      "status": "ok",
+      "walkingMeters": 1562,
+      "walkingSeconds": 1249.6,
+      "snapMeters": {
+        "start": 51.99723719,
+        "end": 1.888229979
+      },
+      "exit": {
+        "station": "대연역 부산2호선",
+        "line": "부산2호선",
+        "name": "대연역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.13504158942585,
+        "lng": 129.09226338115568
+      }
+    },
+    {
+      "complex": "대연파크푸르지오아파트",
+      "dong": "112동",
+      "basis": "dong",
+      "lat": 35.122780388969545,
+      "lng": 129.09075083340113,
+      "status": "ok",
+      "walkingMeters": 1685.7,
+      "walkingSeconds": 1348.3,
+      "snapMeters": {
+        "start": 43.11023362,
+        "end": 1.888229979
+      },
+      "exit": {
+        "station": "대연역 부산2호선",
+        "line": "부산2호선",
+        "name": "대연역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.13504158942585,
+        "lng": 129.09226338115568
+      }
+    },
+    {
+      "complex": "대연파크푸르지오아파트",
+      "dong": "113동",
+      "basis": "dong",
+      "lat": 35.12224295338638,
+      "lng": 129.09045740621707,
+      "status": "ok",
+      "walkingMeters": 1633.8,
+      "walkingSeconds": 1307.1,
+      "snapMeters": {
+        "start": 39.3049674,
+        "end": 1.888229979
+      },
+      "exit": {
+        "station": "대연역 부산2호선",
+        "line": "부산2호선",
+        "name": "대연역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.13504158942585,
+        "lng": 129.09226338115568
+      }
+    },
+    {
+      "complex": "대연파크푸르지오아파트",
+      "dong": "114동",
+      "basis": "dong",
+      "lat": 35.12223590431019,
+      "lng": 129.09081369166324,
+      "status": "ok",
+      "walkingMeters": 1732.3,
+      "walkingSeconds": 1385.8,
+      "snapMeters": {
+        "start": 31.64556941,
+        "end": 1.888229979
+      },
+      "exit": {
+        "station": "대연역 부산2호선",
+        "line": "부산2호선",
+        "name": "대연역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.13504158942585,
+        "lng": 129.09226338115568
+      }
+    },
+    {
+      "complex": "대연푸르지오클라센트",
+      "dong": "101동",
+      "basis": "dong",
+      "lat": 35.1290535335929,
+      "lng": 129.085041661431,
+      "status": "ok",
+      "walkingMeters": 1080.4,
+      "walkingSeconds": 864.3,
+      "snapMeters": {
+        "start": 42.2680003,
+        "end": 1.555872345
+      },
+      "exit": {
+        "station": "못골역 부산2호선",
+        "line": "부산2호선",
+        "name": "못골역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13464826506586,
+        "lng": 129.0847609101675
+      }
+    },
+    {
+      "complex": "대연푸르지오클라센트",
+      "dong": "102동",
+      "basis": "dong",
+      "lat": 35.1295046712402,
+      "lng": 129.085009288896,
+      "status": "ok",
+      "walkingMeters": 1123.3,
+      "walkingSeconds": 898.7,
+      "snapMeters": {
+        "start": 62.62801748,
+        "end": 1.555872345
+      },
+      "exit": {
+        "station": "못골역 부산2호선",
+        "line": "부산2호선",
+        "name": "못골역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13464826506586,
+        "lng": 129.0847609101675
+      }
+    },
+    {
+      "complex": "대연푸르지오클라센트",
+      "dong": "103동",
+      "basis": "dong",
+      "lat": 35.1298136217481,
+      "lng": 129.084337076489,
+      "status": "ok",
+      "walkingMeters": 1204.2,
+      "walkingSeconds": 963.4,
+      "snapMeters": {
+        "start": 25.83237471,
+        "end": 1.555872345
+      },
+      "exit": {
+        "station": "못골역 부산2호선",
+        "line": "부산2호선",
+        "name": "못골역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13464826506586,
+        "lng": 129.0847609101675
+      }
+    },
+    {
+      "complex": "대연푸르지오클라센트",
+      "dong": "104동",
+      "basis": "dong",
+      "lat": 35.1300695115574,
+      "lng": 129.085177261847,
+      "status": "ok",
+      "walkingMeters": 788.3,
+      "walkingSeconds": 630.8,
+      "snapMeters": {
+        "start": 83.89186355,
+        "end": 1.555872345
+      },
+      "exit": {
+        "station": "못골역 부산2호선",
+        "line": "부산2호선",
+        "name": "못골역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13464826506586,
+        "lng": 129.0847609101675
+      }
+    },
+    {
+      "complex": "대연푸르지오클라센트",
+      "dong": "105동",
+      "basis": "dong",
+      "lat": 35.1302482910423,
+      "lng": 129.085785130575,
+      "status": "ok",
+      "walkingMeters": 744.8,
+      "walkingSeconds": 596,
+      "snapMeters": {
+        "start": 44.45047655,
+        "end": 1.555872345
+      },
+      "exit": {
+        "station": "못골역 부산2호선",
+        "line": "부산2호선",
+        "name": "못골역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13464826506586,
+        "lng": 129.0847609101675
+      }
+    },
+    {
+      "complex": "대연푸르지오클라센트",
+      "dong": "106동",
+      "basis": "dong",
+      "lat": 35.1304859395608,
+      "lng": 129.085067219707,
+      "status": "ok",
+      "walkingMeters": 675,
+      "walkingSeconds": 540,
+      "snapMeters": {
+        "start": 73.68592335,
+        "end": 1.555872345
+      },
+      "exit": {
+        "station": "못골역 부산2호선",
+        "line": "부산2호선",
+        "name": "못골역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13464826506586,
+        "lng": 129.0847609101675
+      }
+    },
+    {
+      "complex": "대연푸르지오클라센트",
+      "dong": "107동",
+      "basis": "dong",
+      "lat": 35.1309447637703,
+      "lng": 129.085111828667,
+      "status": "ok",
+      "walkingMeters": 679.8,
+      "walkingSeconds": 543.9,
+      "snapMeters": {
+        "start": 33.55751272,
+        "end": 1.555872345
+      },
+      "exit": {
+        "station": "못골역 부산2호선",
+        "line": "부산2호선",
+        "name": "못골역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13464826506586,
+        "lng": 129.0847609101675
+      }
+    },
+    {
+      "complex": "대연푸르지오클라센트",
+      "dong": "201동",
+      "basis": "dong",
+      "lat": 35.1291491298621,
+      "lng": 129.084199477229,
+      "status": "ok",
+      "walkingMeters": 1125.5,
+      "walkingSeconds": 900.3,
+      "snapMeters": {
+        "start": 21.05728171,
+        "end": 1.555872345
+      },
+      "exit": {
+        "station": "못골역 부산2호선",
+        "line": "부산2호선",
+        "name": "못골역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13464826506586,
+        "lng": 129.0847609101675
+      }
+    },
+    {
+      "complex": "대연sk뷰힐스아파트",
+      "dong": "101동",
+      "basis": "dong",
+      "lat": 35.13824506147155,
+      "lng": 129.09341937161764,
+      "status": "ok",
+      "walkingMeters": 521.1,
+      "walkingSeconds": 416.9,
+      "snapMeters": {
+        "start": 25.95493052,
+        "end": 10.89110642
+      },
+      "exit": {
+        "station": "대연역 부산2호선",
+        "line": "부산2호선",
+        "name": "대연역 부산2호선 4번출구",
+        "number": 4,
+        "lat": 35.13522230970793,
+        "lng": 129.09223509679924
+      }
+    },
+    {
+      "complex": "대연sk뷰힐스아파트",
+      "dong": "102동",
+      "basis": "dong",
+      "lat": 35.138301787419195,
+      "lng": 129.09420410553898,
+      "status": "ok",
+      "walkingMeters": 594.9,
+      "walkingSeconds": 476,
+      "snapMeters": {
+        "start": 29.33214866,
+        "end": 1.334431021
+      },
+      "exit": {
+        "station": "대연역 부산2호선",
+        "line": "부산2호선",
+        "name": "대연역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13509024645168,
+        "lng": 129.09309833848832
+      }
+    },
+    {
+      "complex": "대연sk뷰힐스아파트",
+      "dong": "103동",
+      "basis": "dong",
+      "lat": 35.13800919032625,
+      "lng": 129.09387517968403,
+      "status": "ok",
+      "walkingMeters": 554.6,
+      "walkingSeconds": 443.9,
+      "snapMeters": {
+        "start": 44.92354766,
+        "end": 1.334431021
+      },
+      "exit": {
+        "station": "대연역 부산2호선",
+        "line": "부산2호선",
+        "name": "대연역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13509024645168,
+        "lng": 129.09309833848832
+      }
+    },
+    {
+      "complex": "대연sk뷰힐스아파트",
+      "dong": "104동",
+      "basis": "dong",
+      "lat": 35.13754138108908,
+      "lng": 129.09362075423869,
+      "status": "ok",
+      "walkingMeters": 546,
+      "walkingSeconds": 437.2,
+      "snapMeters": {
+        "start": 39.52382229,
+        "end": 1.334431021
+      },
+      "exit": {
+        "station": "대연역 부산2호선",
+        "line": "부산2호선",
+        "name": "대연역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13509024645168,
+        "lng": 129.09309833848832
+      }
+    },
+    {
+      "complex": "대연sk뷰힐스아파트",
+      "dong": "105동",
+      "basis": "dong",
+      "lat": 35.13708540725223,
+      "lng": 129.0936200456513,
+      "status": "ok",
+      "walkingMeters": 501.9,
+      "walkingSeconds": 401.5,
+      "snapMeters": {
+        "start": 19.88567976,
+        "end": 1.334431021
+      },
+      "exit": {
+        "station": "대연역 부산2호선",
+        "line": "부산2호선",
+        "name": "대연역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13509024645168,
+        "lng": 129.09309833848832
+      }
+    },
+    {
+      "complex": "대연sk뷰힐스아파트",
+      "dong": "106동",
+      "basis": "dong",
+      "lat": 35.13707041238667,
+      "lng": 129.0942789680793,
+      "status": "ok",
+      "walkingMeters": 436.7,
+      "walkingSeconds": 349.3,
+      "snapMeters": {
+        "start": 33.17642464,
+        "end": 1.334431021
+      },
+      "exit": {
+        "station": "대연역 부산2호선",
+        "line": "부산2호선",
+        "name": "대연역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13509024645168,
+        "lng": 129.09309833848832
+      }
+    },
+    {
+      "complex": "대연sk뷰힐스아파트",
+      "dong": "107동",
+      "basis": "dong",
+      "lat": 35.13702945313137,
+      "lng": 129.09487579189746,
+      "status": "ok",
+      "walkingMeters": 423.9,
+      "walkingSeconds": 339.3,
+      "snapMeters": {
+        "start": 19.09693871,
+        "end": 1.334431021
+      },
+      "exit": {
+        "station": "대연역 부산2호선",
+        "line": "부산2호선",
+        "name": "대연역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13509024645168,
+        "lng": 129.09309833848832
+      }
+    },
+    {
+      "complex": "대연sk뷰힐스아파트",
+      "dong": "108동",
+      "basis": "dong",
+      "lat": 35.13660415409705,
+      "lng": 129.09351776486318,
+      "status": "ok",
+      "walkingMeters": 254.8,
+      "walkingSeconds": 203.8,
+      "snapMeters": {
+        "start": 30.14996125,
+        "end": 1.334431021
+      },
+      "exit": {
+        "station": "대연역 부산2호선",
+        "line": "부산2호선",
+        "name": "대연역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13509024645168,
+        "lng": 129.09309833848832
+      }
+    },
+    {
+      "complex": "대연sk뷰힐스아파트",
+      "dong": "109동",
+      "basis": "dong",
+      "lat": 35.13647951301519,
+      "lng": 129.09405539758885,
+      "status": "ok",
+      "walkingMeters": 457.9,
+      "walkingSeconds": 366.4,
+      "snapMeters": {
+        "start": 31.95271527,
+        "end": 1.334431021
+      },
+      "exit": {
+        "station": "대연역 부산2호선",
+        "line": "부산2호선",
+        "name": "대연역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13509024645168,
+        "lng": 129.09309833848832
+      }
+    },
+    {
+      "complex": "대연sk뷰힐스아파트",
+      "dong": "110동",
+      "basis": "dong",
+      "lat": 35.13648454122645,
+      "lng": 129.09470276100458,
+      "status": "ok",
+      "walkingMeters": 399.1,
+      "walkingSeconds": 319.3,
+      "snapMeters": {
+        "start": 32.39993263,
+        "end": 1.334431021
+      },
+      "exit": {
+        "station": "대연역 부산2호선",
+        "line": "부산2호선",
+        "name": "대연역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13509024645168,
+        "lng": 129.09309833848832
+      }
+    },
+    {
+      "complex": "대연sk뷰힐스아파트",
+      "dong": "111동",
+      "basis": "dong",
+      "lat": 35.13584130462917,
+      "lng": 129.09479597805034,
+      "status": "ok",
+      "walkingMeters": 214.4,
+      "walkingSeconds": 171.7,
+      "snapMeters": {
+        "start": 37.56767939,
+        "end": 1.334431021
+      },
+      "exit": {
+        "station": "대연역 부산2호선",
+        "line": "부산2호선",
+        "name": "대연역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13509024645168,
+        "lng": 129.09309833848832
+      }
+    },
+    {
+      "complex": "더비치푸르지오써밋",
+      "dong": "101동",
+      "basis": "dong",
+      "lat": 35.1357570768459,
+      "lng": 129.109981730936,
+      "status": "ok",
+      "walkingMeters": 901.6,
+      "walkingSeconds": 721.2,
+      "snapMeters": {
+        "start": 17.00461444,
+        "end": 10.70557341
+      },
+      "exit": {
+        "station": "남천역 부산2호선",
+        "line": "부산2호선",
+        "name": "남천역 부산2호선 4번출구",
+        "number": 4,
+        "lat": 35.14122267657082,
+        "lng": 129.10687001931237
+      }
+    },
+    {
+      "complex": "더비치푸르지오써밋",
+      "dong": "102동",
+      "basis": "dong",
+      "lat": 35.1360640638562,
+      "lng": 129.109430185613,
+      "status": "ok",
+      "walkingMeters": 984,
+      "walkingSeconds": 787,
+      "snapMeters": {
+        "start": 11.0075229,
+        "end": 10.70557341
+      },
+      "exit": {
+        "station": "남천역 부산2호선",
+        "line": "부산2호선",
+        "name": "남천역 부산2호선 4번출구",
+        "number": 4,
+        "lat": 35.14122267657082,
+        "lng": 129.10687001931237
+      }
+    },
+    {
+      "complex": "더비치푸르지오써밋",
+      "dong": "103동",
+      "basis": "dong",
+      "lat": 35.1364676493438,
+      "lng": 129.109023738795,
+      "status": "ok",
+      "walkingMeters": 722.5,
+      "walkingSeconds": 578.1,
+      "snapMeters": {
+        "start": 29.7799186,
+        "end": 10.70557341
+      },
+      "exit": {
+        "station": "남천역 부산2호선",
+        "line": "부산2호선",
+        "name": "남천역 부산2호선 4번출구",
+        "number": 4,
+        "lat": 35.14122267657082,
+        "lng": 129.10687001931237
+      }
+    },
+    {
+      "complex": "더비치푸르지오써밋",
+      "dong": "104동",
+      "basis": "dong",
+      "lat": 35.1367568080923,
+      "lng": 129.108460755147,
+      "status": "ok",
+      "walkingMeters": 1134,
+      "walkingSeconds": 907.1,
+      "snapMeters": {
+        "start": 10.55886746,
+        "end": 10.70557341
+      },
+      "exit": {
+        "station": "남천역 부산2호선",
+        "line": "부산2호선",
+        "name": "남천역 부산2호선 4번출구",
+        "number": 4,
+        "lat": 35.14122267657082,
+        "lng": 129.10687001931237
+      }
+    },
+    {
+      "complex": "더비치푸르지오써밋",
+      "dong": "105동",
+      "basis": "dong",
+      "lat": 35.13722848121808,
+      "lng": 129.1080253397174,
+      "status": "ok",
+      "walkingMeters": 677.5,
+      "walkingSeconds": 541.8,
+      "snapMeters": {
+        "start": 17.72612147,
+        "end": 10.70557341
+      },
+      "exit": {
+        "station": "남천역 부산2호선",
+        "line": "부산2호선",
+        "name": "남천역 부산2호선 4번출구",
+        "number": 4,
+        "lat": 35.14122267657082,
+        "lng": 129.10687001931237
+      }
+    },
+    {
+      "complex": "더비치푸르지오써밋",
+      "dong": "106동",
+      "basis": "dong",
+      "lat": 35.1374230948472,
+      "lng": 129.107457715664,
+      "status": "ok",
+      "walkingMeters": 1280.3,
+      "walkingSeconds": 1024.3,
+      "snapMeters": {
+        "start": 17.50884638,
+        "end": 10.70557341
+      },
+      "exit": {
+        "station": "남천역 부산2호선",
+        "line": "부산2호선",
+        "name": "남천역 부산2호선 4번출구",
+        "number": 4,
+        "lat": 35.14122267657082,
+        "lng": 129.10687001931237
+      }
+    },
+    {
+      "complex": "더비치푸르지오써밋",
+      "dong": "107동",
+      "basis": "dong",
+      "lat": 35.1368489029969,
+      "lng": 129.107311270697,
+      "status": "ok",
+      "walkingMeters": 1253.8,
+      "walkingSeconds": 1003.1,
+      "snapMeters": {
+        "start": 14.65133235,
+        "end": 10.70557341
+      },
+      "exit": {
+        "station": "남천역 부산2호선",
+        "line": "부산2호선",
+        "name": "남천역 부산2호선 4번출구",
+        "number": 4,
+        "lat": 35.14122267657082,
+        "lng": 129.10687001931237
+      }
+    },
+    {
+      "complex": "더비치푸르지오써밋",
+      "dong": "108동",
+      "basis": "dong",
+      "lat": 35.1363716953418,
+      "lng": 129.107287998386,
+      "status": "ok",
+      "walkingMeters": 729,
+      "walkingSeconds": 583.2,
+      "snapMeters": {
+        "start": 17.7301637,
+        "end": 10.70557341
+      },
+      "exit": {
+        "station": "남천역 부산2호선",
+        "line": "부산2호선",
+        "name": "남천역 부산2호선 4번출구",
+        "number": 4,
+        "lat": 35.14122267657082,
+        "lng": 129.10687001931237
+      }
+    },
+    {
+      "complex": "데시앙해링턴플레이스파크시티",
+      "dong": "101동",
+      "basis": "dong",
+      "lat": 35.112620851449755,
+      "lng": 129.11323534251164,
+      "status": "no-exit-nearby"
+    },
+    {
+      "complex": "데시앙해링턴플레이스파크시티",
+      "dong": "102동",
+      "basis": "dong",
+      "lat": 35.11206339621866,
+      "lng": 129.1131112765138,
+      "status": "no-exit-nearby"
+    },
+    {
+      "complex": "데시앙해링턴플레이스파크시티",
+      "dong": "103동",
+      "basis": "dong",
+      "lat": 35.11162705888858,
+      "lng": 129.1133281145022,
+      "status": "no-exit-nearby"
+    },
+    {
+      "complex": "데시앙해링턴플레이스파크시티",
+      "dong": "104동",
+      "basis": "dong",
+      "lat": 35.1111615422293,
+      "lng": 129.113306220642,
+      "status": "no-exit-nearby"
+    },
+    {
+      "complex": "데시앙해링턴플레이스파크시티",
+      "dong": "105동",
+      "basis": "dong",
+      "lat": 35.1107433726055,
+      "lng": 129.11351475147,
+      "status": "no-exit-nearby"
+    },
+    {
+      "complex": "데시앙해링턴플레이스파크시티",
+      "dong": "106동",
+      "basis": "dong",
+      "lat": 35.1105089386512,
+      "lng": 129.112488807181,
+      "status": "no-exit-nearby"
+    },
+    {
+      "complex": "데시앙해링턴플레이스파크시티",
+      "dong": "107동",
+      "basis": "dong",
+      "lat": 35.11097935029298,
+      "lng": 129.11228162025915,
+      "status": "no-exit-nearby"
+    },
+    {
+      "complex": "데시앙해링턴플레이스파크시티",
+      "dong": "108동",
+      "basis": "dong",
+      "lat": 35.1114227117058,
+      "lng": 129.112282099558,
+      "status": "no-exit-nearby"
+    },
+    {
+      "complex": "데시앙해링턴플레이스파크시티",
+      "dong": "109동",
+      "basis": "dong",
+      "lat": 35.1118572840154,
+      "lng": 129.11206301749868,
+      "status": "no-exit-nearby"
+    },
+    {
+      "complex": "데시앙해링턴플레이스파크시티",
+      "dong": "110동",
+      "basis": "dong",
+      "lat": 35.1123096529365,
+      "lng": 129.112063728392,
+      "status": "no-exit-nearby"
+    },
+    {
+      "complex": "데시앙해링턴플레이스파크시티",
+      "dong": "111동",
+      "basis": "dong",
+      "lat": 35.1125622719285,
+      "lng": 129.112563756704,
+      "status": "no-exit-nearby"
+    },
+    {
+      "complex": "두산위브더제니스 오션시티",
+      "dong": "101동",
+      "basis": "dong",
+      "lat": 35.1273127661085,
+      "lng": 129.080202779123,
+      "status": "ok",
+      "walkingMeters": 1466.8,
+      "walkingSeconds": 1173.5,
+      "snapMeters": {
+        "start": 39.09476211,
+        "end": 5.974255291
+      },
+      "exit": {
+        "station": "지게골역 부산2호선",
+        "line": "부산2호선",
+        "name": "지게골역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13504776649321,
+        "lng": 129.07513950920858
+      }
+    },
+    {
+      "complex": "두산위브더제니스 오션시티",
+      "dong": "102동",
+      "basis": "dong",
+      "lat": 35.1273066090612,
+      "lng": 129.079511583087,
+      "status": "ok",
+      "walkingMeters": 1794.1,
+      "walkingSeconds": 1435.2,
+      "snapMeters": {
+        "start": 61.87209894,
+        "end": 1.555872345
+      },
+      "exit": {
+        "station": "못골역 부산2호선",
+        "line": "부산2호선",
+        "name": "못골역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13464826506586,
+        "lng": 129.0847609101675
+      }
+    },
+    {
+      "complex": "두산위브더제니스 오션시티",
+      "dong": "103동",
+      "basis": "dong",
+      "lat": 35.1274070352987,
+      "lng": 129.078910847797,
+      "status": "ok",
+      "walkingMeters": 1828.6,
+      "walkingSeconds": 1462.9,
+      "snapMeters": {
+        "start": 64.82257171,
+        "end": 1.555872345
+      },
+      "exit": {
+        "station": "못골역 부산2호선",
+        "line": "부산2호선",
+        "name": "못골역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13464826506586,
+        "lng": 129.0847609101675
+      }
+    },
+    {
+      "complex": "두산위브더제니스 오션시티",
+      "dong": "104동",
+      "basis": "dong",
+      "lat": 35.1274440285432,
+      "lng": 129.078330436544,
+      "status": "ok",
+      "walkingMeters": 1214.4,
+      "walkingSeconds": 971.5,
+      "snapMeters": {
+        "start": 50.49293715,
+        "end": 5.974255291
+      },
+      "exit": {
+        "station": "지게골역 부산2호선",
+        "line": "부산2호선",
+        "name": "지게골역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13504776649321,
+        "lng": 129.07513950920858
+      }
+    },
+    {
+      "complex": "두산위브더제니스 오션시티",
+      "dong": "105동",
+      "basis": "dong",
+      "lat": 35.1273993855987,
+      "lng": 129.077780857079,
+      "status": "ok",
+      "walkingMeters": 1188.5,
+      "walkingSeconds": 950.9,
+      "snapMeters": {
+        "start": 46.78692313,
+        "end": 5.974255291
+      },
+      "exit": {
+        "station": "지게골역 부산2호선",
+        "line": "부산2호선",
+        "name": "지게골역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13504776649321,
+        "lng": 129.07513950920858
+      }
+    },
+    {
+      "complex": "두산위브더제니스 오션시티",
+      "dong": "106동",
+      "basis": "dong",
+      "lat": 35.1270053031201,
+      "lng": 129.077639217606,
+      "status": "ok",
+      "walkingMeters": 2167,
+      "walkingSeconds": 1733.5,
+      "snapMeters": {
+        "start": 56.18883419,
+        "end": 5.974255291
+      },
+      "exit": {
+        "station": "지게골역 부산2호선",
+        "line": "부산2호선",
+        "name": "지게골역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13504776649321,
+        "lng": 129.07513950920858
+      }
+    },
+    {
+      "complex": "두산위브더제니스 오션시티",
+      "dong": "107동",
+      "basis": "dong",
+      "lat": 35.1265785884188,
+      "lng": 129.076772810549,
+      "status": "ok",
+      "walkingMeters": 1718.4,
+      "walkingSeconds": 1374.6,
+      "snapMeters": {
+        "start": 67.0400396,
+        "end": 5.974255291
+      },
+      "exit": {
+        "station": "지게골역 부산2호선",
+        "line": "부산2호선",
+        "name": "지게골역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13504776649321,
+        "lng": 129.07513950920858
+      }
+    },
+    {
+      "complex": "두산위브더제니스 오션시티",
+      "dong": "108동",
+      "basis": "dong",
+      "lat": 35.1270349742044,
+      "lng": 129.076959902832,
+      "status": "ok",
+      "walkingMeters": 2167,
+      "walkingSeconds": 1733.5,
+      "snapMeters": {
+        "start": 80.98019873,
+        "end": 5.974255291
+      },
+      "exit": {
+        "station": "지게골역 부산2호선",
+        "line": "부산2호선",
+        "name": "지게골역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13504776649321,
+        "lng": 129.07513950920858
+      }
+    },
+    {
+      "complex": "두산위브더제니스 오션시티",
+      "dong": "109동",
+      "basis": "dong",
+      "lat": 35.1275681205126,
+      "lng": 129.07687472416,
+      "status": "ok",
+      "walkingMeters": 1151.6,
+      "walkingSeconds": 921.3,
+      "snapMeters": {
+        "start": 70.78365622,
+        "end": 5.974255291
+      },
+      "exit": {
+        "station": "지게골역 부산2호선",
+        "line": "부산2호선",
+        "name": "지게골역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13504776649321,
+        "lng": 129.07513950920858
+      }
+    },
+    {
+      "complex": "두산위브더제니스 오션시티",
+      "dong": "110동",
+      "basis": "dong",
+      "lat": 35.1280579197675,
+      "lng": 129.076689722736,
+      "status": "ok",
+      "walkingMeters": 1124.7,
+      "walkingSeconds": 899.7,
+      "snapMeters": {
+        "start": 62.89266096,
+        "end": 5.974255291
+      },
+      "exit": {
+        "station": "지게골역 부산2호선",
+        "line": "부산2호선",
+        "name": "지게골역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13504776649321,
+        "lng": 129.07513950920858
+      }
+    },
+    {
+      "complex": "두산위브더제니스 오션시티",
+      "dong": "111동",
+      "basis": "dong",
+      "lat": 35.1284927328802,
+      "lng": 129.0765581681,
+      "status": "ok",
+      "walkingMeters": 1080.7,
+      "walkingSeconds": 864.6,
+      "snapMeters": {
+        "start": 62.97818138,
+        "end": 5.974255291
+      },
+      "exit": {
+        "station": "지게골역 부산2호선",
+        "line": "부산2호선",
+        "name": "지게골역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13504776649321,
+        "lng": 129.07513950920858
+      }
+    },
+    {
+      "complex": "두산위브더제니스 오션시티",
+      "dong": "112동",
+      "basis": "dong",
+      "lat": 35.1289962247071,
+      "lng": 129.076625800294,
+      "status": "ok",
+      "walkingMeters": 1022.9,
+      "walkingSeconds": 818.3,
+      "snapMeters": {
+        "start": 49.84512399,
+        "end": 5.974255291
+      },
+      "exit": {
+        "station": "지게골역 부산2호선",
+        "line": "부산2호선",
+        "name": "지게골역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13504776649321,
+        "lng": 129.07513950920858
+      }
+    },
+    {
+      "complex": "두산위브더제니스 오션시티",
+      "dong": "113동",
+      "basis": "dong",
+      "lat": 35.129414331189516,
+      "lng": 129.07668029568248,
+      "status": "ok",
+      "walkingMeters": 988,
+      "walkingSeconds": 790.5,
+      "snapMeters": {
+        "start": 37.64867608,
+        "end": 5.974255291
+      },
+      "exit": {
+        "station": "지게골역 부산2호선",
+        "line": "부산2호선",
+        "name": "지게골역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13504776649321,
+        "lng": 129.07513950920858
+      }
+    },
+    {
+      "complex": "두산위브더제니스 오션시티",
+      "dong": "114동",
+      "basis": "dong",
+      "lat": 35.129439493737,
+      "lng": 129.076000845954,
+      "status": "ok",
+      "walkingMeters": 933.9,
+      "walkingSeconds": 747.2,
+      "snapMeters": {
+        "start": 32.16502303,
+        "end": 5.974255291
+      },
+      "exit": {
+        "station": "지게골역 부산2호선",
+        "line": "부산2호선",
+        "name": "지게골역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13504776649321,
+        "lng": 129.07513950920858
+      }
+    },
+    {
+      "complex": "두산위브더제니스 오션시티",
+      "dong": "115동",
+      "basis": "dong",
+      "lat": 35.1290095661604,
+      "lng": 129.075847331834,
+      "status": "ok",
+      "walkingMeters": 980.4,
+      "walkingSeconds": 784.4,
+      "snapMeters": {
+        "start": 43.36217825,
+        "end": 5.974255291
+      },
+      "exit": {
+        "station": "지게골역 부산2호선",
+        "line": "부산2호선",
+        "name": "지게골역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13504776649321,
+        "lng": 129.07513950920858
+      }
+    },
+    {
+      "complex": "두산위브더제니스 오션시티",
+      "dong": "116동",
+      "basis": "dong",
+      "lat": 35.1284139460141,
+      "lng": 129.074844997334,
+      "status": "ok",
+      "walkingMeters": 1104.8,
+      "walkingSeconds": 883.9,
+      "snapMeters": {
+        "start": 37.96830862,
+        "end": 5.974255291
+      },
+      "exit": {
+        "station": "지게골역 부산2호선",
+        "line": "부산2호선",
+        "name": "지게골역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13504776649321,
+        "lng": 129.07513950920858
+      }
+    },
+    {
+      "complex": "두산위브더제니스 오션시티",
+      "dong": "117동",
+      "basis": "dong",
+      "lat": 35.1284722971862,
+      "lng": 129.075647218396,
+      "status": "ok",
+      "walkingMeters": 1006.2,
+      "walkingSeconds": 805,
+      "snapMeters": {
+        "start": 70.46079578,
+        "end": 5.974255291
+      },
+      "exit": {
+        "station": "지게골역 부산2호선",
+        "line": "부산2호선",
+        "name": "지게골역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13504776649321,
+        "lng": 129.07513950920858
+      }
+    },
+    {
+      "complex": "두산위브더제니스 오션시티",
+      "dong": "118동",
+      "basis": "dong",
+      "lat": 35.1279657989236,
+      "lng": 129.075755020157,
+      "status": "ok",
+      "walkingMeters": 1198.7,
+      "walkingSeconds": 959,
+      "snapMeters": {
+        "start": 73.94769123,
+        "end": 5.974255291
+      },
+      "exit": {
+        "station": "지게골역 부산2호선",
+        "line": "부산2호선",
+        "name": "지게골역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13504776649321,
+        "lng": 129.07513950920858
+      }
+    },
+    {
+      "complex": "두산위브더제니스 오션시티",
+      "dong": "119동",
+      "basis": "dong",
+      "lat": 35.1274418487439,
+      "lng": 129.075829470984,
+      "status": "ok",
+      "walkingMeters": 1198.7,
+      "walkingSeconds": 959,
+      "snapMeters": {
+        "start": 105.3855648,
+        "end": 5.974255291
+      },
+      "exit": {
+        "station": "지게골역 부산2호선",
+        "line": "부산2호선",
+        "name": "지게골역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13504776649321,
+        "lng": 129.07513950920858
+      }
+    },
+    {
+      "complex": "두산위브더제니스 오션시티",
+      "dong": "120동",
+      "basis": "dong",
+      "lat": 35.1269970891842,
+      "lng": 129.076015619843,
+      "status": "ok",
+      "walkingMeters": 1698.3,
+      "walkingSeconds": 1358.5,
+      "snapMeters": {
+        "start": 94.97908602,
+        "end": 5.974255291
+      },
+      "exit": {
+        "station": "지게골역 부산2호선",
+        "line": "부산2호선",
+        "name": "지게골역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13504776649321,
+        "lng": 129.07513950920858
+      }
+    },
+    {
+      "complex": "두산위브더제니스 오션시티",
+      "dong": "121동",
+      "basis": "dong",
+      "lat": 35.12690702134992,
+      "lng": 129.07548682914504,
+      "status": "ok",
+      "walkingMeters": 1400.4,
+      "walkingSeconds": 1120.3,
+      "snapMeters": {
+        "start": 73.23166287,
+        "end": 5.974255291
+      },
+      "exit": {
+        "station": "지게골역 부산2호선",
+        "line": "부산2호선",
+        "name": "지게골역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13504776649321,
+        "lng": 129.07513950920858
+      }
+    },
+    {
+      "complex": "두산위브더제니스 오션시티",
+      "dong": "122동",
+      "basis": "dong",
+      "lat": 35.1264016501531,
+      "lng": 129.075528846339,
+      "status": "ok",
+      "walkingMeters": 1669.7,
+      "walkingSeconds": 1335.6,
+      "snapMeters": {
+        "start": 43.79249886,
+        "end": 5.974255291
+      },
+      "exit": {
+        "station": "지게골역 부산2호선",
+        "line": "부산2호선",
+        "name": "지게골역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13504776649321,
+        "lng": 129.07513950920858
+      }
+    },
+    {
+      "complex": "두산위브더제니스 오션시티",
+      "dong": "123동",
+      "basis": "dong",
+      "lat": 35.1259704133898,
+      "lng": 129.074925590845,
+      "status": "ok",
+      "walkingMeters": 1480.1,
+      "walkingSeconds": 1184.1,
+      "snapMeters": {
+        "start": 33.70080228,
+        "end": 5.974255291
+      },
+      "exit": {
+        "station": "지게골역 부산2호선",
+        "line": "부산2호선",
+        "name": "지게골역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13504776649321,
+        "lng": 129.07513950920858
+      }
+    },
+    {
+      "complex": "두산위브더제니스 오션시티",
+      "dong": "201동",
+      "basis": "dong",
+      "lat": 35.1284783615971,
+      "lng": 129.079497506172,
+      "status": "ok",
+      "walkingMeters": 1335.4,
+      "walkingSeconds": 1068.4,
+      "snapMeters": {
+        "start": 48.61828568,
+        "end": 5.974255291
+      },
+      "exit": {
+        "station": "지게골역 부산2호선",
+        "line": "부산2호선",
+        "name": "지게골역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13504776649321,
+        "lng": 129.07513950920858
+      }
+    },
+    {
+      "complex": "문현동삼성아파트",
+      "dong": "101동",
+      "basis": "dong",
+      "lat": 35.14072017721324,
+      "lng": 129.06968517234247,
+      "status": "ok",
+      "walkingMeters": 462.4,
+      "walkingSeconds": 370.2,
+      "snapMeters": {
+        "start": 16.06103276,
+        "end": 2.286613554
+      },
+      "exit": {
+        "station": "문현역 부산2호선",
+        "line": "부산2호선",
+        "name": "문현역 부산2호선 4번출구",
+        "number": 4,
+        "lat": 35.13981329460177,
+        "lng": 129.06732876412633
+      }
+    },
+    {
+      "complex": "문현동삼성아파트",
+      "dong": "102동",
+      "basis": "dong",
+      "lat": 35.14046686984737,
+      "lng": 129.0695844101131,
+      "status": "ok",
+      "walkingMeters": 468.2,
+      "walkingSeconds": 374.7,
+      "snapMeters": {
+        "start": 26.55245528,
+        "end": 10.0106139
+      },
+      "exit": {
+        "station": "문현역 부산2호선",
+        "line": "부산2호선",
+        "name": "문현역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.1383887846003,
+        "lng": 129.067896106762
+      }
+    },
+    {
+      "complex": "문현동삼성아파트",
+      "dong": "103동",
+      "basis": "dong",
+      "lat": 35.14017013487863,
+      "lng": 129.06938820152254,
+      "status": "ok",
+      "walkingMeters": 381,
+      "walkingSeconds": 304.9,
+      "snapMeters": {
+        "start": 27.96740278,
+        "end": 10.0106139
+      },
+      "exit": {
+        "station": "문현역 부산2호선",
+        "line": "부산2호선",
+        "name": "문현역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.1383887846003,
+        "lng": 129.067896106762
+      }
+    },
+    {
+      "complex": "문현동삼성아파트",
+      "dong": "104동",
+      "basis": "dong",
+      "lat": 35.140290769229665,
+      "lng": 129.06897327411426,
+      "status": "ok",
+      "walkingMeters": 348.7,
+      "walkingSeconds": 279.1,
+      "snapMeters": {
+        "start": 51.74225931,
+        "end": 10.0106139
+      },
+      "exit": {
+        "station": "문현역 부산2호선",
+        "line": "부산2호선",
+        "name": "문현역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.1383887846003,
+        "lng": 129.067896106762
+      }
+    },
+    {
+      "complex": "문현동삼성아파트",
+      "dong": "105동",
+      "basis": "dong",
+      "lat": 35.13997081724582,
+      "lng": 129.06871175394414,
+      "status": "ok",
+      "walkingMeters": 324.3,
+      "walkingSeconds": 259.5,
+      "snapMeters": {
+        "start": 27.66702926,
+        "end": 10.0106139
+      },
+      "exit": {
+        "station": "문현역 부산2호선",
+        "line": "부산2호선",
+        "name": "문현역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.1383887846003,
+        "lng": 129.067896106762
+      }
+    },
+    {
+      "complex": "문현동삼성아파트",
+      "dong": "106동",
+      "basis": "dong",
+      "lat": 35.13970157203963,
+      "lng": 129.06848881904733,
+      "status": "ok",
+      "walkingMeters": 286.2,
+      "walkingSeconds": 228.9,
+      "snapMeters": {
+        "start": 15.00974983,
+        "end": 10.0106139
+      },
+      "exit": {
+        "station": "문현역 부산2호선",
+        "line": "부산2호선",
+        "name": "문현역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.1383887846003,
+        "lng": 129.067896106762
+      }
+    },
+    {
+      "complex": "문현동삼성아파트",
+      "dong": "107동",
+      "basis": "dong",
+      "lat": 35.139867597873675,
+      "lng": 129.06974257122238,
+      "status": "ok",
+      "walkingMeters": 402.2,
+      "walkingSeconds": 321.8,
+      "snapMeters": {
+        "start": 13.55914368,
+        "end": 10.0106139
+      },
+      "exit": {
+        "station": "문현역 부산2호선",
+        "line": "부산2호선",
+        "name": "문현역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.1383887846003,
+        "lng": 129.067896106762
+      }
+    },
+    {
+      "complex": "문현동삼성아파트",
+      "dong": "108동",
+      "basis": "dong",
+      "lat": 35.13953128677561,
+      "lng": 129.0695947290007,
+      "status": "ok",
+      "walkingMeters": 378.2,
+      "walkingSeconds": 302.7,
+      "snapMeters": {
+        "start": 45.37405623,
+        "end": 10.0106139
+      },
+      "exit": {
+        "station": "문현역 부산2호선",
+        "line": "부산2호선",
+        "name": "문현역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.1383887846003,
+        "lng": 129.067896106762
+      }
+    },
+    {
+      "complex": "문현동삼성아파트",
+      "dong": "109동",
+      "basis": "dong",
+      "lat": 35.139698215396365,
+      "lng": 129.0691074742742,
+      "status": "ok",
+      "walkingMeters": 341.2,
+      "walkingSeconds": 273,
+      "snapMeters": {
+        "start": 14.72662947,
+        "end": 10.0106139
+      },
+      "exit": {
+        "station": "문현역 부산2호선",
+        "line": "부산2호선",
+        "name": "문현역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.1383887846003,
+        "lng": 129.067896106762
+      }
+    },
+    {
+      "complex": "문현동삼성아파트",
+      "dong": "110동",
+      "basis": "dong",
+      "lat": 35.13934277761579,
+      "lng": 129.06886590140155,
+      "status": "ok",
+      "walkingMeters": 300.2,
+      "walkingSeconds": 240.2,
+      "snapMeters": {
+        "start": 34.89506994,
+        "end": 10.0106139
+      },
+      "exit": {
+        "station": "문현역 부산2호선",
+        "line": "부산2호선",
+        "name": "문현역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.1383887846003,
+        "lng": 129.067896106762
+      }
+    },
+    {
+      "complex": "문현동삼성아파트",
+      "dong": "111동",
+      "basis": "dong",
+      "lat": 35.13899370645804,
+      "lng": 129.0687791755404,
+      "status": "ok",
+      "walkingMeters": 199.8,
+      "walkingSeconds": 159.9,
+      "snapMeters": {
+        "start": 20.78628918,
+        "end": 10.0106139
+      },
+      "exit": {
+        "station": "문현역 부산2호선",
+        "line": "부산2호선",
+        "name": "문현역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.1383887846003,
+        "lng": 129.067896106762
+      }
+    },
+    {
+      "complex": "문현동삼성아파트",
+      "dong": "112동",
+      "basis": "dong",
+      "lat": 35.13913203059216,
+      "lng": 129.06933339535632,
+      "status": "ok",
+      "walkingMeters": 294.9,
+      "walkingSeconds": 235.9,
+      "snapMeters": {
+        "start": 60.79006737,
+        "end": 10.0106139
+      },
+      "exit": {
+        "station": "문현역 부산2호선",
+        "line": "부산2호선",
+        "name": "문현역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.1383887846003,
+        "lng": 129.067896106762
+      }
+    },
+    {
+      "complex": "문현동삼성아파트",
+      "dong": "113동",
+      "basis": "dong",
+      "lat": 35.13887635596143,
+      "lng": 129.0691601714666,
+      "status": "ok",
+      "walkingMeters": 177.1,
+      "walkingSeconds": 141.7,
+      "snapMeters": {
+        "start": 50.07653507,
+        "end": 10.0106139
+      },
+      "exit": {
+        "station": "문현역 부산2호선",
+        "line": "부산2호선",
+        "name": "문현역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.1383887846003,
+        "lng": 129.067896106762
+      }
+    },
+    {
+      "complex": "문현동삼성아파트",
+      "dong": "114동",
+      "basis": "dong",
+      "lat": 35.13843761973862,
+      "lng": 129.06904704034704,
+      "status": "ok",
+      "walkingMeters": 138.4,
+      "walkingSeconds": 110.8,
+      "snapMeters": {
+        "start": 28.04498511,
+        "end": 10.0106139
+      },
+      "exit": {
+        "station": "문현역 부산2호선",
+        "line": "부산2호선",
+        "name": "문현역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.1383887846003,
+        "lng": 129.067896106762
+      }
+    },
+    {
+      "complex": "문현베스티움아파트",
+      "dong": "101동",
+      "basis": "dong",
+      "lat": 35.1389522252261,
+      "lng": 129.07052133304,
+      "status": "ok",
+      "walkingMeters": 345.4,
+      "walkingSeconds": 276.3,
+      "snapMeters": {
+        "start": 30.64749473,
+        "end": 10.0106139
+      },
+      "exit": {
+        "station": "문현역 부산2호선",
+        "line": "부산2호선",
+        "name": "문현역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.1383887846003,
+        "lng": 129.067896106762
+      }
+    },
+    {
+      "complex": "문현베스티움아파트",
+      "dong": "102동",
+      "basis": "dong",
+      "lat": 35.13937612853345,
+      "lng": 129.07034228121955,
+      "status": "ok",
+      "walkingMeters": 307.3,
+      "walkingSeconds": 245.8,
+      "snapMeters": {
+        "start": 69.09799622,
+        "end": 10.0106139
+      },
+      "exit": {
+        "station": "문현역 부산2호선",
+        "line": "부산2호선",
+        "name": "문현역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.1383887846003,
+        "lng": 129.067896106762
+      }
+    },
+    {
+      "complex": "문현베스티움아파트",
+      "dong": "103동",
+      "basis": "dong",
+      "lat": 35.13968466463423,
+      "lng": 129.07048064613977,
+      "status": "ok",
+      "walkingMeters": 523.4,
+      "walkingSeconds": 418.7,
+      "snapMeters": {
+        "start": 60.34439334,
+        "end": 10.0106139
+      },
+      "exit": {
+        "station": "문현역 부산2호선",
+        "line": "부산2호선",
+        "name": "문현역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.1383887846003,
+        "lng": 129.067896106762
+      }
+    },
+    {
+      "complex": "문현베스티움아파트",
+      "dong": "104동",
+      "basis": "dong",
+      "lat": 35.14012763846961,
+      "lng": 129.0705039352402,
+      "status": "ok",
+      "walkingMeters": 426.6,
+      "walkingSeconds": 341.4,
+      "snapMeters": {
+        "start": 54.75976151,
+        "end": 10.0106139
+      },
+      "exit": {
+        "station": "문현역 부산2호선",
+        "line": "부산2호선",
+        "name": "문현역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.1383887846003,
+        "lng": 129.067896106762
+      }
+    },
+    {
+      "complex": "문현베스티움아파트",
+      "dong": "105동",
+      "basis": "dong",
+      "lat": 35.140504255022236,
+      "lng": 129.07050799060278,
+      "status": "ok",
+      "walkingMeters": 468.5,
+      "walkingSeconds": 374.9,
+      "snapMeters": {
+        "start": 57.75880217,
+        "end": 10.0106139
+      },
+      "exit": {
+        "station": "문현역 부산2호선",
+        "line": "부산2호선",
+        "name": "문현역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.1383887846003,
+        "lng": 129.067896106762
+      }
+    },
+    {
+      "complex": "문현베스티움아파트",
+      "dong": "106동",
+      "basis": "dong",
+      "lat": 35.1409224184908,
+      "lng": 129.070453856664,
+      "status": "ok",
+      "walkingMeters": 451,
+      "walkingSeconds": 360.9,
+      "snapMeters": {
+        "start": 42.87087007,
+        "end": 2.286613554
+      },
+      "exit": {
+        "station": "문현역 부산2호선",
+        "line": "부산2호선",
+        "name": "문현역 부산2호선 4번출구",
+        "number": 4,
+        "lat": 35.13981329460177,
+        "lng": 129.06732876412633
+      }
+    },
+    {
+      "complex": "문현베스티움아파트",
+      "dong": "107동",
+      "basis": "dong",
+      "lat": 35.1408772376681,
+      "lng": 129.070882764521,
+      "status": "ok",
+      "walkingMeters": 568.9,
+      "walkingSeconds": 455.3,
+      "snapMeters": {
+        "start": 25.06699187,
+        "end": 2.286613554
+      },
+      "exit": {
+        "station": "문현역 부산2호선",
+        "line": "부산2호선",
+        "name": "문현역 부산2호선 4번출구",
+        "number": 4,
+        "lat": 35.13981329460177,
+        "lng": 129.06732876412633
+      }
+    },
+    {
+      "complex": "문현베스티움아파트",
+      "dong": "108동",
+      "basis": "dong",
+      "lat": 35.1404135275295,
+      "lng": 129.070860044612,
+      "status": "ok",
+      "walkingMeters": 604.6,
+      "walkingSeconds": 483.9,
+      "snapMeters": {
+        "start": 26.6176259,
+        "end": 10.0106139
+      },
+      "exit": {
+        "station": "문현역 부산2호선",
+        "line": "부산2호선",
+        "name": "문현역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.1383887846003,
+        "lng": 129.067896106762
+      }
+    },
+    {
+      "complex": "문현베스티움아파트",
+      "dong": "109동",
+      "basis": "dong",
+      "lat": 35.1398972351104,
+      "lng": 129.070855739923,
+      "status": "ok",
+      "walkingMeters": 547.3,
+      "walkingSeconds": 437.9,
+      "snapMeters": {
+        "start": 26.34420012,
+        "end": 10.0106139
+      },
+      "exit": {
+        "station": "문현역 부산2호선",
+        "line": "부산2호선",
+        "name": "문현역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.1383887846003,
+        "lng": 129.067896106762
+      }
+    },
+    {
+      "complex": "문현베스티움아파트",
+      "dong": "110동",
+      "basis": "dong",
+      "lat": 35.1394062205121,
+      "lng": 129.070848784737,
+      "status": "ok",
+      "walkingMeters": 492.8,
+      "walkingSeconds": 394.3,
+      "snapMeters": {
+        "start": 26.435342,
+        "end": 10.0106139
+      },
+      "exit": {
+        "station": "문현역 부산2호선",
+        "line": "부산2호선",
+        "name": "문현역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.1383887846003,
+        "lng": 129.067896106762
+      }
+    },
+    {
+      "complex": "삼익그린타운",
+      "dong": "101동",
+      "basis": "dong",
+      "lat": 35.152440796791254,
+      "lng": 129.0882629402975,
+      "status": "ok",
+      "walkingMeters": 2394.5,
+      "walkingSeconds": 1915.3,
+      "snapMeters": {
+        "start": 12.90515324,
+        "end": 12.79466124
+      },
+      "exit": {
+        "station": "경성대.부경대역 부산2호선",
+        "line": "부산2호선",
+        "name": "경성대.부경대역 부산2호선 6번출구",
+        "number": 6,
+        "lat": 35.13729323514408,
+        "lng": 129.0996271549339
+      }
+    },
+    {
+      "complex": "삼익그린타운",
+      "dong": "102동",
+      "basis": "dong",
+      "lat": 35.15190605898964,
+      "lng": 129.08770834391785,
+      "status": "ok",
+      "walkingMeters": 3373.7,
+      "walkingSeconds": 2764.6,
+      "snapMeters": {
+        "start": 14.67107565,
+        "end": 12.22548104
+      },
+      "exit": {
+        "station": "못골역 부산2호선",
+        "line": "부산2호선",
+        "name": "못골역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.13483761442156,
+        "lng": 129.084754769063
+      }
+    },
+    {
+      "complex": "삼익그린타운",
+      "dong": "103동",
+      "basis": "dong",
+      "lat": 35.15170693018383,
+      "lng": 129.08728850842343,
+      "status": "ok",
+      "walkingMeters": 3292.3,
+      "walkingSeconds": 2699.7,
+      "snapMeters": {
+        "start": 14.90976968,
+        "end": 10.31477799
+      },
+      "exit": {
+        "station": "못골역 부산2호선",
+        "line": "부산2호선",
+        "name": "못골역 부산2호선 4번출구",
+        "number": 4,
+        "lat": 35.1347969640885,
+        "lng": 129.083974871271
+      }
+    },
+    {
+      "complex": "삼익그린타운",
+      "dong": "104동",
+      "basis": "dong",
+      "lat": 35.152712568948694,
+      "lng": 129.08750073078957,
+      "status": "ok",
+      "walkingMeters": 2952.2,
+      "walkingSeconds": 2427.8,
+      "snapMeters": {
+        "start": 22.40939147,
+        "end": 10.11197465
+      },
+      "exit": {
+        "station": "전포역 부산2호선",
+        "line": "부산2호선",
+        "name": "전포역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.15184602839845,
+        "lng": 129.06561431519256
+      }
+    },
+    {
+      "complex": "삼익그린타운",
+      "dong": "105동",
+      "basis": "dong",
+      "lat": 35.15236565806577,
+      "lng": 129.08708040779675,
+      "status": "ok",
+      "walkingMeters": 3009.8,
+      "walkingSeconds": 2473.7,
+      "snapMeters": {
+        "start": 20.37560896,
+        "end": 10.11197465
+      },
+      "exit": {
+        "station": "전포역 부산2호선",
+        "line": "부산2호선",
+        "name": "전포역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.15184602839845,
+        "lng": 129.06561431519256
+      }
+    },
+    {
+      "complex": "삼익그린타운",
+      "dong": "106동",
+      "basis": "dong",
+      "lat": 35.15194993499239,
+      "lng": 129.08694031574993,
+      "status": "ok",
+      "walkingMeters": 3119.3,
+      "walkingSeconds": 2561.3,
+      "snapMeters": {
+        "start": 12.44561862,
+        "end": 10.11998582
+      },
+      "exit": {
+        "station": "국제금융센터.부산은행역 부산2호선",
+        "line": "부산2호선",
+        "name": "국제금융센터.부산은행역 부산2호선 4번출구",
+        "number": 4,
+        "lat": 35.14693857792158,
+        "lng": 129.0669714116133
+      }
+    },
+    {
+      "complex": "신대연코오롱하늘채아파트",
+      "dong": "101동",
+      "basis": "dong",
+      "lat": 35.12448084834023,
+      "lng": 129.0940398758569,
+      "status": "ok",
+      "walkingMeters": 1417.9,
+      "walkingSeconds": 1134.2,
+      "snapMeters": {
+        "start": 34.51561041,
+        "end": 1.888229979
+      },
+      "exit": {
+        "station": "대연역 부산2호선",
+        "line": "부산2호선",
+        "name": "대연역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.13504158942585,
+        "lng": 129.09226338115568
+      }
+    },
+    {
+      "complex": "신대연코오롱하늘채아파트",
+      "dong": "102동",
+      "basis": "dong",
+      "lat": 35.12394794130016,
+      "lng": 129.09421488694426,
+      "status": "ok",
+      "walkingMeters": 1417.9,
+      "walkingSeconds": 1134.2,
+      "snapMeters": {
+        "start": 39.32556953,
+        "end": 1.888229979
+      },
+      "exit": {
+        "station": "대연역 부산2호선",
+        "line": "부산2호선",
+        "name": "대연역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.13504158942585,
+        "lng": 129.09226338115568
+      }
+    },
+    {
+      "complex": "신대연코오롱하늘채아파트",
+      "dong": "103동",
+      "basis": "dong",
+      "lat": 35.12351029262345,
+      "lng": 129.09404025183068,
+      "status": "ok",
+      "walkingMeters": 1470.9,
+      "walkingSeconds": 1176.7,
+      "snapMeters": {
+        "start": 68.45612557,
+        "end": 1.888229979
+      },
+      "exit": {
+        "station": "대연역 부산2호선",
+        "line": "부산2호선",
+        "name": "대연역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.13504158942585,
+        "lng": 129.09226338115568
+      }
+    },
+    {
+      "complex": "신대연코오롱하늘채아파트",
+      "dong": "104동",
+      "basis": "dong",
+      "lat": 35.123874440497346,
+      "lng": 129.09361851831162,
+      "status": "ok",
+      "walkingMeters": 1432.9,
+      "walkingSeconds": 1146.1,
+      "snapMeters": {
+        "start": 56.05927369,
+        "end": 1.888229979
+      },
+      "exit": {
+        "station": "대연역 부산2호선",
+        "line": "부산2호선",
+        "name": "대연역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.13504158942585,
+        "lng": 129.09226338115568
+      }
+    },
+    {
+      "complex": "신대연코오롱하늘채아파트",
+      "dong": "105동",
+      "basis": "dong",
+      "lat": 35.12369928538011,
+      "lng": 129.0931160706832,
+      "status": "ok",
+      "walkingMeters": 1446.5,
+      "walkingSeconds": 1157,
+      "snapMeters": {
+        "start": 30.44443888,
+        "end": 1.888229979
+      },
+      "exit": {
+        "station": "대연역 부산2호선",
+        "line": "부산2호선",
+        "name": "대연역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.13504158942585,
+        "lng": 129.09226338115568
+      }
+    },
+    {
+      "complex": "신대연코오롱하늘채아파트",
+      "dong": "106동",
+      "basis": "dong",
+      "lat": 35.123387903436544,
+      "lng": 129.09345689394954,
+      "status": "ok",
+      "walkingMeters": 1446.5,
+      "walkingSeconds": 1157,
+      "snapMeters": {
+        "start": 76.79352628,
+        "end": 1.888229979
+      },
+      "exit": {
+        "station": "대연역 부산2호선",
+        "line": "부산2호선",
+        "name": "대연역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.13504158942585,
+        "lng": 129.09226338115568
+      }
+    },
+    {
+      "complex": "신대연코오롱하늘채아파트",
+      "dong": "107동",
+      "basis": "dong",
+      "lat": 35.123120440801614,
+      "lng": 129.09386355192837,
+      "status": "ok",
+      "walkingMeters": 1566.1,
+      "walkingSeconds": 1252.8,
+      "snapMeters": {
+        "start": 69.48123677,
+        "end": 1.888229979
+      },
+      "exit": {
+        "station": "대연역 부산2호선",
+        "line": "부산2호선",
+        "name": "대연역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.13504158942585,
+        "lng": 129.09226338115568
+      }
+    },
+    {
+      "complex": "신대연코오롱하늘채아파트",
+      "dong": "108동",
+      "basis": "dong",
+      "lat": 35.122509388781694,
+      "lng": 129.09360660738767,
+      "status": "ok",
+      "walkingMeters": 1921.6,
+      "walkingSeconds": 1537.2,
+      "snapMeters": {
+        "start": 111.4796936,
+        "end": 1.888229979
+      },
+      "exit": {
+        "station": "대연역 부산2호선",
+        "line": "부산2호선",
+        "name": "대연역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.13504158942585,
+        "lng": 129.09226338115568
+      }
+    },
+    {
+      "complex": "신대연코오롱하늘채아파트",
+      "dong": "109동",
+      "basis": "dong",
+      "lat": 35.12283699319504,
+      "lng": 129.0932135558161,
+      "status": "ok",
+      "walkingMeters": 1631.5,
+      "walkingSeconds": 1305,
+      "snapMeters": {
+        "start": 108.7177346,
+        "end": 1.888229979
+      },
+      "exit": {
+        "station": "대연역 부산2호선",
+        "line": "부산2호선",
+        "name": "대연역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.13504158942585,
+        "lng": 129.09226338115568
+      }
+    },
+    {
+      "complex": "신대연코오롱하늘채아파트",
+      "dong": "110동",
+      "basis": "dong",
+      "lat": 35.123251677987795,
+      "lng": 129.09289182979506,
+      "status": "ok",
+      "walkingMeters": 1484.9,
+      "walkingSeconds": 1187.7,
+      "snapMeters": {
+        "start": 63.6304632,
+        "end": 1.888229979
+      },
+      "exit": {
+        "station": "대연역 부산2호선",
+        "line": "부산2호선",
+        "name": "대연역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.13504158942585,
+        "lng": 129.09226338115568
+      }
+    },
+    {
+      "complex": "신대연코오롱하늘채아파트",
+      "dong": "111동",
+      "basis": "dong",
+      "lat": 35.12278342007802,
+      "lng": 129.09271532335285,
+      "status": "ok",
+      "walkingMeters": 1635,
+      "walkingSeconds": 1307.9,
+      "snapMeters": {
+        "start": 62.98686238,
+        "end": 1.888229979
+      },
+      "exit": {
+        "station": "대연역 부산2호선",
+        "line": "부산2호선",
+        "name": "대연역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.13504158942585,
+        "lng": 129.09226338115568
+      }
+    },
+    {
+      "complex": "신대연코오롱하늘채아파트",
+      "dong": "112동",
+      "basis": "dong",
+      "lat": 35.122375119064934,
+      "lng": 129.0931370224224,
+      "status": "ok",
+      "walkingMeters": 1732.3,
+      "walkingSeconds": 1385.7,
+      "snapMeters": {
+        "start": 84.35088763,
+        "end": 1.888229979
+      },
+      "exit": {
+        "station": "대연역 부산2호선",
+        "line": "부산2호선",
+        "name": "대연역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.13504158942585,
+        "lng": 129.09226338115568
+      }
+    },
+    {
+      "complex": "신대연코오롱하늘채아파트",
+      "dong": "113동",
+      "basis": "dong",
+      "lat": 35.1219709984616,
+      "lng": 129.09357747017305,
+      "status": "ok",
+      "walkingMeters": 1889.4,
+      "walkingSeconds": 1511.4,
+      "snapMeters": {
+        "start": 54.91236544,
+        "end": 1.888229979
+      },
+      "exit": {
+        "station": "대연역 부산2호선",
+        "line": "부산2호선",
+        "name": "대연역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.13504158942585,
+        "lng": 129.09226338115568
+      }
+    },
+    {
+      "complex": "신대연코오롱하늘채아파트",
+      "dong": "114동",
+      "basis": "dong",
+      "lat": 35.121956776092354,
+      "lng": 129.09309670206432,
+      "status": "ok",
+      "walkingMeters": 1794,
+      "walkingSeconds": 1435.1,
+      "snapMeters": {
+        "start": 43.59687335,
+        "end": 1.888229979
+      },
+      "exit": {
+        "station": "대연역 부산2호선",
+        "line": "부산2호선",
+        "name": "대연역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.13504158942585,
+        "lng": 129.09226338115568
+      }
+    },
+    {
+      "complex": "신대연코오롱하늘채아파트",
+      "dong": "115동",
+      "basis": "dong",
+      "lat": 35.122324161294266,
+      "lng": 129.0925916965779,
+      "status": "ok",
+      "walkingMeters": 1701.5,
+      "walkingSeconds": 1361.1,
+      "snapMeters": {
+        "start": 39.12664956,
+        "end": 1.888229979
+      },
+      "exit": {
+        "station": "대연역 부산2호선",
+        "line": "부산2호선",
+        "name": "대연역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.13504158942585,
+        "lng": 129.09226338115568
+      }
+    },
+    {
+      "complex": "오륙도SK VIEW",
+      "dong": "101동",
+      "basis": "dong",
+      "lat": 35.10212276708163,
+      "lng": 129.1168262741956,
+      "status": "no-exit-nearby"
+    },
+    {
+      "complex": "오륙도SK VIEW",
+      "dong": "102동",
+      "basis": "dong",
+      "lat": 35.10294571713927,
+      "lng": 129.11629928259345,
+      "status": "no-exit-nearby"
+    },
+    {
+      "complex": "오륙도SK VIEW",
+      "dong": "103동",
+      "basis": "dong",
+      "lat": 35.10300388058464,
+      "lng": 129.1172514979024,
+      "status": "no-exit-nearby"
+    },
+    {
+      "complex": "오륙도SK VIEW",
+      "dong": "104동",
+      "basis": "dong",
+      "lat": 35.10341495942801,
+      "lng": 129.11848040835582,
+      "status": "no-exit-nearby"
+    },
+    {
+      "complex": "오륙도SK VIEW",
+      "dong": "105동",
+      "basis": "dong",
+      "lat": 35.10342588100187,
+      "lng": 129.11981410554932,
+      "status": "no-exit-nearby"
+    },
+    {
+      "complex": "오륙도SK VIEW",
+      "dong": "106동",
+      "basis": "dong",
+      "lat": 35.103998409627636,
+      "lng": 129.1201579043975,
+      "status": "no-exit-nearby"
+    },
+    {
+      "complex": "오륙도SK VIEW",
+      "dong": "107동",
+      "basis": "dong",
+      "lat": 35.104340313391404,
+      "lng": 129.12126991099208,
+      "status": "no-exit-nearby"
+    },
+    {
+      "complex": "오륙도SK VIEW",
+      "dong": "108동",
+      "basis": "dong",
+      "lat": 35.10347073941192,
+      "lng": 129.12157633989128,
+      "status": "no-exit-nearby"
+    },
+    {
+      "complex": "오륙도SK VIEW",
+      "dong": "109동",
+      "basis": "dong",
+      "lat": 35.10284958975699,
+      "lng": 129.12143632828005,
+      "status": "no-exit-nearby"
+    },
+    {
+      "complex": "오륙도SK VIEW",
+      "dong": "110동",
+      "basis": "dong",
+      "lat": 35.10191763799829,
+      "lng": 129.12154814309005,
+      "status": "no-exit-nearby"
+    },
+    {
+      "complex": "오륙도SK VIEW",
+      "dong": "111동",
+      "basis": "dong",
+      "lat": 35.10189157369003,
+      "lng": 129.12035991796984,
+      "status": "no-exit-nearby"
+    },
+    {
+      "complex": "오륙도SK VIEW",
+      "dong": "112동",
+      "basis": "dong",
+      "lat": 35.10258337315087,
+      "lng": 129.1198613667262,
+      "status": "no-exit-nearby"
+    },
+    {
+      "complex": "오륙도SK VIEW",
+      "dong": "113동",
+      "basis": "dong",
+      "lat": 35.10179355275054,
+      "lng": 129.11911171382053,
+      "status": "no-exit-nearby"
+    },
+    {
+      "complex": "오륙도SK VIEW",
+      "dong": "114동",
+      "basis": "dong",
+      "lat": 35.10259360886522,
+      "lng": 129.11834839723292,
+      "status": "no-exit-nearby"
+    },
+    {
+      "complex": "오륙도SK VIEW",
+      "dong": "115동",
+      "basis": "dong",
+      "lat": 35.101923427934516,
+      "lng": 129.1178683127205,
+      "status": "no-exit-nearby"
+    },
+    {
+      "complex": "용당현대I-PARK",
+      "dong": "101동",
+      "basis": "dong",
+      "lat": 35.11820669118717,
+      "lng": 129.09921170211402,
+      "status": "ok",
+      "walkingMeters": 2260.6,
+      "walkingSeconds": 1808.2,
+      "snapMeters": {
+        "start": 17.38082043,
+        "end": 1.888229979
+      },
+      "exit": {
+        "station": "대연역 부산2호선",
+        "line": "부산2호선",
+        "name": "대연역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.13504158942585,
+        "lng": 129.09226338115568
+      }
+    },
+    {
+      "complex": "용당현대I-PARK",
+      "dong": "102동",
+      "basis": "dong",
+      "lat": 35.11884393664542,
+      "lng": 129.09951650645095,
+      "status": "ok",
+      "walkingMeters": 2255.2,
+      "walkingSeconds": 1803.9,
+      "snapMeters": {
+        "start": 16.73832932,
+        "end": 1.888229979
+      },
+      "exit": {
+        "station": "대연역 부산2호선",
+        "line": "부산2호선",
+        "name": "대연역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.13504158942585,
+        "lng": 129.09226338115568
+      }
+    },
+    {
+      "complex": "용당현대I-PARK",
+      "dong": "103동",
+      "basis": "dong",
+      "lat": 35.118555445168155,
+      "lng": 129.09889929988316,
+      "status": "ok",
+      "walkingMeters": 2276.6,
+      "walkingSeconds": 1821,
+      "snapMeters": {
+        "start": 18.28037533,
+        "end": 1.888229979
+      },
+      "exit": {
+        "station": "대연역 부산2호선",
+        "line": "부산2호선",
+        "name": "대연역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.13504158942585,
+        "lng": 129.09226338115568
+      }
+    },
+    {
+      "complex": "용당현대I-PARK",
+      "dong": "104동",
+      "basis": "dong",
+      "lat": 35.11907594545252,
+      "lng": 129.09876459151906,
+      "status": "ok",
+      "walkingMeters": 2366.1,
+      "walkingSeconds": 1892.8,
+      "snapMeters": {
+        "start": 25.55236763,
+        "end": 1.888229979
+      },
+      "exit": {
+        "station": "대연역 부산2호선",
+        "line": "부산2호선",
+        "name": "대연역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.13504158942585,
+        "lng": 129.09226338115568
+      }
+    },
+    {
+      "complex": "용당현대I-PARK",
+      "dong": "105동",
+      "basis": "dong",
+      "lat": 35.119282433443516,
+      "lng": 129.0992776968152,
+      "status": "ok",
+      "walkingMeters": 2317.5,
+      "walkingSeconds": 1853.8,
+      "snapMeters": {
+        "start": 19.15776488,
+        "end": 1.888229979
+      },
+      "exit": {
+        "station": "대연역 부산2호선",
+        "line": "부산2호선",
+        "name": "대연역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.13504158942585,
+        "lng": 129.09226338115568
+      }
+    },
+    {
+      "complex": "용당현대I-PARK",
+      "dong": "106동",
+      "basis": "dong",
+      "lat": 35.119666591291605,
+      "lng": 129.09900239327627,
+      "status": "ok",
+      "walkingMeters": 2410.3,
+      "walkingSeconds": 1928,
+      "snapMeters": {
+        "start": 31.09786529,
+        "end": 1.888229979
+      },
+      "exit": {
+        "station": "대연역 부산2호선",
+        "line": "부산2호선",
+        "name": "대연역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.13504158942585,
+        "lng": 129.09226338115568
+      }
+    },
+    {
+      "complex": "용당현대I-PARK",
+      "dong": "107동",
+      "basis": "dong",
+      "lat": 35.12001739892378,
+      "lng": 129.09883152291104,
+      "status": "ok",
+      "walkingMeters": 2386.6,
+      "walkingSeconds": 1909,
+      "snapMeters": {
+        "start": 48.89342927,
+        "end": 1.888229979
+      },
+      "exit": {
+        "station": "대연역 부산2호선",
+        "line": "부산2호선",
+        "name": "대연역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.13504158942585,
+        "lng": 129.09226338115568
+      }
+    },
+    {
+      "complex": "LG메트로시티아파트",
+      "dong": "101동",
+      "basis": "dong",
+      "lat": 35.1256023915299,
+      "lng": 129.11207683439173,
+      "status": "ok",
+      "walkingMeters": 2133.5,
+      "walkingSeconds": 1706.7,
+      "snapMeters": {
+        "start": 15.92363523,
+        "end": 3.697913179
+      },
+      "exit": {
+        "station": "경성대.부경대역 부산2호선",
+        "line": "부산2호선",
+        "name": "경성대.부경대역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13789315070687,
+        "lng": 129.10140877549668
+      }
+    },
+    {
+      "complex": "LG메트로시티아파트",
+      "dong": "102동",
+      "basis": "dong",
+      "lat": 35.126434709995735,
+      "lng": 129.11266541260255,
+      "status": "ok",
+      "walkingMeters": 2056.5,
+      "walkingSeconds": 1645.2,
+      "snapMeters": {
+        "start": 6.721780389,
+        "end": 3.697913179
+      },
+      "exit": {
+        "station": "경성대.부경대역 부산2호선",
+        "line": "부산2호선",
+        "name": "경성대.부경대역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13789315070687,
+        "lng": 129.10140877549668
+      }
+    },
+    {
+      "complex": "LG메트로시티아파트",
+      "dong": "103동",
+      "basis": "dong",
+      "lat": 35.12611736994805,
+      "lng": 129.11205284181648,
+      "status": "ok",
+      "walkingMeters": 2077.4,
+      "walkingSeconds": 1661.8,
+      "snapMeters": {
+        "start": 1.203489615,
+        "end": 3.697913179
+      },
+      "exit": {
+        "station": "경성대.부경대역 부산2호선",
+        "line": "부산2호선",
+        "name": "경성대.부경대역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13789315070687,
+        "lng": 129.10140877549668
+      }
+    },
+    {
+      "complex": "LG메트로시티아파트",
+      "dong": "104동",
+      "basis": "dong",
+      "lat": 35.1259607970535,
+      "lng": 129.11136764642887,
+      "status": "ok",
+      "walkingMeters": 2066.2,
+      "walkingSeconds": 1652.9,
+      "snapMeters": {
+        "start": 17.16635769,
+        "end": 3.697913179
+      },
+      "exit": {
+        "station": "경성대.부경대역 부산2호선",
+        "line": "부산2호선",
+        "name": "경성대.부경대역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13789315070687,
+        "lng": 129.10140877549668
+      }
+    },
+    {
+      "complex": "LG메트로시티아파트",
+      "dong": "105동",
+      "basis": "dong",
+      "lat": 35.12680362470938,
+      "lng": 129.11202559473415,
+      "status": "ok",
+      "walkingMeters": 1982.4,
+      "walkingSeconds": 1585.9,
+      "snapMeters": {
+        "start": 10.85205566,
+        "end": 3.697913179
+      },
+      "exit": {
+        "station": "경성대.부경대역 부산2호선",
+        "line": "부산2호선",
+        "name": "경성대.부경대역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13789315070687,
+        "lng": 129.10140877549668
+      }
+    },
+    {
+      "complex": "LG메트로시티아파트",
+      "dong": "106동",
+      "basis": "dong",
+      "lat": 35.126477770744344,
+      "lng": 129.1113842850723,
+      "status": "ok",
+      "walkingMeters": 2012,
+      "walkingSeconds": 1609.5,
+      "snapMeters": {
+        "start": 7.936948775,
+        "end": 3.697913179
+      },
+      "exit": {
+        "station": "경성대.부경대역 부산2호선",
+        "line": "부산2호선",
+        "name": "경성대.부경대역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13789315070687,
+        "lng": 129.10140877549668
+      }
+    },
+    {
+      "complex": "LG메트로시티아파트",
+      "dong": "107동",
+      "basis": "dong",
+      "lat": 35.12628507155872,
+      "lng": 129.11075519241385,
+      "status": "ok",
+      "walkingMeters": 2025.3,
+      "walkingSeconds": 1620.2,
+      "snapMeters": {
+        "start": 17.47160841,
+        "end": 3.697913179
+      },
+      "exit": {
+        "station": "경성대.부경대역 부산2호선",
+        "line": "부산2호선",
+        "name": "경성대.부경대역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13789315070687,
+        "lng": 129.10140877549668
+      }
+    },
+    {
+      "complex": "LG메트로시티아파트",
+      "dong": "108동",
+      "basis": "dong",
+      "lat": 35.12709889281313,
+      "lng": 129.11152646357635,
+      "status": "ok",
+      "walkingMeters": 1923.8,
+      "walkingSeconds": 1539.2,
+      "snapMeters": {
+        "start": 11.52882392,
+        "end": 3.697913179
+      },
+      "exit": {
+        "station": "경성대.부경대역 부산2호선",
+        "line": "부산2호선",
+        "name": "경성대.부경대역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13789315070687,
+        "lng": 129.10140877549668
+      }
+    },
+    {
+      "complex": "LG메트로시티아파트",
+      "dong": "109동",
+      "basis": "dong",
+      "lat": 35.12744987123321,
+      "lng": 129.11217391218088,
+      "status": "ok",
+      "walkingMeters": 2116.5,
+      "walkingSeconds": 1693.5,
+      "snapMeters": {
+        "start": 3.321814449,
+        "end": 3.697913179
+      },
+      "exit": {
+        "station": "경성대.부경대역 부산2호선",
+        "line": "부산2호선",
+        "name": "경성대.부경대역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13789315070687,
+        "lng": 129.10140877549668
+      }
+    },
+    {
+      "complex": "LG메트로시티아파트",
+      "dong": "110동",
+      "basis": "dong",
+      "lat": 35.126989956556166,
+      "lng": 129.1127093735616,
+      "status": "ok",
+      "walkingMeters": 2152.6,
+      "walkingSeconds": 1722.2,
+      "snapMeters": {
+        "start": 20.16809948,
+        "end": 3.697913179
+      },
+      "exit": {
+        "station": "경성대.부경대역 부산2호선",
+        "line": "부산2호선",
+        "name": "경성대.부경대역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13789315070687,
+        "lng": 129.10140877549668
+      }
+    },
+    {
+      "complex": "LG메트로시티아파트",
+      "dong": "111동",
+      "basis": "dong",
+      "lat": 35.127411022587026,
+      "lng": 129.1130580921026,
+      "status": "ok",
+      "walkingMeters": 2174.7,
+      "walkingSeconds": 1739.8,
+      "snapMeters": {
+        "start": 0.916204363,
+        "end": 3.959399512
+      },
+      "exit": {
+        "station": "남천역 부산2호선",
+        "line": "부산2호선",
+        "name": "남천역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.141128214256895,
+        "lng": 129.10711990964924
+      }
+    },
+    {
+      "complex": "LG메트로시티아파트",
+      "dong": "112동",
+      "basis": "dong",
+      "lat": 35.126984434454116,
+      "lng": 129.11312933429585,
+      "status": "ok",
+      "walkingMeters": 2217.4,
+      "walkingSeconds": 1774,
+      "snapMeters": {
+        "start": 19.35585595,
+        "end": 3.959399512
+      },
+      "exit": {
+        "station": "남천역 부산2호선",
+        "line": "부산2호선",
+        "name": "남천역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.141128214256895,
+        "lng": 129.10711990964924
+      }
+    },
+    {
+      "complex": "LG메트로시티아파트",
+      "dong": "113동",
+      "basis": "dong",
+      "lat": 35.127503494853094,
+      "lng": 129.11364621702387,
+      "status": "ok",
+      "walkingMeters": 2176,
+      "walkingSeconds": 1740.9,
+      "snapMeters": {
+        "start": 14.14346624,
+        "end": 3.959399512
+      },
+      "exit": {
+        "station": "남천역 부산2호선",
+        "line": "부산2호선",
+        "name": "남천역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.141128214256895,
+        "lng": 129.10711990964924
+      }
+    },
+    {
+      "complex": "LG메트로시티아파트",
+      "dong": "114동",
+      "basis": "dong",
+      "lat": 35.12799673568615,
+      "lng": 129.11409333485298,
+      "status": "ok",
+      "walkingMeters": 2070.6,
+      "walkingSeconds": 1660.5,
+      "snapMeters": {
+        "start": 12.55953737,
+        "end": 3.959399512
+      },
+      "exit": {
+        "station": "남천역 부산2호선",
+        "line": "부산2호선",
+        "name": "남천역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.141128214256895,
+        "lng": 129.10711990964924
+      }
+    },
+    {
+      "complex": "LG메트로시티아파트",
+      "dong": "115동",
+      "basis": "dong",
+      "lat": 35.12798897791519,
+      "lng": 129.11360830933873,
+      "status": "ok",
+      "walkingMeters": 2158.4,
+      "walkingSeconds": 1726.8,
+      "snapMeters": {
+        "start": 12.97980615,
+        "end": 3.959399512
+      },
+      "exit": {
+        "station": "남천역 부산2호선",
+        "line": "부산2호선",
+        "name": "남천역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.141128214256895,
+        "lng": 129.10711990964924
+      }
+    },
+    {
+      "complex": "LG메트로시티아파트",
+      "dong": "116동",
+      "basis": "dong",
+      "lat": 35.12791298680968,
+      "lng": 129.11300525039044,
+      "status": "ok",
+      "walkingMeters": 2077.3,
+      "walkingSeconds": 1662.2,
+      "snapMeters": {
+        "start": 10.57891291,
+        "end": 3.697913179
+      },
+      "exit": {
+        "station": "경성대.부경대역 부산2호선",
+        "line": "부산2호선",
+        "name": "경성대.부경대역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.13789315070687,
+        "lng": 129.10140877549668
+      }
+    },
+    {
+      "complex": "LG메트로시티아파트",
+      "dong": "117동",
+      "basis": "dong",
+      "lat": 35.12822475929104,
+      "lng": 129.11249008932097,
+      "status": "ok",
+      "walkingMeters": 2051.9,
+      "walkingSeconds": 1641.7,
+      "snapMeters": {
+        "start": 9.966791679,
+        "end": 3.959399512
+      },
+      "exit": {
+        "station": "남천역 부산2호선",
+        "line": "부산2호선",
+        "name": "남천역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.141128214256895,
+        "lng": 129.10711990964924
+      }
+    },
+    {
+      "complex": "LG메트로시티아파트",
+      "dong": "118동",
+      "basis": "dong",
+      "lat": 35.128407806293886,
+      "lng": 129.11305204099347,
+      "status": "ok",
+      "walkingMeters": 2021.7,
+      "walkingSeconds": 1617.5,
+      "snapMeters": {
+        "start": 5.791611253,
+        "end": 3.959399512
+      },
+      "exit": {
+        "station": "남천역 부산2호선",
+        "line": "부산2호선",
+        "name": "남천역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.141128214256895,
+        "lng": 129.10711990964924
+      }
+    },
+    {
+      "complex": "LG메트로시티아파트",
+      "dong": "119동",
+      "basis": "dong",
+      "lat": 35.129097300415715,
+      "lng": 129.11304572745453,
+      "status": "ok",
+      "walkingMeters": 1893.1,
+      "walkingSeconds": 1518.3,
+      "snapMeters": {
+        "start": 6.88723432,
+        "end": 3.959399512
+      },
+      "exit": {
+        "station": "남천역 부산2호선",
+        "line": "부산2호선",
+        "name": "남천역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.141128214256895,
+        "lng": 129.10711990964924
+      }
+    },
+    {
+      "complex": "LG메트로시티아파트",
+      "dong": "120동",
+      "basis": "dong",
+      "lat": 35.129214282114795,
+      "lng": 129.1135719745658,
+      "status": "ok",
+      "walkingMeters": 1868.5,
+      "walkingSeconds": 1498.8,
+      "snapMeters": {
+        "start": 20.33459802,
+        "end": 3.959399512
+      },
+      "exit": {
+        "station": "남천역 부산2호선",
+        "line": "부산2호선",
+        "name": "남천역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.141128214256895,
+        "lng": 129.10711990964924
+      }
+    },
+    {
+      "complex": "LG메트로시티아파트",
+      "dong": "121동",
+      "basis": "dong",
+      "lat": 35.129639446995185,
+      "lng": 129.1139438486985,
+      "status": "ok",
+      "walkingMeters": 1810.4,
+      "walkingSeconds": 1452.3,
+      "snapMeters": {
+        "start": 20.54748462,
+        "end": 3.959399512
+      },
+      "exit": {
+        "station": "남천역 부산2호선",
+        "line": "부산2호선",
+        "name": "남천역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.141128214256895,
+        "lng": 129.10711990964924
+      }
+    },
+    {
+      "complex": "LG메트로시티아파트",
+      "dong": "122동",
+      "basis": "dong",
+      "lat": 35.13014893783713,
+      "lng": 129.11438920706587,
+      "status": "ok",
+      "walkingMeters": 1741,
+      "walkingSeconds": 1396.8,
+      "snapMeters": {
+        "start": 21.05917689,
+        "end": 3.959399512
+      },
+      "exit": {
+        "station": "남천역 부산2호선",
+        "line": "부산2호선",
+        "name": "남천역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.141128214256895,
+        "lng": 129.10711990964924
+      }
+    },
+    {
+      "complex": "LG메트로시티아파트",
+      "dong": "123동",
+      "basis": "dong",
+      "lat": 35.13057730872936,
+      "lng": 129.1143191126095,
+      "status": "ok",
+      "walkingMeters": 1709.9,
+      "walkingSeconds": 1371.8,
+      "snapMeters": {
+        "start": 6.751208711,
+        "end": 3.959399512
+      },
+      "exit": {
+        "station": "남천역 부산2호선",
+        "line": "부산2호선",
+        "name": "남천역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.141128214256895,
+        "lng": 129.10711990964924
+      }
+    },
+    {
+      "complex": "LG메트로시티아파트",
+      "dong": "124동",
+      "basis": "dong",
+      "lat": 35.13050504127674,
+      "lng": 129.1137611039512,
+      "status": "ok",
+      "walkingMeters": 1697.4,
+      "walkingSeconds": 1361.9,
+      "snapMeters": {
+        "start": 3.885978352,
+        "end": 3.959399512
+      },
+      "exit": {
+        "station": "남천역 부산2호선",
+        "line": "부산2호선",
+        "name": "남천역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.141128214256895,
+        "lng": 129.10711990964924
+      }
+    },
+    {
+      "complex": "LG메트로시티아파트",
+      "dong": "125동",
+      "basis": "dong",
+      "lat": 35.130028378505564,
+      "lng": 129.1133451157186,
+      "status": "ok",
+      "walkingMeters": 1762.5,
+      "walkingSeconds": 1413.9,
+      "snapMeters": {
+        "start": 3.885978353,
+        "end": 3.959399512
+      },
+      "exit": {
+        "station": "남천역 부산2호선",
+        "line": "부산2호선",
+        "name": "남천역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.141128214256895,
+        "lng": 129.10711990964924
+      }
+    },
+    {
+      "complex": "LG메트로시티아파트",
+      "dong": "126동",
+      "basis": "dong",
+      "lat": 35.12952660785045,
+      "lng": 129.1129219021598,
+      "status": "ok",
+      "walkingMeters": 1830.2,
+      "walkingSeconds": 1468.1,
+      "snapMeters": {
+        "start": 2.895805627,
+        "end": 3.959399512
+      },
+      "exit": {
+        "station": "남천역 부산2호선",
+        "line": "부산2호선",
+        "name": "남천역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.141128214256895,
+        "lng": 129.10711990964924
+      }
+    },
+    {
+      "complex": "LG메트로시티아파트",
+      "dong": "127동",
+      "basis": "dong",
+      "lat": 35.12978965439202,
+      "lng": 129.11220363994389,
+      "status": "ok",
+      "walkingMeters": 1800.9,
+      "walkingSeconds": 1444.6,
+      "snapMeters": {
+        "start": 0.8615064555,
+        "end": 3.959399512
+      },
+      "exit": {
+        "station": "남천역 부산2호선",
+        "line": "부산2호선",
+        "name": "남천역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.141128214256895,
+        "lng": 129.10711990964924
+      }
+    },
+    {
+      "complex": "LG메트로시티아파트",
+      "dong": "128동",
+      "basis": "dong",
+      "lat": 35.130241368078366,
+      "lng": 129.1126036188017,
+      "status": "ok",
+      "walkingMeters": 1807.5,
+      "walkingSeconds": 1449.8,
+      "snapMeters": {
+        "start": 6.355862039,
+        "end": 3.959399512
+      },
+      "exit": {
+        "station": "남천역 부산2호선",
+        "line": "부산2호선",
+        "name": "남천역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.141128214256895,
+        "lng": 129.10711990964924
+      }
+    },
+    {
+      "complex": "LG메트로시티아파트",
+      "dong": "129동",
+      "basis": "dong",
+      "lat": 35.13078541945843,
+      "lng": 129.1130827734184,
+      "status": "ok",
+      "walkingMeters": 1882.1,
+      "walkingSeconds": 1509.3,
+      "snapMeters": {
+        "start": 5.16460614,
+        "end": 3.959399512
+      },
+      "exit": {
+        "station": "남천역 부산2호선",
+        "line": "부산2호선",
+        "name": "남천역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.141128214256895,
+        "lng": 129.10711990964924
+      }
+    },
+    {
+      "complex": "LG메트로시티아파트",
+      "dong": "130동",
+      "basis": "dong",
+      "lat": 35.13094424002574,
+      "lng": 129.11369018898046,
+      "status": "ok",
+      "walkingMeters": 1939.7,
+      "walkingSeconds": 1555.5,
+      "snapMeters": {
+        "start": 13.06149161,
+        "end": 3.959399512
+      },
+      "exit": {
+        "station": "남천역 부산2호선",
+        "line": "부산2호선",
+        "name": "남천역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.141128214256895,
+        "lng": 129.10711990964924
+      }
+    },
+    {
+      "complex": "광안쌍용예가디오션",
+      "dong": "101동",
+      "basis": "dong",
+      "lat": 35.15600733223976,
+      "lng": 129.11465893452097,
+      "status": "ok",
+      "walkingMeters": 211.4,
+      "walkingSeconds": 169.1,
+      "snapMeters": {
+        "start": 41.77005826,
+        "end": 5.735374668
+      },
+      "exit": {
+        "station": "광안역 부산2호선",
+        "line": "부산2호선",
+        "name": "광안역 부산2호선 5번출구",
+        "number": 5,
+        "lat": 35.15684924862086,
+        "lng": 129.11304469092207
+      }
+    },
+    {
+      "complex": "광안쌍용예가디오션",
+      "dong": "102동",
+      "basis": "dong",
+      "lat": 35.15529265194384,
+      "lng": 129.1141982387724,
+      "status": "ok",
+      "walkingMeters": 203.3,
+      "walkingSeconds": 162.6,
+      "snapMeters": {
+        "start": 47.07113785,
+        "end": 5.735374668
+      },
+      "exit": {
+        "station": "광안역 부산2호선",
+        "line": "부산2호선",
+        "name": "광안역 부산2호선 5번출구",
+        "number": 5,
+        "lat": 35.15684924862086,
+        "lng": 129.11304469092207
+      }
+    },
+    {
+      "complex": "광안쌍용예가디오션",
+      "dong": "103동",
+      "basis": "dong",
+      "lat": 35.15518154403195,
+      "lng": 129.1148844388152,
+      "status": "ok",
+      "walkingMeters": 370.2,
+      "walkingSeconds": 296.2,
+      "snapMeters": {
+        "start": 57.47495007,
+        "end": 5.735374668
+      },
+      "exit": {
+        "station": "광안역 부산2호선",
+        "line": "부산2호선",
+        "name": "광안역 부산2호선 5번출구",
+        "number": 5,
+        "lat": 35.15684924862086,
+        "lng": 129.11304469092207
+      }
+    },
+    {
+      "complex": "광안쌍용예가디오션",
+      "dong": "104동",
+      "basis": "dong",
+      "lat": 35.15505866485792,
+      "lng": 129.11552205292472,
+      "status": "ok",
+      "walkingMeters": 429.3,
+      "walkingSeconds": 343.4,
+      "snapMeters": {
+        "start": 58.29825288,
+        "end": 5.735374668
+      },
+      "exit": {
+        "station": "광안역 부산2호선",
+        "line": "부산2호선",
+        "name": "광안역 부산2호선 5번출구",
+        "number": 5,
+        "lat": 35.15684924862086,
+        "lng": 129.11304469092207
+      }
+    },
+    {
+      "complex": "광안쌍용예가디오션",
+      "dong": "105동",
+      "basis": "dong",
+      "lat": 35.15492462847762,
+      "lng": 129.11612755573273,
+      "status": "ok",
+      "walkingMeters": 486.5,
+      "walkingSeconds": 389.1,
+      "snapMeters": {
+        "start": 57.39328432,
+        "end": 5.735374668
+      },
+      "exit": {
+        "station": "광안역 부산2호선",
+        "line": "부산2호선",
+        "name": "광안역 부산2호선 5번출구",
+        "number": 5,
+        "lat": 35.15684924862086,
+        "lng": 129.11304469092207
+      }
+    },
+    {
+      "complex": "광안쌍용예가디오션",
+      "dong": "106동",
+      "basis": "dong",
+      "lat": 35.15480764595939,
+      "lng": 129.1166852194458,
+      "status": "ok",
+      "walkingMeters": 586.3,
+      "walkingSeconds": 468.9,
+      "snapMeters": {
+        "start": 41.63707754,
+        "end": 6.671296017
+      },
+      "exit": {
+        "station": "광안역 부산2호선",
+        "line": "부산2호선",
+        "name": "광안역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.15754934201723,
+        "lng": 129.1132054495269
+      }
+    },
+    {
+      "complex": "광안자이아파트",
+      "dong": "101동",
+      "basis": "dong",
+      "lat": 35.155219632124144,
+      "lng": 129.10975575589518,
+      "status": "ok",
+      "walkingMeters": 443.6,
+      "walkingSeconds": 354.8,
+      "snapMeters": {
+        "start": 56.3960813,
+        "end": 8.324300753
+      },
+      "exit": {
+        "station": "광안역 부산2호선",
+        "line": "부산2호선",
+        "name": "광안역 부산2호선 6번출구",
+        "number": 6,
+        "lat": 35.156934334240916,
+        "lng": 129.11281646359697
+      }
+    },
+    {
+      "complex": "광안자이아파트",
+      "dong": "102동",
+      "basis": "dong",
+      "lat": 35.15469498744541,
+      "lng": 129.10961053588255,
+      "status": "ok",
+      "walkingMeters": 484.7,
+      "walkingSeconds": 387.6,
+      "snapMeters": {
+        "start": 60.19328489,
+        "end": 8.324300753
+      },
+      "exit": {
+        "station": "광안역 부산2호선",
+        "line": "부산2호선",
+        "name": "광안역 부산2호선 6번출구",
+        "number": 6,
+        "lat": 35.156934334240916,
+        "lng": 129.11281646359697
+      }
+    },
+    {
+      "complex": "광안자이아파트",
+      "dong": "103동",
+      "basis": "dong",
+      "lat": 35.154133739470204,
+      "lng": 129.10949728994785,
+      "status": "ok",
+      "walkingMeters": 470.4,
+      "walkingSeconds": 376.2,
+      "snapMeters": {
+        "start": 63.77303882,
+        "end": 5.536947139
+      },
+      "exit": {
+        "station": "금련산역 부산2호선",
+        "line": "부산2호선",
+        "name": "금련산역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.15053054509809,
+        "lng": 129.1110708874872
+      }
+    },
+    {
+      "complex": "광안자이아파트",
+      "dong": "104동",
+      "basis": "dong",
+      "lat": 35.153734558175884,
+      "lng": 129.10954732981213,
+      "status": "ok",
+      "walkingMeters": 436.4,
+      "walkingSeconds": 349,
+      "snapMeters": {
+        "start": 46.06717762,
+        "end": 5.536947139
+      },
+      "exit": {
+        "station": "금련산역 부산2호선",
+        "line": "부산2호선",
+        "name": "금련산역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.15053054509809,
+        "lng": 129.1110708874872
+      }
+    },
+    {
+      "complex": "광안자이아파트",
+      "dong": "105동",
+      "basis": "dong",
+      "lat": 35.15391015859841,
+      "lng": 129.10877831130162,
+      "status": "ok",
+      "walkingMeters": 668,
+      "walkingSeconds": 534.2,
+      "snapMeters": {
+        "start": 55.08848782,
+        "end": 5.536947139
+      },
+      "exit": {
+        "station": "금련산역 부산2호선",
+        "line": "부산2호선",
+        "name": "금련산역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.15053054509809,
+        "lng": 129.1110708874872
+      }
+    },
+    {
+      "complex": "광안자이아파트",
+      "dong": "106동",
+      "basis": "dong",
+      "lat": 35.1542736916524,
+      "lng": 129.10870540249377,
+      "status": "ok",
+      "walkingMeters": 682.4,
+      "walkingSeconds": 545.8,
+      "snapMeters": {
+        "start": 93.43302399,
+        "end": 5.536947139
+      },
+      "exit": {
+        "station": "금련산역 부산2호선",
+        "line": "부산2호선",
+        "name": "금련산역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.15053054509809,
+        "lng": 129.1110708874872
+      }
+    },
+    {
+      "complex": "광안자이아파트",
+      "dong": "107동",
+      "basis": "dong",
+      "lat": 35.15467215021671,
+      "lng": 129.10874860579847,
+      "status": "ok",
+      "walkingMeters": 495.7,
+      "walkingSeconds": 396.4,
+      "snapMeters": {
+        "start": 137.9898058,
+        "end": 8.324300753
+      },
+      "exit": {
+        "station": "광안역 부산2호선",
+        "line": "부산2호선",
+        "name": "광안역 부산2호선 6번출구",
+        "number": 6,
+        "lat": 35.156934334240916,
+        "lng": 129.11281646359697
+      }
+    },
+    {
+      "complex": "광안자이아파트",
+      "dong": "108동",
+      "basis": "dong",
+      "lat": 35.15512080549511,
+      "lng": 129.10885894078388,
+      "status": "ok",
+      "walkingMeters": 445.1,
+      "walkingSeconds": 355.9,
+      "snapMeters": {
+        "start": 133.4018974,
+        "end": 8.324300753
+      },
+      "exit": {
+        "station": "광안역 부산2호선",
+        "line": "부산2호선",
+        "name": "광안역 부산2호선 6번출구",
+        "number": 6,
+        "lat": 35.156934334240916,
+        "lng": 129.11281646359697
+      }
+    },
+    {
+      "complex": "남천자이아파트",
+      "dong": "101동",
+      "basis": "dong",
+      "lat": 35.14101739130072,
+      "lng": 129.11358425010488,
+      "status": "ok",
+      "walkingMeters": 567.9,
+      "walkingSeconds": 454.6,
+      "snapMeters": {
+        "start": 51.07011154,
+        "end": 5.352786707
+      },
+      "exit": {
+        "station": "남천역 부산2호선",
+        "line": "부산2호선",
+        "name": "남천역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.142748725593506,
+        "lng": 129.1087634405819
+      }
+    },
+    {
+      "complex": "남천자이아파트",
+      "dong": "102동",
+      "basis": "dong",
+      "lat": 35.14082322832794,
+      "lng": 129.11283322701033,
+      "status": "ok",
+      "walkingMeters": 516.6,
+      "walkingSeconds": 413,
+      "snapMeters": {
+        "start": 39.71210324,
+        "end": 5.352786707
+      },
+      "exit": {
+        "station": "남천역 부산2호선",
+        "line": "부산2호선",
+        "name": "남천역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.142748725593506,
+        "lng": 129.1087634405819
+      }
+    },
+    {
+      "complex": "남천자이아파트",
+      "dong": "103동",
+      "basis": "dong",
+      "lat": 35.14030369602528,
+      "lng": 129.1136864696671,
+      "status": "ok",
+      "walkingMeters": 825.9,
+      "walkingSeconds": 660.7,
+      "snapMeters": {
+        "start": 98.90403848,
+        "end": 3.959399512
+      },
+      "exit": {
+        "station": "남천역 부산2호선",
+        "line": "부산2호선",
+        "name": "남천역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.141128214256895,
+        "lng": 129.10711990964924
+      }
+    },
+    {
+      "complex": "남천자이아파트",
+      "dong": "104동",
+      "basis": "dong",
+      "lat": 35.14017296835505,
+      "lng": 129.11291515187742,
+      "status": "ok",
+      "walkingMeters": 456.2,
+      "walkingSeconds": 364.7,
+      "snapMeters": {
+        "start": 80.06309662,
+        "end": 5.352786707
+      },
+      "exit": {
+        "station": "남천역 부산2호선",
+        "line": "부산2호선",
+        "name": "남천역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.142748725593506,
+        "lng": 129.1087634405819
+      }
+    },
+    {
+      "complex": "남천자이아파트",
+      "dong": "105동",
+      "basis": "dong",
+      "lat": 35.140095324529504,
+      "lng": 129.11220006085213,
+      "status": "ok",
+      "walkingMeters": 438.2,
+      "walkingSeconds": 350.4,
+      "snapMeters": {
+        "start": 37.92737621,
+        "end": 5.352786707
+      },
+      "exit": {
+        "station": "남천역 부산2호선",
+        "line": "부산2호선",
+        "name": "남천역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.142748725593506,
+        "lng": 129.1087634405819
+      }
+    },
+    {
+      "complex": "남천자이아파트",
+      "dong": "106동",
+      "basis": "dong",
+      "lat": 35.13976877941138,
+      "lng": 129.1128388801033,
+      "status": "ok",
+      "walkingMeters": 720.6,
+      "walkingSeconds": 576.4,
+      "snapMeters": {
+        "start": 76.76095052,
+        "end": 3.959399512
+      },
+      "exit": {
+        "station": "남천역 부산2호선",
+        "line": "부산2호선",
+        "name": "남천역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.141128214256895,
+        "lng": 129.10711990964924
+      }
+    },
+    {
+      "complex": "남천자이아파트",
+      "dong": "107동",
+      "basis": "dong",
+      "lat": 35.13959090543082,
+      "lng": 129.11218702530894,
+      "status": "ok",
+      "walkingMeters": 525,
+      "walkingSeconds": 419.8,
+      "snapMeters": {
+        "start": 64.17837046,
+        "end": 3.959399512
+      },
+      "exit": {
+        "station": "남천역 부산2호선",
+        "line": "부산2호선",
+        "name": "남천역 부산2호선 3번출구",
+        "number": 3,
+        "lat": 35.141128214256895,
+        "lng": 129.10711990964924
+      }
+    },
+    {
+      "complex": "남천코오롱하늘채골든비치",
+      "dong": "101동",
+      "basis": "dong",
+      "lat": 35.143456748319544,
+      "lng": 129.1129682347003,
+      "status": "ok",
+      "walkingMeters": 828.3,
+      "walkingSeconds": 662.9,
+      "snapMeters": {
+        "start": 35.71088979,
+        "end": 5.352786707
+      },
+      "exit": {
+        "station": "남천역 부산2호선",
+        "line": "부산2호선",
+        "name": "남천역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.142748725593506,
+        "lng": 129.1087634405819
+      }
+    },
+    {
+      "complex": "남천코오롱하늘채골든비치",
+      "dong": "102동",
+      "basis": "dong",
+      "lat": 35.14292642339708,
+      "lng": 129.1130971446783,
+      "status": "ok",
+      "walkingMeters": 796.5,
+      "walkingSeconds": 637.2,
+      "snapMeters": {
+        "start": 38.57972047,
+        "end": 5.352786707
+      },
+      "exit": {
+        "station": "남천역 부산2호선",
+        "line": "부산2호선",
+        "name": "남천역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.142748725593506,
+        "lng": 129.1087634405819
+      }
+    },
+    {
+      "complex": "남천코오롱하늘채골든비치",
+      "dong": "103동",
+      "basis": "dong",
+      "lat": 35.142358456704265,
+      "lng": 129.11316254613808,
+      "status": "ok",
+      "walkingMeters": 716.4,
+      "walkingSeconds": 573.1,
+      "snapMeters": {
+        "start": 19.61954191,
+        "end": 5.352786707
+      },
+      "exit": {
+        "station": "남천역 부산2호선",
+        "line": "부산2호선",
+        "name": "남천역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.142748725593506,
+        "lng": 129.1087634405819
+      }
+    },
+    {
+      "complex": "남천코오롱하늘채골든비치",
+      "dong": "104동",
+      "basis": "dong",
+      "lat": 35.143360773401184,
+      "lng": 129.11247754556172,
+      "status": "ok",
+      "walkingMeters": 741.5,
+      "walkingSeconds": 593.4,
+      "snapMeters": {
+        "start": 28.75457756,
+        "end": 5.352786707
+      },
+      "exit": {
+        "station": "남천역 부산2호선",
+        "line": "부산2호선",
+        "name": "남천역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.142748725593506,
+        "lng": 129.1087634405819
+      }
+    },
+    {
+      "complex": "남천코오롱하늘채골든비치",
+      "dong": "105동",
+      "basis": "dong",
+      "lat": 35.14281101496057,
+      "lng": 129.11258401448558,
+      "status": "ok",
+      "walkingMeters": 660.7,
+      "walkingSeconds": 528.7,
+      "snapMeters": {
+        "start": 33.65147788,
+        "end": 5.352786707
+      },
+      "exit": {
+        "station": "남천역 부산2호선",
+        "line": "부산2호선",
+        "name": "남천역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.142748725593506,
+        "lng": 129.1087634405819
+      }
+    },
+    {
+      "complex": "남천코오롱하늘채골든비치",
+      "dong": "106동",
+      "basis": "dong",
+      "lat": 35.14228440630341,
+      "lng": 129.11265487692913,
+      "status": "ok",
+      "walkingMeters": 604.6,
+      "walkingSeconds": 483.9,
+      "snapMeters": {
+        "start": 30.77176067,
+        "end": 5.352786707
+      },
+      "exit": {
+        "station": "남천역 부산2호선",
+        "line": "부산2호선",
+        "name": "남천역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.142748725593506,
+        "lng": 129.1087634405819
+      }
+    },
+    {
+      "complex": "남천코오롱하늘채골든비치",
+      "dong": "107동",
+      "basis": "dong",
+      "lat": 35.14175977300892,
+      "lng": 129.11276747852514,
+      "status": "ok",
+      "walkingMeters": 629.4,
+      "walkingSeconds": 503.6,
+      "snapMeters": {
+        "start": 27.16541943,
+        "end": 5.352786707
+      },
+      "exit": {
+        "station": "남천역 부산2호선",
+        "line": "부산2호선",
+        "name": "남천역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.142748725593506,
+        "lng": 129.1087634405819
+      }
+    },
+    {
+      "complex": "남천코오롱하늘채골든비치",
+      "dong": "108동",
+      "basis": "dong",
+      "lat": 35.14331630487339,
+      "lng": 129.11182362431813,
+      "status": "ok",
+      "walkingMeters": 796.9,
+      "walkingSeconds": 637.6,
+      "snapMeters": {
+        "start": 28.41763108,
+        "end": 5.352786707
+      },
+      "exit": {
+        "station": "남천역 부산2호선",
+        "line": "부산2호선",
+        "name": "남천역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.142748725593506,
+        "lng": 129.1087634405819
+      }
+    },
+    {
+      "complex": "남천코오롱하늘채골든비치",
+      "dong": "109동",
+      "basis": "dong",
+      "lat": 35.14276678680938,
+      "lng": 129.11170958912845,
+      "status": "ok",
+      "walkingMeters": 777.6,
+      "walkingSeconds": 622.3,
+      "snapMeters": {
+        "start": 18.0529822,
+        "end": 5.352786707
+      },
+      "exit": {
+        "station": "남천역 부산2호선",
+        "line": "부산2호선",
+        "name": "남천역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.142748725593506,
+        "lng": 129.1087634405819
+      }
+    },
+    {
+      "complex": "남천코오롱하늘채골든비치",
+      "dong": "110동",
+      "basis": "dong",
+      "lat": 35.142223391433056,
+      "lng": 129.11181293586034,
+      "status": "ok",
+      "walkingMeters": 613.1,
+      "walkingSeconds": 490.6,
+      "snapMeters": {
+        "start": 34.02107495,
+        "end": 5.352786707
+      },
+      "exit": {
+        "station": "남천역 부산2호선",
+        "line": "부산2호선",
+        "name": "남천역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.142748725593506,
+        "lng": 129.1087634405819
+      }
+    },
+    {
+      "complex": "남천코오롱하늘채골든비치",
+      "dong": "111동",
+      "basis": "dong",
+      "lat": 35.141684958578686,
+      "lng": 129.11189007987647,
+      "status": "ok",
+      "walkingMeters": 614,
+      "walkingSeconds": 491.3,
+      "snapMeters": {
+        "start": 26.08070813,
+        "end": 5.352786707
+      },
+      "exit": {
+        "station": "남천역 부산2호선",
+        "line": "부산2호선",
+        "name": "남천역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.142748725593506,
+        "lng": 129.1087634405819
+      }
+    },
+    {
+      "complex": "남천코오롱하늘채골든비치",
+      "dong": "112동",
+      "basis": "dong",
+      "lat": 35.14221149166222,
+      "lng": 129.1114099997638,
+      "status": "ok",
+      "walkingMeters": 687,
+      "walkingSeconds": 549.8,
+      "snapMeters": {
+        "start": 21.51754955,
+        "end": 5.352786707
+      },
+      "exit": {
+        "station": "남천역 부산2호선",
+        "line": "부산2호선",
+        "name": "남천역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.142748725593506,
+        "lng": 129.1087634405819
+      }
+    },
+    {
+      "complex": "남천코오롱하늘채골든비치",
+      "dong": "113동",
+      "basis": "dong",
+      "lat": 35.14167426787782,
+      "lng": 129.11152118695256,
+      "status": "ok",
+      "walkingMeters": 646,
+      "walkingSeconds": 517,
+      "snapMeters": {
+        "start": 22.90669987,
+        "end": 5.352786707
+      },
+      "exit": {
+        "station": "남천역 부산2호선",
+        "line": "부산2호선",
+        "name": "남천역 부산2호선 1번출구",
+        "number": 1,
+        "lat": 35.142748725593506,
+        "lng": 129.1087634405819
+      }
+    },
+    {
+      "complex": "드파인 광안",
+      "dong": "101동",
+      "basis": "dong",
+      "lat": 35.15547356441484,
+      "lng": 129.11049089459414,
+      "status": "ok",
+      "walkingMeters": 439.2,
+      "walkingSeconds": 351.3,
+      "snapMeters": {
+        "start": 54.16995875,
+        "end": 8.324300753
+      },
+      "exit": {
+        "station": "광안역 부산2호선",
+        "line": "부산2호선",
+        "name": "광안역 부산2호선 6번출구",
+        "number": 6,
+        "lat": 35.156934334240916,
+        "lng": 129.11281646359697
+      }
+    },
+    {
+      "complex": "드파인 광안",
+      "dong": "102동",
+      "basis": "dong",
+      "lat": 35.15533198787219,
+      "lng": 129.1112202045732,
+      "status": "ok",
+      "walkingMeters": 278.5,
+      "walkingSeconds": 222.8,
+      "snapMeters": {
+        "start": 39.39740163,
+        "end": 8.324300753
+      },
+      "exit": {
+        "station": "광안역 부산2호선",
+        "line": "부산2호선",
+        "name": "광안역 부산2호선 6번출구",
+        "number": 6,
+        "lat": 35.156934334240916,
+        "lng": 129.11281646359697
+      }
+    },
+    {
+      "complex": "드파인 광안",
+      "dong": "103동",
+      "basis": "dong",
+      "lat": 35.156011847416714,
+      "lng": 129.1114045607564,
+      "status": "ok",
+      "walkingMeters": 201.4,
+      "walkingSeconds": 160.9,
+      "snapMeters": {
+        "start": 38.77397414,
+        "end": 8.324300753
+      },
+      "exit": {
+        "station": "광안역 부산2호선",
+        "line": "부산2호선",
+        "name": "광안역 부산2호선 6번출구",
+        "number": 6,
+        "lat": 35.156934334240916,
+        "lng": 129.11281646359697
+      }
+    },
+    {
+      "complex": "드파인 광안",
+      "dong": "104동",
+      "basis": "dong",
+      "lat": 35.1560776383093,
+      "lng": 129.1104735841699,
+      "status": "ok",
+      "walkingMeters": 270.8,
+      "walkingSeconds": 216.4,
+      "snapMeters": {
+        "start": 62.0365845,
+        "end": 8.324300753
+      },
+      "exit": {
+        "station": "광안역 부산2호선",
+        "line": "부산2호선",
+        "name": "광안역 부산2호선 6번출구",
+        "number": 6,
+        "lat": 35.156934334240916,
+        "lng": 129.11281646359697
+      }
+    },
+    {
+      "complex": "드파인 광안",
+      "dong": "105동",
+      "basis": "dong",
+      "lat": 35.15620781204387,
+      "lng": 129.10982955866726,
+      "status": "ok",
+      "walkingMeters": 346.1,
+      "walkingSeconds": 276.7,
+      "snapMeters": {
+        "start": 53.07287793,
+        "end": 8.324300753
+      },
+      "exit": {
+        "station": "광안역 부산2호선",
+        "line": "부산2호선",
+        "name": "광안역 부산2호선 6번출구",
+        "number": 6,
+        "lat": 35.156934334240916,
+        "lng": 129.11281646359697
+      }
+    },
+    {
+      "complex": "드파인 광안",
+      "dong": "106동",
+      "basis": "dong",
+      "lat": 35.156100114525316,
+      "lng": 129.10928692109317,
+      "status": "ok",
+      "walkingMeters": 381.1,
+      "walkingSeconds": 304.8,
+      "snapMeters": {
+        "start": 68.99488449,
+        "end": 8.324300753
+      },
+      "exit": {
+        "station": "광안역 부산2호선",
+        "line": "부산2호선",
+        "name": "광안역 부산2호선 6번출구",
+        "number": 6,
+        "lat": 35.156934334240916,
+        "lng": 129.11281646359697
+      }
+    },
+    {
+      "complex": "드파인 광안",
+      "dong": "107동",
+      "basis": "dong",
+      "lat": 35.15590627359338,
+      "lng": 129.10851602432749,
+      "status": "ok",
+      "walkingMeters": 497,
+      "walkingSeconds": 397.5,
+      "snapMeters": {
+        "start": 68.12503342,
+        "end": 8.324300753
+      },
+      "exit": {
+        "station": "광안역 부산2호선",
+        "line": "부산2호선",
+        "name": "광안역 부산2호선 6번출구",
+        "number": 6,
+        "lat": 35.156934334240916,
+        "lng": 129.11281646359697
+      }
+    },
+    {
+      "complex": "드파인 광안",
+      "dong": "108동",
+      "basis": "dong",
+      "lat": 35.15531932155118,
+      "lng": 129.10806745671917,
+      "status": "ok",
+      "walkingMeters": 505.3,
+      "walkingSeconds": 404.2,
+      "snapMeters": {
+        "start": 133.1458016,
+        "end": 8.324300753
+      },
+      "exit": {
+        "station": "광안역 부산2호선",
+        "line": "부산2호선",
+        "name": "광안역 부산2호선 6번출구",
+        "number": 6,
+        "lat": 35.156934334240916,
+        "lng": 129.11281646359697
+      }
+    },
+    {
+      "complex": "드파인 광안",
+      "dong": "109동",
+      "basis": "dong",
+      "lat": 35.15575702601192,
+      "lng": 129.10777151884864,
+      "status": "ok",
+      "walkingMeters": 505.3,
+      "walkingSeconds": 404.2,
+      "snapMeters": {
+        "start": 96.2299662,
+        "end": 8.324300753
+      },
+      "exit": {
+        "station": "광안역 부산2호선",
+        "line": "부산2호선",
+        "name": "광안역 부산2호선 6번출구",
+        "number": 6,
+        "lat": 35.156934334240916,
+        "lng": 129.11281646359697
+      }
+    },
+    {
+      "complex": "드파인 광안",
+      "dong": "110동",
+      "basis": "dong",
+      "lat": 35.1559750504336,
+      "lng": 129.10730861185,
+      "status": "ok",
+      "walkingMeters": 508.4,
+      "walkingSeconds": 406.7,
+      "snapMeters": {
+        "start": 107.2571311,
+        "end": 8.324300753
+      },
+      "exit": {
+        "station": "광안역 부산2호선",
+        "line": "부산2호선",
+        "name": "광안역 부산2호선 6번출구",
+        "number": 6,
+        "lat": 35.156934334240916,
+        "lng": 129.11281646359697
+      }
+    },
+    {
+      "complex": "망미동the#파크리치",
+      "dong": "101동",
+      "basis": "dong",
+      "lat": 35.172718493840804,
+      "lng": 129.10564892343345,
+      "status": "ok",
+      "walkingMeters": 231.2,
+      "walkingSeconds": 185.1,
+      "snapMeters": {
+        "start": 20.10358527,
+        "end": 5.682014558
+      },
+      "exit": {
+        "station": "망미역 부산3호선",
+        "line": "부산3호선",
+        "name": "망미역 부산3호선 8번출구",
+        "number": 8,
+        "lat": 35.1718621065769,
+        "lng": 129.107375121043
+      }
+    },
+    {
+      "complex": "망미동the#파크리치",
+      "dong": "102동",
+      "basis": "dong",
+      "lat": 35.17260722679779,
+      "lng": 129.10645051423643,
+      "status": "ok",
+      "walkingMeters": 146.6,
+      "walkingSeconds": 117.3,
+      "snapMeters": {
+        "start": 21.61785453,
+        "end": 5.682014558
+      },
+      "exit": {
+        "station": "망미역 부산3호선",
+        "line": "부산3호선",
+        "name": "망미역 부산3호선 8번출구",
+        "number": 8,
+        "lat": 35.1718621065769,
+        "lng": 129.107375121043
+      }
+    },
+    {
+      "complex": "망미동the#파크리치",
+      "dong": "103동",
+      "basis": "dong",
+      "lat": 35.17251384100639,
+      "lng": 129.107052821232,
+      "status": "ok",
+      "walkingMeters": 118.6,
+      "walkingSeconds": 94.8,
+      "snapMeters": {
+        "start": 12.77563206,
+        "end": 5.682014558
+      },
+      "exit": {
+        "station": "망미역 부산3호선",
+        "line": "부산3호선",
+        "name": "망미역 부산3호선 8번출구",
+        "number": 8,
+        "lat": 35.1718621065769,
+        "lng": 129.107375121043
+      }
+    },
+    {
+      "complex": "망미동the#파크리치",
+      "dong": "104동",
+      "basis": "dong",
+      "lat": 35.17314180532116,
+      "lng": 129.10721609462095,
+      "status": "ok",
+      "walkingMeters": 149.3,
+      "walkingSeconds": 119.4,
+      "snapMeters": {
+        "start": 22.93762887,
+        "end": 5.682014558
+      },
+      "exit": {
+        "station": "망미역 부산3호선",
+        "line": "부산3호선",
+        "name": "망미역 부산3호선 8번출구",
+        "number": 8,
+        "lat": 35.1718621065769,
+        "lng": 129.107375121043
+      }
+    },
+    {
+      "complex": "망미동the#파크리치",
+      "dong": "105동",
+      "basis": "dong",
+      "lat": 35.173326705213995,
+      "lng": 129.10585996701838,
+      "status": "ok",
+      "walkingMeters": 308.4,
+      "walkingSeconds": 246.7,
+      "snapMeters": {
+        "start": 29.18438639,
+        "end": 5.682014558
+      },
+      "exit": {
+        "station": "망미역 부산3호선",
+        "line": "부산3호선",
+        "name": "망미역 부산3호선 8번출구",
+        "number": 8,
+        "lat": 35.1718621065769,
+        "lng": 129.107375121043
+      }
+    },
+    {
+      "complex": "해운대벽산1차아파트",
+      "dong": "101동",
+      "basis": "dong",
+      "lat": 35.170044580005595,
+      "lng": 129.17895201442732,
+      "status": "ok",
+      "walkingMeters": 155.2,
+      "walkingSeconds": 124,
+      "snapMeters": {
+        "start": 19.95987582,
+        "end": 14.76685993
+      },
+      "exit": {
+        "station": "장산역 부산2호선",
+        "line": "부산2호선",
+        "name": "장산역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.17051505519542,
+        "lng": 129.17789566007508
+      }
+    },
+    {
+      "complex": "해운대벽산1차아파트",
+      "dong": "102동",
+      "basis": "dong",
+      "lat": 35.17050238468482,
+      "lng": 129.17915079909127,
+      "status": "ok",
+      "walkingMeters": 99.3,
+      "walkingSeconds": 79.3,
+      "snapMeters": {
+        "start": 41.28863043,
+        "end": 14.76685993
+      },
+      "exit": {
+        "station": "장산역 부산2호선",
+        "line": "부산2호선",
+        "name": "장산역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.17051505519542,
+        "lng": 129.17789566007508
+      }
+    },
+    {
+      "complex": "해운대벽산1차아파트",
+      "dong": "103동",
+      "basis": "dong",
+      "lat": 35.17045074754068,
+      "lng": 129.17956644948038,
+      "status": "ok",
+      "walkingMeters": 279.2,
+      "walkingSeconds": 223.3,
+      "snapMeters": {
+        "start": 21.04212785,
+        "end": 14.76685993
+      },
+      "exit": {
+        "station": "장산역 부산2호선",
+        "line": "부산2호선",
+        "name": "장산역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.17051505519542,
+        "lng": 129.17789566007508
+      }
+    },
+    {
+      "complex": "해운대벽산1차아파트",
+      "dong": "104동",
+      "basis": "dong",
+      "lat": 35.17081210876783,
+      "lng": 129.17981643853926,
+      "status": "ok",
+      "walkingMeters": 298.6,
+      "walkingSeconds": 238.8,
+      "snapMeters": {
+        "start": 22.9509701,
+        "end": 14.76685993
+      },
+      "exit": {
+        "station": "장산역 부산2호선",
+        "line": "부산2호선",
+        "name": "장산역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.17051505519542,
+        "lng": 129.17789566007508
+      }
+    },
+    {
+      "complex": "해운대벽산1차아파트",
+      "dong": "105동",
+      "basis": "dong",
+      "lat": 35.170801182679405,
+      "lng": 129.18032316805005,
+      "status": "ok",
+      "walkingMeters": 318.6,
+      "walkingSeconds": 254.8,
+      "snapMeters": {
+        "start": 19.41107942,
+        "end": 14.76685993
+      },
+      "exit": {
+        "station": "장산역 부산2호선",
+        "line": "부산2호선",
+        "name": "장산역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.17051505519542,
+        "lng": 129.17789566007508
+      }
+    },
+    {
+      "complex": "해운대벽산1차아파트",
+      "dong": "106동",
+      "basis": "dong",
+      "lat": 35.17070776160342,
+      "lng": 129.18070697441343,
+      "status": "ok",
+      "walkingMeters": 569.3,
+      "walkingSeconds": 455.4,
+      "snapMeters": {
+        "start": 31.5588731,
+        "end": 14.76685993
+      },
+      "exit": {
+        "station": "장산역 부산2호선",
+        "line": "부산2호선",
+        "name": "장산역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.17051505519542,
+        "lng": 129.17789566007508
+      }
+    },
+    {
+      "complex": "해운대벽산1차아파트",
+      "dong": "107동",
+      "basis": "dong",
+      "lat": 35.170194407314476,
+      "lng": 129.18089080091366,
+      "status": "ok",
+      "walkingMeters": 327.7,
+      "walkingSeconds": 262,
+      "snapMeters": {
+        "start": 31.17201604,
+        "end": 14.76685993
+      },
+      "exit": {
+        "station": "장산역 부산2호선",
+        "line": "부산2호선",
+        "name": "장산역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.17051505519542,
+        "lng": 129.17789566007508
+      }
+    },
+    {
+      "complex": "해운대벽산1차아파트",
+      "dong": "108동",
+      "basis": "dong",
+      "lat": 35.16966504591309,
+      "lng": 129.18101274137078,
+      "status": "ok",
+      "walkingMeters": 376.6,
+      "walkingSeconds": 301.3,
+      "snapMeters": {
+        "start": 16.98637144,
+        "end": 14.76685993
+      },
+      "exit": {
+        "station": "장산역 부산2호선",
+        "line": "부산2호선",
+        "name": "장산역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.17051505519542,
+        "lng": 129.17789566007508
+      }
+    },
+    {
+      "complex": "해운대벽산1차아파트",
+      "dong": "109동",
+      "basis": "dong",
+      "lat": 35.16967602609771,
+      "lng": 129.18030299535607,
+      "status": "ok",
+      "walkingMeters": 312,
+      "walkingSeconds": 249.5,
+      "snapMeters": {
+        "start": 15.87437283,
+        "end": 14.76685993
+      },
+      "exit": {
+        "station": "장산역 부산2호선",
+        "line": "부산2호선",
+        "name": "장산역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.17051505519542,
+        "lng": 129.17789566007508
+      }
+    },
+    {
+      "complex": "해운대벽산1차아파트",
+      "dong": "110동",
+      "basis": "dong",
+      "lat": 35.16990514378782,
+      "lng": 129.17988989354674,
+      "status": "ok",
+      "walkingMeters": 222.2,
+      "walkingSeconds": 177.6,
+      "snapMeters": {
+        "start": 34.94288182,
+        "end": 14.76685993
+      },
+      "exit": {
+        "station": "장산역 부산2호선",
+        "line": "부산2호선",
+        "name": "장산역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.17051505519542,
+        "lng": 129.17789566007508
+      }
+    },
+    {
+      "complex": "해운대벽산1차아파트",
+      "dong": "111동",
+      "basis": "dong",
+      "lat": 35.17017171689267,
+      "lng": 129.17999907344995,
+      "status": "ok",
+      "walkingMeters": 245.3,
+      "walkingSeconds": 196.1,
+      "snapMeters": {
+        "start": 13.84476209,
+        "end": 14.76685993
+      },
+      "exit": {
+        "station": "장산역 부산2호선",
+        "line": "부산2호선",
+        "name": "장산역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.17051505519542,
+        "lng": 129.17789566007508
+      }
+    },
+    {
+      "complex": "해운대벽산1차아파트",
+      "dong": "112동",
+      "basis": "dong",
+      "lat": 35.16992692048923,
+      "lng": 129.1794811310452,
+      "status": "ok",
+      "walkingMeters": 190.8,
+      "walkingSeconds": 152.5,
+      "snapMeters": {
+        "start": 14.74487487,
+        "end": 14.76685993
+      },
+      "exit": {
+        "station": "장산역 부산2호선",
+        "line": "부산2호선",
+        "name": "장산역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.17051505519542,
+        "lng": 129.17789566007508
+      }
+    },
+    {
+      "complex": "해운대벽산1차아파트",
+      "dong": "113동",
+      "basis": "dong",
+      "lat": 35.16952542636124,
+      "lng": 129.17930799275362,
+      "status": "ok",
+      "walkingMeters": 173.7,
+      "walkingSeconds": 138.8,
+      "snapMeters": {
+        "start": 27.80915862,
+        "end": 14.76685993
+      },
+      "exit": {
+        "station": "장산역 부산2호선",
+        "line": "부산2호선",
+        "name": "장산역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.17051505519542,
+        "lng": 129.17789566007508
       }
     }
   ]

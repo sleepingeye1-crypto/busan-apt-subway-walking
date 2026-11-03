@@ -16,6 +16,8 @@ create table if not exists complexes (
   lng           double precision,
   source        text
 );
+-- 공공데이터상의 동 수. 좌표가 있는 동 수보다 많으면 화면에서 "동별 좌표 없음" 동이 있다고 알린다
+alter table complexes add column if not exists building_count integer;
 
 -- 단지 안 동별 좌표 (없는 단지는 행이 없다)
 create table if not exists dongs (

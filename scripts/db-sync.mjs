@@ -42,20 +42,26 @@ const guDongOf = (jibun) => {
 // 같은 도로명 주소는 한 번만 넣는다 (동 좌표 쪽을 우선)
 export async function syncComplexes(db = client()) {
   const dongData = await readJson("data/dong-coordinates.json");
-  const rows = dongData.complexes.map((c) => ({
-    name: c.name,
-    kapt_code: null,
-    ...guDongOf(c.jibunAddress),
-    households: null,
-    address: c.address ?? null,
-    jibun_address: c.jibunAddress ?? null,
-    lat: c.lat ?? null,
-    lng: c.lng ?? null,
-    source: dongData.source ?? null,
-  }));
+  const listData = existsSync("data/complexes.json") ? await readJson("data/complexes.json") : null;
+  // 동 좌표를 모은 단지에 단지 목록의 세대수·단지 코드를 합친다 (이름 또는 도로명 주소가 같으면 같은 단지)
+  const listed = (c) => listData?.complexes.find((l) => l.name === c.name || (c.address && l.roadAddress === c.address));
+  const rows = dongData.complexes.map((c) => {
+    const l = listed(c);
+    return {
+      name: c.name,
+      kapt_code: l?.kaptCode ?? null,
+      ...(l ? { gu: l.gu ?? null, dong: l.dong ?? null } : guDongOf(c.jibunAddress)),
+      households: l?.households ?? null,
+      building_count: l?.buildingCount || null, // 0이면 모르는 값으로 본다
+      address: c.address ?? null,
+      jibun_address: c.jibunAddress ?? null,
+      lat: c.lat ?? null,
+      lng: c.lng ?? null,
+      source: dongData.source ?? null,
+    };
+  });
 
-  if (existsSync("data/complexes.json")) {
-    const listData = await readJson("data/complexes.json");
+  if (listData) {
     const seenAddress = new Set(dongData.complexes.map((c) => c.address));
     for (const c of listData.complexes) {
       if (seenAddress.has(c.roadAddress) || rows.some((r) => r.name === c.name)) continue;
@@ -65,6 +71,7 @@ export async function syncComplexes(db = client()) {
         gu: c.gu ?? null,
         dong: c.dong ?? null,
         households: c.households ?? null,
+        building_count: c.buildingCount || null,
         address: c.roadAddress ?? null,
         jibun_address: c.jibunAddress ?? null,
         lat: c.lat,
@@ -72,8 +79,8 @@ export async function syncComplexes(db = client()) {
         source: listData.source ?? null,
       });
     }
-    await saveMeta(db, "complexes", listData);
   }
+  if (listData) await saveMeta(db, "complexes", listData);
   await upsertRows(db, "complexes", rows, "name");
   await saveMeta(db, "dongs", dongData);
   return rows.length;
