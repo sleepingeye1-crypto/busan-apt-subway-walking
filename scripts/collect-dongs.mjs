@@ -103,11 +103,19 @@ async function findDongs(kakaoName) {
   return dongs;
 }
 
+// 같은 동 이름이 두 번 이상 나오면 카카오에서 이름이 같은 다른 단지의 동이 섞인 것이다.
+// 어느 쪽이 이 단지의 동인지 알 수 없으므로 추측하지 않고 동 좌표를 쓰지 않는다 (단지 대표 위치로 계산)
+function hasDuplicateDongs(entry) {
+  const labels = entry.dongs.map((d) => d.dong);
+  return new Set(labels).size !== labels.length;
+}
+
 async function collectAuto(c) {
   const main = await findKakaoComplex(c);
   if (!main) return null;
   const dongs = await findDongs(main.place_name);
   if (dongs.length === 0) return null;
+  if (hasDuplicateDongs({ dongs })) return null;
   return {
     name: c.name,
     kakaoName: main.place_name,
@@ -141,7 +149,8 @@ async function collectAllAuto(curated) {
       await writeFile(CACHE_FILE, JSON.stringify(cache));
       console.log(`  [${i + 1}/${list.length}] ${c.name}: ${cache[c.name] ? `동 ${cache[c.name].dongCount}개` : "카카오에 동 정보 없음 → 단지 대표 위치"}`);
     }
-    if (cache[c.name]) found.push(cache[c.name]);
+    // 이미 캐시에 있던 결과도 같은 규칙으로 거른다
+    if (cache[c.name] && !hasDuplicateDongs(cache[c.name])) found.push(cache[c.name]);
     else noCoord++;
   }
   console.log(`동 좌표를 찾은 단지 ${found.length}개, 못 찾은 단지 ${noCoord}개`);
