@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 우리 동에서 지하철까지
 
-## Getting Started
+부산 **해운대구·수영구·남구**의 700세대 이상 아파트를 검색하면, 단지 안 **동마다** 가장 가까운 지하철 입구까지의 **실제 도보 거리**와 시간을 보여주는 웹 앱입니다.
 
-First, run the development server:
+부동산 서비스는 보통 아파트 **정문** 기준 거리만 알려줍니다. 하지만 대단지는 동마다 위치 차이가 커서, "내가 살 동"이 지하철 입구까지 얼마나 걸리는지는 알기 어렵습니다. 이 앱은 동별로 따로 계산해서 보여줍니다.
+
+- 서비스 주소: https://my-app-rho-olive.vercel.app
+
+## 주요 기능
+
+- **아파트 검색**: 이름 일부만 입력해도 찾고, 구·동 이름을 함께 보여줍니다. 빈칸으로 검색하면 전체 목록이 나옵니다.
+- **동별 도보 거리**: 동마다 가장 가까운 지하철 입구 1개까지의 거리(10m 단위)와 도보 시간(분당 60m 기준)을 보여줍니다. 동 순·거리 순으로 정렬할 수 있습니다.
+- **지도**: 카카오맵에 동과 지하철 입구 위치를 표시합니다.
+- **솔직한 표시**
+  - 동 좌표가 없는 단지는 "동별 좌표 없음 · 단지 대표 위치 기준"으로 표시합니다.
+  - 대상이 아닌 단지, 가장 가까운 입구까지 1.5km 초과, 길찾기 서버 실패는 다른 값으로 대신하지 않고 **"불가능"**으로 표시합니다.
+  - 도보 거리가 아직 계산되지 않은 단지는 목록에서 **"정보 없음"**으로 먼저 알려주고, 눌러 들어갈 수 없게 합니다.
+
+대상은 2·3호선과 동해선 지하철 입구입니다. 회원가입·로그인, 시세·매물 가격, 결제 기능은 만들지 않았습니다. 개인정보는 다루지 않습니다.
+
+## 현재 상태와 한계
+
+- 95개 대상 단지 중 **26개 단지**의 도보 거리가 계산되어 있습니다. 나머지는 "정보 없음"으로 보입니다.
+- 도보 거리의 **오차 50m 이내 검증은 하지 않았습니다**(예외 처리). 지도 데이터가 다르면 실제와 차이가 날 수 있으며, 출입구 위치도 실제와 다를 수 있습니다.
+- 자세한 점검 내용은 [PLAN.md](PLAN.md)의 성공 기준을 참고하세요.
+
+## 사용한 기술
+
+| 구분 | 내용 |
+|---|---|
+| 화면·서버 | Next.js 16 (App Router), TypeScript, Tailwind CSS |
+| 데이터 저장 | Supabase (PostgreSQL) — 화면은 읽기 전용 키만 사용 |
+| 배포 | Vercel |
+| 지도 · 장소 검색 | 카카오맵, 카카오 장소 검색 (지하철 출구·아파트 동 좌표) |
+| 단지 정보 | 공공데이터포털 공동주택 단지 API (이름·세대수) |
+| 도보 거리 | OpenStreetMap 도보 길찾기 서버 (routing.openstreetmap.de) |
+
+도보 거리는 화면에서 실시간으로 부르지 않고, 스크립트로 **미리 계산해서 DB에 저장**합니다. (무료 공개 서버라 짧은 시간에 많이 부르면 막히기 때문입니다.)
+
+## 직접 실행해 보기
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+cp .env.example .env   # 값을 채웁니다 (아래 표 참고)
+npm run dev            # http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+| 환경 변수 | 용도 | 어디서 쓰나 |
+|---|---|---|
+| `SUPABASE_URL`, `SUPABASE_ANON_KEY` | DB 읽기 | 화면(서버) |
+| `NEXT_PUBLIC_KAKAO_MAP_JS_KEY` | 지도 표시 (브라우저 공개용 키) | 화면(브라우저) |
+| `KAKAO_REST_API_KEY`, `DATA_GO_KR_SERVICE_KEY` | 데이터 수집 | `scripts/` |
+| `SUPABASE_SERVICE_ROLE_KEY` | DB 쓰기 | `scripts/` 전용 |
+| `SUPABASE_ACCESS_TOKEN`, `VERCEL_TOKEN`, `GITHUB_TOKEN` | 관리·배포 도구 | 내 컴퓨터 전용 |
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+비밀 키가 든 `.env` 파일은 저장소에 올리지 않습니다.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 데이터 모으기 (선택)
 
-## Learn More
+```bash
+node scripts/collect-all.mjs     # 단지 목록 → 동 좌표 → 도보 거리 계산
+node scripts/calc-walking.mjs    # 도보 거리만 이어서 계산 (15초에 1건, 서버가 막히면 멈추고 이어서 가능)
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 폴더 구조
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+app/        화면 (/ 검색, /complex/[id] 단지)
+lib/        검색 규칙, 거리 규칙, DB 읽기 연결
+scripts/    데이터 수집·계산 스크립트
+supabase/   DB 표 설계 (schema.sql)
+data/       수집 결과 JSON 백업
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 문서
 
-## Deploy on Vercel
+- [PRD.md](PRD.md) — 무엇을 왜 만드는지 (기획서)
+- [PLAN.md](PLAN.md) — 만드는 순서와 성공 기준
+- [DESIGN.md](DESIGN.md) — 화면 구성, 데이터 흐름, 기술 선택
+- [CLAUDE.md](CLAUDE.md) — AI와 함께 작업할 때 지킨 규칙
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 출처와 저작권
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- 도보 거리: © OpenStreetMap contributors
+- 지도·장소: 카카오 / 단지 정보: 공공데이터포털(국토교통부)
