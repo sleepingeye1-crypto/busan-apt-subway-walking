@@ -5,7 +5,7 @@ import { getComplex, listComplexes } from "@/lib/complexes";
 import {
   getDongDistances,
   IMPOSSIBLE_LABEL,
-  WALKING_DATA_DATES,
+  getWalkingDataDates,
   WALKING_METERS_PER_MINUTE,
   type DongDistance,
 } from "@/lib/walking";
@@ -15,8 +15,8 @@ import DongList from "./dong-list";
 // 개발 단위 9: 단지를 고르면 동 목록과 동마다 가장 가까운 지하철 출구까지의 도보 거리를 보여준다.
 
 // 단지 목록이 정해져 있으므로 빌드할 때 단지별 화면을 미리 만들어 둔다
-export function generateStaticParams() {
-  return listComplexes().map((c) => ({ id: c.id }));
+export async function generateStaticParams() {
+  return (await listComplexes()).map((c) => ({ id: c.id }));
 }
 
 // 지도에 찍을 점: 동마다 1개, 출구는 여러 동이 같은 출구를 쓰면 1개만
@@ -38,16 +38,17 @@ function toMapPoints(dongs: DongDistance[]): MapPoint[] {
 async function ComplexDetail({ params }: { params: PageProps<"/complex/[id]">["params"] }) {
   const { id } = await params;
   // 한글 단지 이름이 주소에 인코딩된 채로 올 수 있어 풀어서 찾는다
-  const complex = getComplex(decodeURIComponent(id));
+  const complex = await getComplex(decodeURIComponent(id));
   if (!complex) notFound();
 
-  const dongs = getDongDistances(complex.name);
+  const dongs = await getDongDistances(complex.name);
 
   return (
     <>
       <h1 className="mt-4 text-2xl font-bold">{complex.name}</h1>
       <p className="mt-1 text-zinc-500">
-        부산 {complex.gu} {complex.dong} · {complex.address}
+        {complex.area}
+        {complex.address && ` · ${complex.address}`}
       </p>
       {/* 개발 단위 10: 동 좌표가 없는 단지는 단지 대표 위치로 계산했음을 알린다 */}
       {!complex.hasDongCoordinates && (
@@ -74,11 +75,12 @@ async function ComplexDetail({ params }: { params: PageProps<"/complex/[id]">["p
 }
 
 // 데이터 기준일과 출처. OpenStreetMap 데이터는 출처 표시가 사용 조건이다
-function DataNotice() {
+async function DataNotice() {
+  const dates = await getWalkingDataDates();
   return (
     <footer className="mt-10 space-y-1 border-t border-zinc-200 pt-4 text-xs text-zinc-500 dark:border-zinc-800">
       <p>
-        출입구 데이터 기준일 {WALKING_DATA_DATES.exitDataDate} · 도보 거리 계산일 {WALKING_DATA_DATES.calculatedAt}
+        출입구 데이터 기준일 {dates.exitDataDate} · 도보 거리 계산일 {dates.calculatedAt}
       </p>
       <p>출입구 정보는 실제와 다를 수 있습니다. 공사·폐쇄된 출구는 반영되지 않았을 수 있습니다.</p>
       <p>도보 시간은 모든 동을 분당 {WALKING_METERS_PER_MINUTE}m(시속 3.6km)로 걷는다고 보고 계산했습니다.</p>
@@ -92,7 +94,7 @@ function DataNotice() {
         >
           © OpenStreetMap contributors
         </a>{" "}
-        · 출구·동 위치: 카카오 장소 검색
+        · 출구·동 위치: 카카오 장소 검색 (일부 동은 OpenStreetMap 건물 위치)
       </p>
     </footer>
   );
@@ -107,7 +109,9 @@ export default function ComplexPage(props: PageProps<"/complex/[id]">) {
       <Suspense fallback={<p className="mt-4 text-zinc-500">불러오는 중…</p>}>
         <ComplexDetail params={props.params} />
       </Suspense>
-      <DataNotice />
+      <Suspense fallback={null}>
+        <DataNotice />
+      </Suspense>
     </main>
   );
 }

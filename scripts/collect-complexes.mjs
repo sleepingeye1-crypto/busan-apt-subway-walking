@@ -9,6 +9,7 @@
 // 4) 카카오 주소 검색으로 단지 대표 좌표(위도·경도)를 붙인다
 
 import { mkdir, writeFile } from "node:fs/promises";
+import { syncComplexes, trySync } from "./db-sync.mjs";
 
 process.loadEnvFile(".env");
 
@@ -149,7 +150,8 @@ async function main() {
   if (failed.length) console.log(`조회에 실패한 단지 ${failed.length}개:`, failed);
 }
 
-main().catch((err) => {
+// JSON 백업을 저장한 뒤 DB에도 저장한다 (개발 단위 13)
+main().then(() => trySync("단지", syncComplexes)).catch((err) => {
   console.error(err.message);
   process.exitCode = 1;
 });

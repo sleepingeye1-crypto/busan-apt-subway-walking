@@ -9,6 +9,7 @@
 // 4) 그래도 출구가 하나도 없는 역은 따로 알려준다 (빠진 출구 점검)
 
 import { mkdir, writeFile } from "node:fs/promises";
+import { syncExits, trySync } from "./db-sync.mjs";
 
 process.loadEnvFile(".env");
 
@@ -142,7 +143,8 @@ async function main() {
   if (missing.length) console.log(`\n출구가 검색되지 않은 역 ${missing.length}개:`, missing.map((s) => s.name).join(", "));
 }
 
-main().catch((err) => {
+// JSON 백업을 저장한 뒤 DB에도 저장한다 (개발 단위 13)
+main().then(() => trySync("지하철 출구", syncExits)).catch((err) => {
   console.error(err.message);
   process.exitCode = 1;
 });

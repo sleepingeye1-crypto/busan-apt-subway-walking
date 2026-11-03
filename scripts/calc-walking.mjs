@@ -13,6 +13,7 @@
 
 import { existsSync } from "node:fs";
 import { readFile, writeFile } from "node:fs/promises";
+import { syncWalking, trySync } from "./db-sync.mjs";
 
 const OSRM_TABLE_URL = "https://routing.openstreetmap.de/routed-foot/table/v1/foot";
 const USER_AGENT = "my-app-practice/0.1 (busan apartment subway walking distance study)";
@@ -163,7 +164,8 @@ async function main() {
   console.log(`\n${OUT_FILE} 에 저장했습니다. 성공 ${items.length - failed.length}개, 실패 ${failed.length}개`);
 }
 
-main().catch((err) => {
+// JSON 백업을 저장한 뒤 DB에도 저장한다 (개발 단위 13)
+main().then(() => trySync("도보 거리", syncWalking)).catch((err) => {
   console.error(err.message);
   process.exitCode = 1;
 });

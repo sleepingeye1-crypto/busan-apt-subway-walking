@@ -2,7 +2,7 @@
   "generatedAt": "2026-11-02",
   "source": "© OpenStreetMap contributors — routing.openstreetmap.de (foot)",
   "exitDataDate": "2026-11-02",
-  "count": 38,
+  "count": 40,
   "items": [
     {
       "complex": "더샵센텀포레",
@@ -521,6 +521,50 @@
       "walkingSeconds": 696.1,
       "snapMeters": {
         "start": 20.35555168,
+        "end": 12.98563376
+      },
+      "exit": {
+        "station": "경성대.부경대역 부산2호선",
+        "line": "부산2호선",
+        "name": "경성대.부경대역 부산2호선 2번출구",
+        "number": 2,
+        "lat": 35.1380669572347,
+        "lng": 129.101259660026
+      }
+    },
+    {
+      "complex": "대연힐스테이트푸르지오",
+      "dong": "113동",
+      "basis": "dong",
+      "lat": 35.1402331,
+      "lng": 129.1038525,
+      "status": "ok",
+      "walkingMeters": 333.3,
+      "walkingSeconds": 266.6,
+      "snapMeters": {
+        "start": 58.17151209,
+        "end": 10.70557341
+      },
+      "exit": {
+        "station": "남천역 부산2호선",
+        "line": "부산2호선",
+        "name": "남천역 부산2호선 4번출구",
+        "number": 4,
+        "lat": 35.14122267657082,
+        "lng": 129.10687001931237
+      }
+    },
+    {
+      "complex": "대연힐스테이트푸르지오",
+      "dong": "114동",
+      "basis": "dong",
+      "lat": 35.1399464,
+      "lng": 129.1033158,
+      "status": "ok",
+      "walkingMeters": 578.7,
+      "walkingSeconds": 463.2,
+      "snapMeters": {
+        "start": 51.99472149,
         "end": 12.98563376
       },
       "exit": {

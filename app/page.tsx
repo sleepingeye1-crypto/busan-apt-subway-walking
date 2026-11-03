@@ -35,7 +35,7 @@ async function SearchSection({ searchParams }: { searchParams: PageProps<"/">["s
   const query = submitted ? q.trim() : "";
   // 빈칸으로 검색하면 전체 단지 목록을 보여준다
   const showAll = submitted && query === "";
-  const results = showAll ? listComplexes() : searchComplexes(query);
+  const results = showAll ? await listComplexes() : await searchComplexes(query);
 
   return (
     <>
@@ -55,7 +55,7 @@ async function SearchSection({ searchParams }: { searchParams: PageProps<"/">["s
                   >
                     <p className="font-medium">{c.name}</p>
                     <p className="text-sm text-zinc-500">
-                      부산 {c.gu} {c.dong}
+                      {c.area}
                     </p>
                   </Link>
                 </li>
