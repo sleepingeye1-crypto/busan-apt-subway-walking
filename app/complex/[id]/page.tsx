@@ -38,7 +38,14 @@ function toMapPoints(dongs: DongDistance[]): MapPoint[] {
 async function ComplexDetail({ params }: { params: PageProps<"/complex/[id]">["params"] }) {
   const { id } = await params;
   // 한글 단지 이름이 주소에 인코딩된 채로 올 수 있어 풀어서 찾는다
-  const complex = await getComplex(decodeURIComponent(id));
+  // 잘못된 % 글자가 섞인 주소는 서버 오류(500) 대신 "없는 단지"(404)로 처리한다
+  let name: string;
+  try {
+    name = decodeURIComponent(id);
+  } catch {
+    notFound();
+  }
+  const complex = await getComplex(name);
   if (!complex) notFound();
 
   const dongs = await getDongDistances(complex.name);
